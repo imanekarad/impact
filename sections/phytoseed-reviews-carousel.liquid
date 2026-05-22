@@ -1,0 +1,584 @@
+{% comment %}
+  ============================================================
+  PHYTOSEED LABS ‚Äî Carrousel Avis Style Trustpilot
+  20 avis ¬∑ 16√ó ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ ¬∑ 4√ó ‚òÖ‚òÖ‚òÖ‚òÖ
+  ============================================================
+  COMMENT MODIFIER :
+  ‚Üí Titre/sous-titre : cherche section_title / section_subtitle
+  ‚Üí Couleur principale : cherche --psl-green
+  ‚Üí Modifier un avis : trouve le bloc "AVIS XX" et √©dite
+    name, initials, rating (5 ou 4), title, body, date
+  ============================================================
+{% endcomment %}
+
+<style>
+#psl-section {
+  --psl-green: #085946;
+  --psl-star: #00B67A;
+  --psl-bg: #ffffff;
+  --psl-card-bg: #f9fdfb;
+  --psl-text: #0d2b22;
+  --psl-muted: #6b7280;
+  --psl-border: #e2ece7;
+  --psl-radius: 14px;
+  background: var(--psl-bg);
+  padding: 64px 24px 72px;
+  font-family: var(--font-body-family, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* ‚îÄ‚îÄ HEADER ‚îÄ‚îÄ */
+.psl-head { text-align: center; margin-bottom: 40px; }
+.psl-head h2 { font-size: clamp(22px,4vw,32px); font-weight:800; color:var(--psl-text); margin:0 0 8px; letter-spacing:-0.02em; }
+.psl-head p  { font-size:14px; color:var(--psl-muted); margin:0 0 24px; }
+
+.psl-score-pill {
+  display:inline-flex; align-items:center; gap:14px; flex-wrap:wrap; justify-content:center;
+  background:var(--psl-card-bg); border:1px solid var(--psl-border);
+  border-radius:50px; padding:10px 24px;
+}
+.psl-score-num { font-size:28px; font-weight:800; color:var(--psl-text); line-height:1; }
+.psl-score-stars { display:flex; gap:3px; }
+.psl-score-stars svg { width:22px; height:22px; }
+.psl-score-label { font-size:13px; color:var(--psl-muted); line-height:1.4; }
+.psl-score-label strong { display:block; color:var(--psl-text); font-weight:700; }
+
+/* ‚îÄ‚îÄ CAROUSEL ‚îÄ‚îÄ */
+.psl-outer   { position:relative; max-width:1100px; margin:0 auto; }
+.psl-clip    { overflow:hidden; }
+.psl-track   {
+  display:flex; gap:16px; align-items:stretch;
+  transition: transform .45s cubic-bezier(.25,.46,.45,.94);
+  will-change: transform;
+}
+
+/* ‚îÄ‚îÄ CARD ‚îÄ‚îÄ */
+.psl-card {
+  flex: 0 0 calc(33.333% - 11px);
+  min-width:0; box-sizing:border-box;
+  background:var(--psl-card-bg); border:1px solid var(--psl-border);
+  border-radius:var(--psl-radius); padding:22px 20px 18px;
+  display:flex; flex-direction:column; gap:10px;
+}
+@media(max-width:900px){ .psl-card { flex: 0 0 calc(50% - 8px); } }
+@media(max-width:580px){ .psl-card { flex: 0 0 100%; } }
+
+.psl-card-top  { display:flex; align-items:center; gap:12px; }
+.psl-avatar    {
+  width:40px; height:40px; border-radius:50%;
+  background:var(--psl-green); color:#fff;
+  font-size:14px; font-weight:700;
+  display:flex; align-items:center; justify-content:center; flex-shrink:0;
+}
+.psl-avatar.four { background:#3b82f6; }
+
+.psl-rname   { font-size:14px; font-weight:700; color:var(--psl-text); }
+.psl-vbadge  { display:inline-flex; align-items:center; gap:3px; font-size:11px; color:var(--psl-green); font-weight:600; margin-top:2px; }
+
+.psl-stars   { display:flex; gap:2px; }
+.psl-stars svg { width:15px; height:15px; }
+
+.psl-rtitle  { font-size:14px; font-weight:700; color:var(--psl-text); line-height:1.4; margin:0; }
+.psl-rbody   { font-size:13.5px; color:#374151; line-height:1.65; margin:0; flex:1; }
+
+.psl-foot    {
+  display:flex; align-items:center; justify-content:space-between;
+  padding-top:10px; border-top:1px solid var(--psl-border); margin-top:auto;
+}
+.psl-date    { font-size:11px; color:#9ca3af; }
+.psl-dot-tp  { width:7px; height:7px; border-radius:50%; background:#00B67A; }
+
+/* ‚îÄ‚îÄ NAV ‚îÄ‚îÄ */
+.psl-nav { display:flex; align-items:center; justify-content:center; gap:12px; margin-top:28px; }
+.psl-btn {
+  width:42px; height:42px; border-radius:50%;
+  border:1.5px solid var(--psl-border); background:#fff; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition:all .2s; color:var(--psl-text);
+}
+.psl-btn:hover { background:var(--psl-green); border-color:var(--psl-green); color:#fff; }
+.psl-btn svg   { width:18px; height:18px; }
+
+.psl-dots { display:flex; gap:6px; }
+.psl-dot  {
+  width:8px; height:8px; border-radius:50%;
+  background:var(--psl-border); cursor:pointer; border:none; padding:0;
+  transition:all .25s;
+}
+.psl-dot.active { background:var(--psl-green); width:22px; border-radius:4px; }
+
+/* ‚îÄ‚îÄ LEGAL ‚îÄ‚îÄ */
+.psl-legal {
+  text-align:center; font-size:11px; color:#c0c0c0;
+  max-width:660px; margin:32px auto 0; line-height:1.6;
+}
+</style>
+
+<!-- SVG symbols -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="s5" viewBox="0 0 24 24"><path fill="#00B67A" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol>
+  <symbol id="s0" viewBox="0 0 24 24"><path fill="#d1d5db" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol>
+  <symbol id="chk" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="#085946" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+  <symbol id="arr-l" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+  <symbol id="arr-r" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+</svg>
+
+{% comment %} Macro √©toiles {% endcomment %}
+{% assign _5stars = '<svg><use href="#s5"/></svg><svg><use href="#s5"/></svg><svg><use href="#s5"/></svg><svg><use href="#s5"/></svg><svg><use href="#s5"/></svg>' %}
+{% assign _4stars = '<svg><use href="#s5"/></svg><svg><use href="#s5"/></svg><svg><use href="#s5"/></svg><svg><use href="#s5"/></svg><svg><use href="#s0"/></svg>' %}
+{% assign _checkmark = '<svg width="11" height="11"><use href="#chk"/></svg>' %}
+
+<section id="psl-section">
+
+  <!-- HEADER -->
+  <div class="psl-head">
+    <h2>Ce que disent nos clients</h2>
+    <p>Avis v√©rifi√©s ¬∑ R√©sultats individuels variables</p>
+    <div class="psl-score-pill">
+      <span class="psl-score-num">4.9</span>
+      <div class="psl-score-stars">
+        <svg><use href="#s5"/></svg><svg><use href="#s5"/></svg><svg><use href="#s5"/></svg><svg><use href="#s5"/></svg><svg><use href="#s5"/></svg>
+      </div>
+      <div class="psl-score-label">
+        <strong>Excellent</strong>
+        Bas√© sur 1 248 avis
+      </div>
+    </div>
+  </div>
+
+  <!-- CAROUSEL -->
+  <div class="psl-outer">
+    <div class="psl-clip">
+      <div class="psl-track" id="pslTrack">
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 01 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">SL</div>
+            <div>
+              <div class="psl-rname">Sarah L.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Je ne tombe plus malade chaque hiver</p>
+          <p class="psl-rbody">3 mois que je prends Phytoseed Labs tous les matins. J'ai pass√© tout l'hiver sans un seul rhume ‚Äî c'est une premi√®re pour moi depuis des ann√©es.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">14 mars 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 02 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">MB</div>
+            <div>
+              <div class="psl-rname">Marc B.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Ventre plat enfin !</p>
+          <p class="psl-rbody">Je souffrais de ballonnements constants. Apr√®s 10 jours avec Phytoseed Labs, le gonflements a vraiment diminu√©. Ma femme a remarqu√© avant moi.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">28 f√©vr. 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 03 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">JT</div>
+            <div>
+              <div class="psl-rname">Julie T.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Enfin quelque chose qui marche vraiment</p>
+          <p class="psl-rbody">J'avais essay√© une dizaine de compl√©ments avant. Phytoseed Labs est le premier √† tenir ses promesses. √ânergie en hausse, digestion nickel.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">5 mars 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 04 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">KR</div>
+            <div>
+              <div class="psl-rname">Kevin R.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Mes sinus ont enfin souffl√©</p>
+          <p class="psl-rbody">Rhumes √† r√©p√©tition depuis des ann√©es. Depuis que je prends Phytoseed Labs d√®s les premiers sympt√¥mes, √ßa dure 2 jours max au lieu d'une semaine.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">19 janv. 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 05 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">AM</div>
+            <div>
+              <div class="psl-rname">Audrey M.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Mes rots ont pratiquement disparu</p>
+          <p class="psl-rbody">Je rotais constamment apr√®s chaque repas, c'√©tait g√™nant. Apr√®s 3 jours de Phytoseed Labs, 90% d'am√©lioration. J'en ai command√© 3 autres bo√Ætes.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">2 avr. 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 06 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">PC</div>
+            <div>
+              <div class="psl-rname">Pierre C.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Le format softgel change tout</p>
+          <p class="psl-rbody">J'utilisais l'huile d'origan liquide avant ‚Äî le go√ªt √©tait insupportable. Les softgels Phytoseed Labs n'ont aucun go√ªt et la puissance est clairement l√†.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">11 mars 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 07 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">NV</div>
+            <div>
+              <div class="psl-rname">Nadia V.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Peau plus nette en bonus</p>
+          <p class="psl-rbody">Je prenais Phytoseed Labs pour mon intestin, mais ma peau s'est aussi am√©lior√©e. Moins de boutons, moins de rougeurs. Le lien intestin-peau est r√©el.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">22 f√©vr. 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 08 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">TD</div>
+            <div>
+              <div class="psl-rname">Thomas D.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Discret mais redoutablement efficace</p>
+          <p class="psl-rbody">Pas de r√©sultats spectaculaires la premi√®re semaine. Mais au bout de 3 semaines, j'ai r√©alis√© que j'avais plus d'√©nergie, moins de brouillard mental, l'estomac calme.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">7 avr. 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 09 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">CF</div>
+            <div>
+              <div class="psl-rname">Claire F.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Mon m√©decin naturopathe me l'avait recommand√©</p>
+          <p class="psl-rbody">J'avais un candidose intestinale diagnostiqu√©e. Phytoseed Labs fait partie de mon protocole depuis 6 semaines. Les r√©sultats sur la digestion parlent d'eux-m√™mes.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">30 janv. 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 10 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">LG</div>
+            <div>
+              <div class="psl-rname">Laura G.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Commande r√©currente depuis 4 mois</p>
+          <p class="psl-rbody">Je ne pars plus en voyage sans Phytoseed Labs. C'est devenu mon premier r√©flexe d√®s que je sens quelque chose. Famille contente, moi contente.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">16 mars 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 11 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">RB</div>
+            <div>
+              <div class="psl-rname">Rachel B.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Sceptique au d√©part, convaincue maintenant</p>
+          <p class="psl-rbody">J'avais peur d'√™tre d√©√ßue comme avec d'autres produits. La diff√©rence dans mon abdomen est notable. Plus de ce sentiment de ballonnement permanent.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">9 f√©vr. 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 12 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">OM</div>
+            <div>
+              <div class="psl-rname">Olivia M.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Id√©al pour toute la famille</p>
+          <p class="psl-rbody">Mon mari et moi prenons Phytoseed Labs tous les deux. On a √©vit√© les gastros que nos coll√®gues ont eues cet hiver. Co√Øncidence ? Je ne crois pas.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">25 mars 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 13 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">FH</div>
+            <div>
+              <div class="psl-rname">Fabien H.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Produit s√©rieux, label propre</p>
+          <p class="psl-rbody">J'ai lu la liste d'ingr√©dients en entier. Z√©ro remplissage, z√©ro additif. 80% de carvacrol, c'est du s√©rieux. Phytoseed Labs fait ce que la plupart des marques promettent sans tenir.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">3 avr. 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 14 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">IS</div>
+            <div>
+              <div class="psl-rname">Isabelle S.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Mon syst√®me immunitaire a l'air solide</p>
+          <p class="psl-rbody">Mes enfants ont √©t√© malades deux fois cet hiver. Moi, rien. Je ne peux pas garantir que c'est uniquement Phytoseed Labs, mais je continue.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">18 f√©vr. 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 15 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">YP</div>
+            <div>
+              <div class="psl-rname">Yannick P.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Livraison rapide, qualit√© au rendez-vous</p>
+          <p class="psl-rbody">Command√© un mardi, re√ßu le jeudi. Packaging soign√©. Surtout, apr√®s 2 semaines d'utilisation, les r√©sultats sur mon √©nergie sont clairs. Je recommande sans h√©siter.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">1 avr. 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 16 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar">EW</div>
+            <div>
+              <div class="psl-rname">Emma W.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _5stars }}</div>
+          <p class="psl-rtitle">Mon cure anti-candidose naturelle</p>
+          <p class="psl-rbody">J'utilise Phytoseed Labs dans le cadre d'un protocole de 6 semaines pour la candidose. Semaine 4, les sympt√¥mes digestifs ont nettement recul√©.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">12 mars 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 17 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ (4 √©toiles)
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar four">BN</div>
+            <div>
+              <div class="psl-rname">Bruno N.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _4stars }}</div>
+          <p class="psl-rtitle">Bon produit, effets progressifs</p>
+          <p class="psl-rbody">Les r√©sultats ne sont pas imm√©diats, il faut √™tre patient. Apr√®s 3 semaines, digestion vraiment am√©lior√©e. J'enl√®ve une √©toile car j'aurais aim√© des effets plus rapides.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">6 mars 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 18 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ (4 √©toiles)
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar four">CL</div>
+            <div>
+              <div class="psl-rname">Christine L.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _4stars }}</div>
+          <p class="psl-rtitle">Tr√®s satisfaite, juste un peu cher</p>
+          <p class="psl-rbody">Phytoseed Labs a vraiment aid√© pour mon confort intestinal. Le prix est un peu √©lev√© pour un usage quotidien, mais la qualit√© des ingr√©dients le justifie.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">21 janv. 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 19 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ (4 √©toiles)
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar four">DK</div>
+            <div>
+              <div class="psl-rname">David K.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _4stars }}</div>
+          <p class="psl-rtitle">Efficace sur les infections respiratoires</p>
+          <p class="psl-rbody">J'ai pris Phytoseed Labs lors d'une sinusite naissante. Je ne suis pas tomb√© vraiment malade. Difficile de savoir si c'est le produit ou mon immunit√©, mais je le reprends syst√©matiquement.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">4 f√©vr. 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+        <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+             AVIS 20 ‚Äî ‚òÖ‚òÖ‚òÖ‚òÖ (4 √©toiles)
+        ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+        <div class="psl-card">
+          <div class="psl-card-top">
+            <div class="psl-avatar four">MP</div>
+            <div>
+              <div class="psl-rname">Marie P.</div>
+              <div class="psl-vbadge">{{ _checkmark }} Achat v√©rifi√©</div>
+            </div>
+          </div>
+          <div class="psl-stars">{{ _4stars }}</div>
+          <p class="psl-rtitle">Bonne alternative naturelle aux antibiotiques</p>
+          <p class="psl-rbody">J'√©vite les antibiotiques autant que possible. Phytoseed Labs est devenu mon premier recours. Pas miraculeux √† 100%, mais vraiment utile au quotidien.‚Ä†</p>
+          <div class="psl-foot"><span class="psl-date">10 mars 2025</span><div class="psl-dot-tp"></div></div>
+        </div>
+
+      </div><!-- /track -->
+    </div><!-- /clip -->
+
+    <!-- NAVIGATION -->
+    <div class="psl-nav">
+      <button class="psl-btn" id="pslPrev" aria-label="Pr√©c√©dent">
+        <svg><use href="#arr-l"/></svg>
+      </button>
+      <div class="psl-dots" id="pslDots"></div>
+      <button class="psl-btn" id="pslNext" aria-label="Suivant">
+        <svg><use href="#arr-r"/></svg>
+      </button>
+    </div>
+  </div><!-- /outer -->
+
+  <!-- LEGAL -->
+  <p class="psl-legal">
+    ‚Ä† Ces d√©clarations n'ont pas √©t√© √©valu√©es par les autorit√©s sanitaires. Ce produit n'est pas destin√© √† diagnostiquer, traiter, gu√©rir ou pr√©venir une maladie. Les avis refl√®tent des exp√©riences individuelles. Les r√©sultats peuvent varier.
+  </p>
+
+</section>
+
+<script>
+(function(){
+  const track   = document.getElementById('pslTrack');
+  const dotsWrap= document.getElementById('pslDots');
+  const btnPrev = document.getElementById('pslPrev');
+  const btnNext = document.getElementById('pslNext');
+
+  const cards   = track.querySelectorAll('.psl-card');
+  const total   = cards.length;
+  let current   = 0;
+
+  /* ‚îÄ‚îÄ Responsive: combien de cartes visibles ? ‚îÄ‚îÄ */
+  function perView(){
+    const w = window.innerWidth;
+    if(w <= 580) return 1;
+    if(w <= 900) return 2;
+    return 3;
+  }
+
+  function pages(){ return Math.ceil(total / perView()); }
+
+  /* ‚îÄ‚îÄ Cr√©e les dots ‚îÄ‚îÄ */
+  function buildDots(){
+    dotsWrap.innerHTML = '';
+    for(let i=0; i<pages(); i++){
+      const d = document.createElement('button');
+      d.className = 'psl-dot' + (i===current?' active':'');
+      d.setAttribute('aria-label','Page '+(i+1));
+      d.addEventListener('click',()=>goTo(i));
+      dotsWrap.appendChild(d);
+    }
+  }
+
+  /* ‚îÄ‚îÄ Calcule le d√©calage ‚îÄ‚îÄ */
+  function cardWidth(){
+    if(!cards[0]) return 0;
+    return cards[0].getBoundingClientRect().width + 16; // gap 16
+  }
+
+  function goTo(page){
+    const p = Math.max(0, Math.min(page, pages()-1));
+    current = p;
+    const offset = p * perView() * cardWidth();
+    track.style.transform = `translateX(-${offset}px)`;
+    dotsWrap.querySelectorAll('.psl-dot').forEach((d,i)=>{
+      d.classList.toggle('active', i===current);
+    });
+  }
+
+  btnPrev.addEventListener('click',()=> goTo(current-1));
+  btnNext.addEventListener('click',()=> goTo(current+1));
+
+  /* ‚îÄ‚îÄ Init + resize ‚îÄ‚îÄ */
+  buildDots();
+  let resizeTimer;
+  window.addEventListener('resize',()=>{
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(()=>{ buildDots(); goTo(0); }, 150);
+  });
+
+  /* ‚îÄ‚îÄ Auto-play toutes les 5s ‚îÄ‚îÄ */
+  setInterval(()=>{
+    const next = (current + 1) >= pages() ? 0 : current + 1;
+    goTo(next);
+  }, 5000);
+})();
+</script>
+
