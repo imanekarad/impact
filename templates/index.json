@@ -288,6 +288,28 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "17794659306db84895": {
+      "type": "apps",
+      "blocks": {
+        "rapi_rapi_bundle_gdQXbA": {
+          "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
+          "settings": {
+            "product": "phytoseed-labs-oregano-oil-softgel-with-blackseed-oil"
+          }
+        }
+      },
+      "block_order": [
+        "rapi_rapi_bundle_gdQXbA"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -298,6 +320,7 @@
     "image_with_text_overlay_Ly377i",
     "custom_liquid_yF8yj3",
     "faq",
-    "custom_liquid_LM3Gng"
+    "custom_liquid_LM3Gng",
+    "17794659306db84895"
   ]
 }
