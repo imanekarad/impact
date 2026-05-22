@@ -238,12 +238,20 @@
             "title": "Recommended use",
             "content": "<p>Take 2 softgels daily with water, preferably with food. Consistent daily use is recommended for best results.</p><p>Most customers report noticing a difference within 1–2 weeks of consistent use.*</p><p>* Individual results may vary. Consult your healthcare provider before use if you are pregnant, nursing, taking medication, or have a medical condition.</p>"
           }
+        },
+        "item_yRx3Yi": {
+          "type": "item",
+          "settings": {
+            "title": "Ingredients",
+            "content": "<p>Oil of Oregano (<em>Origanum vulgare</em>) — 6,000 mg (standardized to 80% carvacrol and 5% thymol)<br/>Black Seed Oil (<em>Nigella sativa</em>) — 200 mg</p><p>Other ingredients: Softgel shell (gelatin, glycerin, purified water). Contains no fillers, binders, artificial colors, or preservatives.</p><p>Free from: Gluten, dairy, soy, sugar, GMOs, artificial additives.</p>"
+          }
         }
       },
       "block_order": [
         "166442457738b23caf-0",
         "166442457738b23caf-1",
-        "166442457738b23caf-2"
+        "166442457738b23caf-2",
+        "item_yRx3Yi"
       ],
       "settings": {
         "full_width": false,
