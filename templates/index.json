@@ -217,31 +217,6 @@
         "text_gradient": ""
       }
     },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "",
-        "products": [],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 6,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "subheading": "",
-        "title": "Featured collection",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
     "impact-text": {
       "type": "impact-text",
       "blocks": {
@@ -550,104 +525,6 @@
         "button_text_color": ""
       }
     },
-    "featured-product": {
-      "type": "featured-product",
-      "blocks": {
-        "vendor": {
-          "type": "vendor",
-          "settings": {}
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h2"
-          }
-        },
-        "badges": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
-        "rating": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "separator": {
-          "type": "separator",
-          "settings": {}
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "icon": "none",
-            "icon_width": 20,
-            "collapse_content": false
-          }
-        },
-        "variant-picker": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_style": "block",
-            "swatch_selector_style": "color",
-            "variant_image_options": "",
-            "size_chart_page": ""
-          }
-        },
-        "quantity-selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy-buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": true,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "vendor",
-        "title",
-        "badges",
-        "price",
-        "rating",
-        "separator",
-        "description",
-        "variant-picker",
-        "quantity-selector",
-        "buy-buttons"
-      ],
-      "settings": {
-        "full_width": false,
-        "product": "",
-        "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
-      }
-    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -700,19 +577,6 @@
         "accordion_text_color": ""
       }
     },
-    "custom_liquid_RDffQb": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "{% comment %}\nSection: Avis clients avec étoiles — Phytoseed Labs\n- Affiche la note moyenne et le nombre d’avis (si app/Shopify product.reviews disponible).\n- Liste les avis dynamiques si présents.\n- Fallback: 3 témoignages vérifiés inspirés de la page produit, brandés Phytoseed Labs.\n- Remplacement complet de \"Resilia\" -> \"Phytoseed Labs\".\n- Styles de base inclus; adaptez-les à votre thème.\n{% endcomment %}\n\n<section class=\"phytoseed-reviews\">\n  <div class=\"phytoseed-reviews__header\">\n    <h2 class=\"phytoseed-reviews__title\">Ce que disent nos clients</h2>\n\n    {%- assign avg = product.metafields.reviews.rating.value | default: product.rating | default: blank -%}\n    {%- assign count = product.metafields.reviews.rating_count | default: product.review_count | default: 0 -%}\n\n    <div class=\"phytoseed-reviews__summary\" aria-live=\"polite\">\n      {%- if avg != blank and count > 0 -%}\n        <div class=\"stars\" role=\"img\" aria-label=\"{{ avg | round: 1 }} sur 5 étoiles\">\n          {%- assign filled = avg | round -%}\n          {%- for i in (1..5) -%}\n            {%- if i <= filled -%}\n              <span class=\"star star--full\" aria-hidden=\"true\">★</span>\n            {%- else -%}\n              <span class=\"star star--empty\" aria-hidden=\"true\">☆</span>\n            {%- endif -%}\n          {%- endfor -%}\n        </div>\n        <div class=\"rating-text\">\n          <strong>{{ avg | round: 1 }}/5</strong> basé sur <strong>{{ count }}</strong> avis vérifiés\n        </div>\n      {%- else -%}\n        <div class=\"stars\" role=\"img\" aria-label=\"5 sur 5 étoiles\">\n          <span class=\"star star--full\" aria-hidden=\"true\">★</span>\n          <span class=\"star star--full\" aria-hidden=\"true\">★</span>\n          <span class=\"star star--full\" aria-hidden=\"true\">★</span>\n          <span class=\"star star--full\" aria-hidden=\"true\">★</span>\n          <span class=\"star star--full\" aria-hidden=\"true\">★</span>\n        </div>\n        <div class=\"rating-text\">\n          <strong>5.0/5</strong> basé sur des avis clients Phytoseed Labs\n        </div>\n      {%- endif -%}\n    </div>\n  </div>\n\n  {%- comment -%}\n  Bloc d’avis dynamiques (fonctionne si votre app d’avis renseigne les metafields standards).\n  {%- endcomment -%}\n  {%- if product.reviews and product.reviews != empty -%}\n    <ul class=\"phytoseed-reviews__list\">\n      {%- for review in product.reviews -%}\n        <li class=\"review\">\n          <div class=\"review__header\">\n            <div class=\"review__stars\" role=\"img\" aria-label=\"{{ review.rating }} sur 5 étoiles\">\n              {%- for i in (1..5) -%}\n                {%- if i <= review.rating -%}\n                  <span class=\"star star--full\" aria-hidden=\"true\">★</span>\n                {%- else -%}\n                  <span class=\"star star--empty\" aria-hidden=\"true\">☆</span>\n                {%- endif -%}\n              {%- endfor -%}\n            </div>\n            <div class=\"review__meta\">\n              <strong class=\"review__author\">\n                {%- if review.author != blank -%}{{ review.author }}{%- else -%}Client vérifié{%- endif -%}\n              </strong>\n              {%- if review.created_at -%}\n                <span class=\"review__date\">· {{ review.created_at | date: \"%d %b %Y\" }}</span>\n              {%- endif -%}\n              <span class=\"review__badge\">VÉRIFIÉ</span>\n            </div>\n          </div>\n          {%- if review.title -%}\n            <h3 class=\"review__title\">“{{ review.title }}”</h3>\n          {%- endif -%}\n          <p class=\"review__body\">{{ review.body }}</p>\n          {%- if review.photos and review.photos.size > 0 -%}\n            <div class=\"review__media\">\n              {%- for photo in review.photos limit: 3 -%}\n                <img src=\"{{ photo | img_url: '200x200' }}\" alt=\"Photo client\" loading=\"lazy\">\n              {%- endfor -%}\n            </div>\n          {%- endif -%}\n        </li>\n      {%- endfor -%}\n    </ul>\n  {%- else -%}\n    {%- comment -%}\n    Fallback: Témoignages statiques (brandés Phytoseed Labs). \n    {%- endcomment -%}\n    <ul class=\"phytoseed-reviews__list\">\n      <li class=\"review\">\n        <div class=\"review__header\">\n          <div class=\"review__stars\" role=\"img\" aria-label=\"5 sur 5 étoiles\">\n            <span class=\"star star--full\">★</span><span class=\"star star--full\">★</span><span class=\"star star--full\">★</span><span class=\"star star--full\">★</span><span class=\"star star--full\">★</span>\n          </div>\n          <div class=\"review__meta\">\n            <strong class=\"review__author\">Evelyn N.</strong>\n            <span class=\"review__badge\">VÉRIFIÉ</span>\n          </div>\n        </div>\n        <h3 class=\"review__title\">“Moins de ballonnements, ça change tout.”</h3>\n        <p class=\"review__body\">J’étais un peu sceptique au début — tellement de produits décevants. Ravie d’avoir tenté. Différence notable au niveau du ventre, je n’ai plus cette sensation de ballonnement. Phytoseed Labs a clairement fait la différence. *</p>\n      </li>\n\n      <li class=\"review\">\n        <div class=\"review__header\">\n          <div class=\"review__stars\" role=\"img\" aria-label=\"5 sur 5 étoiles\">\n            <span class=\"star star--full\">★</span><span class=\"star star--full\">★</span><span class=\"star star--full\">★</span><span class=\"star star--full\">★</span><span class=\"star star--full\">★</span>\n          </div>\n          <div class=\"review__meta\">\n            <strong class=\"review__author\">Client vérifié</strong>\n            <span class=\"review__badge\">VÉRIFIÉ</span>\n          </div>\n        </div>\n        <h3 class=\"review__title\">“Subtil au début, mais puissant.”</h3>\n        <p class=\"review__body\">Pas des effets du jour au lendemain, mais après 3 semaines: plus d’énergie, moins de brouillard mental, digestion plus calme après les repas. Ça agit discrètement mais efficacement. *</p>\n      </li>\n\n      <li class=\"review\">\n        <div class=\"review__header\">\n          <div class=\"review__stars\" role=\"img\" aria-label=\"5 sur 5 étoiles\">\n            <span class=\"star star--full\">★</span><span class=\"star star--full\">★</span><span class=\"star star--full\">★</span><span class=\"star star--full\">★</span><span class=\"star star--full\">★</span>\n          </div>\n          <div class=\"review__meta\">\n            <strong class=\"review__author\">Client vérifié</strong>\n            <span class=\"review__badge\">VÉRIFIÉ</span>\n          </div>\n        </div>\n        <h3 class=\"review__title\">“Résultats concrets”</h3>\n        <p class=\"review__body\">Moins de ballonnements et un confort digestif retrouvé. Je rachèterai sans hésiter. *</p>\n      </li>\n    </ul>\n\n    <p class=\"phytoseed-reviews__disclaimer\">\n      * Les témoignages reflètent des expériences individuelles. Les résultats peuvent varier. \n      Ce produit n’est pas destiné à diagnostiquer, traiter, guérir ou prévenir une maladie.\n    </p>\n  {%- endif -%}\n\n  <div class=\"phytoseed-reviews__guarantee\">\n    <strong>Garantie 30 jours “Satisfait ou remboursé”.</strong>\n    Nous soutenons chaque commande. Si vous n’êtes pas entièrement satisfait sous 30 jours, contactez-nous et nous organiserons un remboursement complet.\n  </div>\n</section>\n\n<style>\n.phytoseed-reviews { border: 1px solid #e6e6e6; border-radius: 10px; padding: 20px; background: #fff; }\n.phytoseed-reviews__title { margin: 0 0 6px; font-size: 1.3rem; }\n.phytoseed-reviews__summary { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }\n.stars { color: #f5a623; font-size: 1.1rem; letter-spacing: 1px; }\n.star { display: inline-block; }\n.star--empty { color: #ddd; }\n.rating-text { color: #333; font-size: .95rem; }\n.phytoseed-reviews__list { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 16px; }\n.review { border-top: 1px solid #f0f0f0; padding-top: 14px; }\n.review:first-child { border-top: none; padding-top: 0; }\n.review__header { display: flex; align-items: center; justify-content: space-between; gap: 10px; }\n.review__meta { color: #666; font-size: .9rem; display: flex; align-items: center; gap: 6px; }\n.review__badge { background: #eef7ee; color: #2e7d32; padding: 2px 6px; border-radius: 4px; font-size: .75rem; }\n.review__title { margin: 6px 0; font-size: 1.05rem; }\n.review__body { margin: 0; color: #333; }\n.review__media { margin-top: 8px; display: flex; gap: 8px; }\n.review__media img { border-radius: 6px; border: 1px solid #eee; }\n.phytoseed-reviews__guarantee { margin-top: 16px; padding: 10px; background: #f9fafb; border: 1px dashed #e0e0e0; border-radius: 8px; font-size: .9rem; }\n</style>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "custom_liquid_LM3Gng": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -725,6 +589,19 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "custom_liquid_yF8yj3": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"ps-testimonials-wrapper\">\n  <div class=\"ps-custom-container\">\n\n    <div class=\"ps-heading-block\">\n      <span class=\"ps-badge\">★★★★★ TRUSTED BY +7000 people</span>\n      <h2 class=\"ps-main-title\">\n        What our community is Saying About <span>Phytoseed Labs</span>\n      </h2>\n      <p class=\"ps-subtitle\">\n        Natural gut support, immune balance & daily wellness — without harsh ingredients.\n      </p>\n    </div>\n\n    <div class=\"ps-custom-grid\">\n\n      <div class=\"ps-review-card\">\n        <div class=\"ps-stars-display\">★★★★★</div>\n        <p class=\"ps-review-content\">\n          “My cycle has been more regular since I started. My energy through the luteal phase improved dramatically.”\n        </p>\n        <div class=\"ps-review-meta\">Heather D.</div>\n      </div>\n\n      <div class=\"ps-review-card\">\n        <div class=\"ps-stars-display\">★★★★★</div>\n        <p class=\"ps-review-content\">\n          “The combination of oregano and black seed oil feels much more complete. I feel lighter and cleaner.”\n        </p>\n        <div class=\"ps-review-meta\">Mary B.</div>\n      </div>\n\n      <div class=\"ps-review-card\">\n        <div class=\"ps-stars-display\">★★★★★</div>\n        <p class=\"ps-review-content\">\n          “After years of digestive discomfort, this is the first natural formula that actually made a difference.”\n        </p>\n        <div class=\"ps-review-meta\">Daniel M.</div>\n      </div>\n\n      <div class=\"ps-review-card\">\n        <div class=\"ps-stars-display\">★★★★★</div>\n        <p class=\"ps-review-content\">\n          “The bloating, gas and heaviness after meals are finally gone. My gut feels calm again.”\n        </p>\n        <div class=\"ps-review-meta\">Sophia L.</div>\n      </div>\n\n      <div class=\"ps-review-card\">\n        <div class=\"ps-stars-display\">★★★★★</div>\n        <p class=\"ps-review-content\">\n          “These softgels completely solve the harsh oregano oil taste problem. Very premium product.”\n        </p>\n        <div class=\"ps-review-meta\">Camilla H.</div>\n      </div>\n\n      <div class=\"ps-review-card\">\n        <div class=\"ps-stars-display\">★★★★★</div>\n        <p class=\"ps-review-content\">\n          “I noticed a difference within the first week. Less fatigue, better digestion and clearer skin.”\n        </p>\n        <div class=\"ps-review-meta\">Rachel Y.</div>\n      </div>\n\n    </div>\n\n  </div>\n</div>\n\n<style>\n.ps-testimonials-wrapper{\n  width:100%;\n  padding:80px 0;\n  background:\n  linear-gradient(\n    180deg,\n    #eef4e8 0%,\n    #f8f5ef 100%\n  );\n  overflow:hidden;\n}\n\n.ps-custom-container{\n  max-width:1250px;\n  margin:0 auto;\n  padding:0 20px;\n}\n\n.ps-heading-block{\n  text-align:center;\n  margin-bottom:50px;\n}\n\n.ps-badge{\n  display:inline-block;\n  background:#4F5F35;\n  color:#F8F5EF;\n  padding:10px 18px;\n  border-radius:999px;\n  font-size:12px;\n  letter-spacing:2px;\n  font-weight:700;\n  margin-bottom:22px;\n}\n\n.ps-main-title{\n  font-size:52px;\n  line-height:1.1;\n  color:#2E3B22;\n  margin:0;\n  font-weight:700;\n  letter-spacing:-1px;\n}\n\n.ps-main-title span{\n  color:#4F5F35;\n}\n\n.ps-subtitle{\n  max-width:760px;\n  margin:18px auto 0;\n  font-size:18px;\n  line-height:1.7;\n  color:#72825B;\n}\n\n.ps-custom-grid{\n  display:flex;\n  overflow-x:auto;\n  gap:28px;\n  padding-bottom:20px;\n  scroll-snap-type:x mandatory;\n  -webkit-overflow-scrolling:touch;\n}\n\n.ps-custom-grid::-webkit-scrollbar{\n  height:6px;\n}\n\n.ps-custom-grid::-webkit-scrollbar-thumb{\n  background:#cbb98d;\n  border-radius:20px;\n}\n\n.ps-review-card{\n  min-width:360px;\n  max-width:360px;\n  background:rgba(255,255,255,0.78);\n  backdrop-filter:blur(10px);\n  border:1px solid rgba(255,255,255,0.6);\n  border-radius:28px;\n  padding:32px;\n  box-shadow:\n  0 10px 35px rgba(79,95,53,0.08);\n  scroll-snap-align:start;\n  transition:all .3s ease;\n}\n\n.ps-review-card:hover{\n  transform:translateY(-5px);\n  box-shadow:\n  0 18px 45px rgba(79,95,53,0.12);\n}\n\n.ps-stars-display{\n  color:#B79A5B;\n  font-size:22px;\n  letter-spacing:4px;\n  margin-bottom:18px;\n}\n\n.ps-review-content{\n  color:#3f4b34;\n  font-size:16px;\n  line-height:1.8;\n  margin-bottom:24px;\n  font-style:italic;\n}\n\n.ps-review-meta{\n  border-top:1px solid #e7ddcb;\n  padding-top:16px;\n  font-size:13px;\n  font-weight:700;\n  letter-spacing:1px;\n  text-transform:uppercase;\n  color:#4F5F35;\n}\n\n@media(max-width:768px){\n\n  .ps-testimonials-wrapper{\n    padding:60px 0;\n  }\n\n  .ps-main-title{\n    font-size:34px;\n  }\n\n  .ps-subtitle{\n    font-size:16px;\n  }\n\n  .ps-review-card{\n    min-width:300px;\n    max-width:300px;\n    padding:26px;\n  }\n\n}\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -732,16 +609,14 @@
     "image-with-text-overlay",
     "image-link-blocks",
     "scrolling-text",
-    "featured-collection",
     "impact-text",
     "media-grid",
     "before-after-image",
     "press",
     "hot-spots",
     "multiple-images-with-text",
-    "featured-product",
     "faq",
-    "custom_liquid_RDffQb",
-    "custom_liquid_LM3Gng"
+    "custom_liquid_LM3Gng",
+    "custom_liquid_yF8yj3"
   ]
 }
