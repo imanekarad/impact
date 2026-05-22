@@ -238,6 +238,48 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "image_with_text_overlay_Ly377i": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_M8mfPe": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_4jR97G": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_rMFU3n": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_M8mfPe",
+        "heading_4jR97G",
+        "richtext_rMFU3n"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/ChatGPT_Image_May_22_2026_05_04_18_PM.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
     }
   },
   "order": [
@@ -247,6 +289,7 @@
     "before-after-image",
     "custom_liquid_yF8yj3",
     "faq",
-    "custom_liquid_LM3Gng"
+    "custom_liquid_LM3Gng",
+    "image_with_text_overlay_Ly377i"
   ]
 }
