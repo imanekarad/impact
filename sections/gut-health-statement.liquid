@@ -1,0 +1,358 @@
+{% comment %}
+  Section: Gut Health Statement Banner
+  √Ä ajouter via : Online Store > Themes > Edit code > Sections > Add new section
+  Puis l'ins√©rer dans ton template via le customizer ou le JSON du template.
+{% endcomment %}
+
+<section class="gut-statement" id="gut-statement-{{ section.id }}">
+  <div class="gut-statement__bg-texture"></div>
+  <div class="gut-statement__orb gut-statement__orb--1"></div>
+  <div class="gut-statement__orb gut-statement__orb--2"></div>
+
+  <div class="gut-statement__inner">
+    <div class="gut-statement__eyebrow">
+      <span class="gut-statement__line"></span>
+      <span class="gut-statement__eyebrow-text">{{ section.settings.eyebrow_text }}</span>
+      <span class="gut-statement__line"></span>
+    </div>
+
+    <div class="gut-statement__body">
+      <p class="gut-statement__sentence gut-statement__sentence--1">
+        {{ section.settings.sentence_1 }}
+      </p>
+      <p class="gut-statement__sentence gut-statement__sentence--2">
+        <span class="gut-statement__highlight">{{ section.settings.sentence_2_highlight }}</span>
+        {{ section.settings.sentence_2_rest }}
+      </p>
+      <p class="gut-statement__sentence gut-statement__sentence--3">
+        {{ section.settings.sentence_3 }}
+      </p>
+    </div>
+
+    {% if section.settings.show_cta %}
+    <div class="gut-statement__cta-wrap">
+      <a href="{{ section.settings.cta_url }}" class="gut-statement__cta">
+        {{ section.settings.cta_label }}
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  #gut-statement-{{ section.id }} {
+    --gs-bg:        {{ section.settings.bg_color }};
+    --gs-text:      {{ section.settings.text_color }};
+    --gs-accent:    {{ section.settings.accent_color }};
+    --gs-highlight: {{ section.settings.highlight_color }};
+    --gs-muted:     {{ section.settings.muted_color }};
+    --gs-orb-a:     {{ section.settings.orb_color_a }};
+    --gs-orb-b:     {{ section.settings.orb_color_b }};
+  }
+
+  .gut-statement {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--gs-bg);
+    padding: {{ section.settings.padding_top }}px 24px {{ section.settings.padding_bottom }}px;
+    text-align: center;
+  }
+
+  /* Noise texture overlay */
+  .gut-statement__bg-texture {
+    position: absolute;
+    inset: 0;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 180px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Ambient orbs */
+  .gut-statement__orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .gut-statement__orb--1 {
+    width: 420px; height: 420px;
+    background: var(--gs-orb-a);
+    top: -120px; left: -80px;
+    opacity: 0.45;
+  }
+  .gut-statement__orb--2 {
+    width: 360px; height: 360px;
+    background: var(--gs-orb-b);
+    bottom: -100px; right: -60px;
+    opacity: 0.38;
+  }
+
+  .gut-statement__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  /* Eyebrow */
+  .gut-statement__eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .gut-statement__line {
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: var(--gs-accent);
+    opacity: 0.6;
+  }
+  .gut-statement__eyebrow-text {
+    font-family: 'DM Mono', 'Courier New', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gs-accent);
+  }
+
+  /* Sentences */
+  .gut-statement__body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gut-statement__sentence {
+    margin: 0;
+    line-height: 1.35;
+    color: var(--gs-text);
+  }
+
+  .gut-statement__sentence--1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(22px, 4vw, 34px);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--gs-muted);
+    letter-spacing: -0.01em;
+  }
+
+  .gut-statement__sentence--2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(26px, 5vw, 42px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--gs-text);
+    line-height: 1.25;
+  }
+
+  .gut-statement__highlight {
+    color: var(--gs-highlight);
+    font-style: italic;
+  }
+
+  .gut-statement__sentence--3 {
+    font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+    font-size: clamp(14px, 2vw, 17px);
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: var(--gs-muted);
+    margin-top: 8px;
+  }
+
+  /* CTA */
+  .gut-statement__cta-wrap {
+    margin-top: 40px;
+  }
+  .gut-statement__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    background: var(--gs-accent);
+    color: var(--gs-bg);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .gut-statement__cta:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
+  }
+
+  /* Fade-in animation */
+  @media (prefers-reduced-motion: no-preference) {
+    .gut-statement__eyebrow,
+    .gut-statement__sentence,
+    .gut-statement__cta-wrap {
+      opacity: 0;
+      transform: translateY(18px);
+      animation: gs-fade-up 0.7s ease forwards;
+    }
+    .gut-statement__eyebrow        { animation-delay: 0.05s; }
+    .gut-statement__sentence--1    { animation-delay: 0.18s; }
+    .gut-statement__sentence--2    { animation-delay: 0.30s; }
+    .gut-statement__sentence--3    { animation-delay: 0.42s; }
+    .gut-statement__cta-wrap       { animation-delay: 0.55s; }
+  }
+  @keyframes gs-fade-up {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    .gut-statement__orb--1 { width: 260px; height: 260px; }
+    .gut-statement__orb--2 { width: 220px; height: 220px; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Gut Health Statement",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Texte"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow_text",
+      "label": "Texte eyebrow (au-dessus)",
+      "default": "The gut truth"
+    },
+    {
+      "type": "text",
+      "id": "sentence_1",
+      "label": "Phrase 1 (italique, att√©nu√©e)",
+      "default": "Millions of people are walking around with inflamed, imbalanced guts ‚Äî"
+    },
+    {
+      "type": "text",
+      "id": "sentence_2_highlight",
+      "label": "Phrase 2 ‚Äî mot(s) mis en couleur",
+      "default": "and their doctors"
+    },
+    {
+      "type": "text",
+      "id": "sentence_2_rest",
+      "label": "Phrase 2 ‚Äî suite du texte",
+      "default": "never mention it."
+    },
+    {
+      "type": "text",
+      "id": "sentence_3",
+      "label": "Phrase 3 (sous-titre)",
+      "default": "Two ancient plants. One formula. Designed to finally fix that."
+    },
+    {
+      "type": "header",
+      "content": "Bouton CTA"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_cta",
+      "label": "Afficher le bouton",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Texte du bouton",
+      "default": "Discover the formula"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Lien du bouton"
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Fond",
+      "default": "#0f0e0c"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Texte principal",
+      "default": "#f5efe6"
+    },
+    {
+      "type": "color",
+      "id": "muted_color",
+      "label": "Texte att√©nu√©",
+      "default": "#9a8f82"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Couleur accent (eyebrow + CTA)",
+      "default": "#c8a96e"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Couleur highlight (phrase 2)",
+      "default": "#c8a96e"
+    },
+    {
+      "type": "color",
+      "id": "orb_color_a",
+      "label": "Orbe ambiant gauche",
+      "default": "#4a3728"
+    },
+    {
+      "type": "color",
+      "id": "orb_color_b",
+      "label": "Orbe ambiant droit",
+      "default": "#2d4a35"
+    },
+    {
+      "type": "header",
+      "content": "Espacement"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding haut (px)",
+      "min": 20,
+      "max": 160,
+      "step": 4,
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bas (px)",
+      "min": 20,
+      "max": 160,
+      "step": 4,
+      "default": 96
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gut Health Statement"
+    }
+  ]
+}
+{% endschema %}
+
