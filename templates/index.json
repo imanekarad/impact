@@ -74,6 +74,48 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
+    "image_with_text_overlay_Ly377i": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_M8mfPe": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_4jR97G": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_rMFU3n": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_M8mfPe",
+        "heading_4jR97G",
+        "richtext_rMFU3n"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/ChatGPT_Image_May_22_2026_05_04_18_PM.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "impact-text": {
       "type": "impact-text",
       "settings": {
@@ -143,48 +185,6 @@
         "background": "#f8f5ef",
         "background_gradient": "",
         "text_color": "#2f3527"
-      }
-    },
-    "image_with_text_overlay_Ly377i": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_M8mfPe": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        },
-        "heading_4jR97G": {
-          "type": "heading",
-          "settings": {
-            "text": "",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_rMFU3n": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_M8mfPe",
-        "heading_4jR97G",
-        "richtext_rMFU3n"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/ChatGPT_Image_May_22_2026_05_04_18_PM.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
       }
     },
     "17794659306db84895": {
@@ -298,8 +298,8 @@
     "impact-text",
     "custom_liquid_LM3Gng",
     "before-after-image",
-    "custom_liquid_yF8yj3",
     "image_with_text_overlay_Ly377i",
+    "custom_liquid_yF8yj3",
     "17794659306db84895",
     "faq",
     "gut_health_statement_Hpeftn"
