@@ -77,10 +77,24 @@
         "background_opacity": 0,
         "background_blur_radius": 0
       }
+    },
+    "custom_html_94F84N": {
+      "type": "custom-html",
+      "name": "Custom HTML",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<p style=\"text-align: center\">Write or copy/paste HTML code</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "custom_html_94F84N"
   ]
 }
