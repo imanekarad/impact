@@ -399,6 +399,22 @@
         "cta_label": "Shop the Bundle",
         "cta_url": ""
       }
+    },
+    "scrolling_text_Bfg9gN": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "Cardiovascular wellness - Healthy inflmmation response - Gut health - Daily energy - Metabolic support",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 12,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
     }
   },
   "order": [
@@ -412,6 +428,7 @@
     "17794659306db84895",
     "faq",
     "gut_health_statement_Hpeftn",
-    "oregano_blackseed_ypDKA4"
+    "oregano_blackseed_ypDKA4",
+    "scrolling_text_Bfg9gN"
   ]
 }
