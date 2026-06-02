@@ -1,0 +1,584 @@
+{% comment %}
+  Oregano Oil & Black Seed Oil ‚Äî Benefits Timeline Section
+  Drop into: Shopify Admin > Online Store > Themes > Edit code > Sections > Add new section
+  Then add to a page via the Customize editor.
+{% endcomment %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ob-gold:      #C8963E;
+    --ob-gold-lt:   #E8B96A;
+    --ob-cream:     #FAF6EE;
+    --ob-bark:      #3B2D1F;
+    --ob-moss:      #4A5C3A;
+    --ob-moss-lt:   #6B7F5A;
+    --ob-sand:      #D9CCBA;
+    --ob-white:     #FFFDF8;
+    --ob-radius:    4px;
+  }
+
+  .ob-section {
+    background: var(--ob-cream);
+    padding: 80px 24px 100px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--ob-bark);
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* subtle grain overlay */
+  .ob-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .ob-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* ‚îÄ‚îÄ Header ‚îÄ‚îÄ */
+  .ob-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .ob-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ob-gold);
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .ob-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--ob-bark);
+    margin: 0 0 20px;
+  }
+
+  .ob-title em {
+    font-style: italic;
+    color: var(--ob-moss);
+  }
+
+  .ob-subtitle {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--ob-moss-lt);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* ‚îÄ‚îÄ Decorative divider ‚îÄ‚îÄ */
+  .ob-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0 0;
+  }
+  .ob-divider span {
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--ob-gold);
+    opacity: 0.5;
+  }
+  .ob-divider svg {
+    flex-shrink: 0;
+  }
+
+  /* ‚îÄ‚îÄ Timeline track ‚îÄ‚îÄ */
+  .ob-timeline {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    position: relative;
+  }
+
+  .ob-timeline::before {
+    content: '';
+    position: absolute;
+    left: 36px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, var(--ob-gold) 8%, var(--ob-gold) 92%, transparent);
+    opacity: 0.35;
+  }
+
+  @media (min-width: 768px) {
+    .ob-timeline::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  /* ‚îÄ‚îÄ Month card ‚îÄ‚îÄ */
+  .ob-card {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 0 28px;
+    padding-bottom: 56px;
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .ob-card.ob-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .ob-card:nth-child(2) { transition-delay: 0.1s; }
+  .ob-card:nth-child(3) { transition-delay: 0.2s; }
+
+  @media (min-width: 768px) {
+    .ob-card {
+      grid-template-columns: 1fr 80px 1fr;
+      gap: 0;
+    }
+    .ob-card:nth-child(even) .ob-card-content  { grid-column: 1; grid-row: 1; text-align: right; }
+    .ob-card:nth-child(even) .ob-card-node     { grid-column: 2; grid-row: 1; }
+    .ob-card:nth-child(even) .ob-card-spacer   { grid-column: 3; grid-row: 1; }
+    .ob-card:nth-child(odd)  .ob-card-spacer   { grid-column: 1; grid-row: 1; }
+    .ob-card:nth-child(odd)  .ob-card-node     { grid-column: 2; grid-row: 1; }
+    .ob-card:nth-child(odd)  .ob-card-content  { grid-column: 3; grid-row: 1; }
+  }
+
+  .ob-card-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .ob-node-badge {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: var(--ob-white);
+    border: 2px solid var(--ob-gold);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    flex-shrink: 0;
+    box-shadow: 0 4px 20px rgba(200,150,62,0.15);
+    position: relative;
+    z-index: 1;
+  }
+
+  .ob-node-badge .ob-num {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--ob-gold);
+  }
+
+  .ob-node-badge .ob-label {
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ob-moss-lt);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1;
+    margin-top: 2px;
+  }
+
+  .ob-card-spacer {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .ob-card-spacer { display: block; }
+  }
+
+  /* ‚îÄ‚îÄ Card content ‚îÄ‚îÄ */
+  .ob-card-content {
+    padding-top: 12px;
+  }
+
+  @media (min-width: 768px) {
+    .ob-card-content {
+      padding: 12px 36px 0;
+    }
+  }
+
+  .ob-card-phase {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ob-gold);
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .ob-card-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(22px, 3vw, 30px);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--ob-bark);
+    margin: 0 0 16px;
+  }
+
+  .ob-card-heading em {
+    font-style: italic;
+    color: var(--ob-moss);
+  }
+
+  /* ‚îÄ‚îÄ Benefit pills ‚îÄ‚îÄ */
+  .ob-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .ob-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px 5px 8px;
+    background: var(--ob-white);
+    border: 1px solid var(--ob-sand);
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--ob-bark);
+    white-space: nowrap;
+  }
+
+  .ob-pill svg {
+    flex-shrink: 0;
+  }
+
+  /* ‚îÄ‚îÄ Detail list ‚îÄ‚îÄ */
+  .ob-detail-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ob-detail-list li {
+    display: flex;
+    gap: 10px;
+    font-size: 13.5px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #5A4A3A;
+  }
+
+  .ob-detail-list li::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--ob-gold);
+    flex-shrink: 0;
+    margin-top: 7px;
+  }
+
+  /* ‚îÄ‚îÄ Warning box ‚îÄ‚îÄ */
+  .ob-notice {
+    margin-top: 52px;
+    background: var(--ob-white);
+    border: 1px solid var(--ob-sand);
+    border-left: 3px solid var(--ob-gold);
+    border-radius: var(--ob-radius);
+    padding: 24px 28px;
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 14px;
+    align-items: start;
+  }
+
+  .ob-notice-icon {
+    color: var(--ob-gold);
+    margin-top: 2px;
+  }
+
+  .ob-notice-text h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    color: var(--ob-bark);
+  }
+
+  .ob-notice-text p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #6B5C4C;
+    margin: 0;
+  }
+
+  .ob-notice-text p + p {
+    margin-top: 6px;
+  }
+
+  /* ‚îÄ‚îÄ CTA ‚îÄ‚îÄ */
+  .ob-cta-wrap {
+    margin-top: 52px;
+    text-align: center;
+  }
+
+  .ob-cta-btn {
+    display: inline-block;
+    background: var(--ob-bark);
+    color: var(--ob-cream);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 16px 40px;
+    border-radius: var(--ob-radius);
+    text-decoration: none;
+    transition: background 0.25s, color 0.25s;
+  }
+
+  .ob-cta-btn:hover {
+    background: var(--ob-moss);
+    color: var(--ob-cream);
+  }
+</style>
+
+<section class="ob-section" id="ob-timeline-section">
+  <div class="ob-inner">
+
+    <!-- Header -->
+    <header class="ob-header">
+      <span class="ob-eyebrow">What to Expect</span>
+      <h2 class="ob-title">Your <em>90-Day Journey</em><br>with Nature's Duo</h2>
+      <p class="ob-subtitle">Oregano Oil &amp; Black Seed Oil work together ‚Äî here's a realistic timeline of what consistent use can do for your body.</p>
+      <div class="ob-divider">
+        <span></span>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="9" cy="9" r="3" fill="#C8963E"/>
+          <circle cx="9" cy="9" r="7" stroke="#C8963E" stroke-width="1" opacity="0.4"/>
+        </svg>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Timeline -->
+    <div class="ob-timeline">
+
+      <!-- Month 1 -->
+      <div class="ob-card">
+        <div class="ob-card-spacer"></div>
+        <div class="ob-card-node">
+          <div class="ob-node-badge">
+            <span class="ob-num">1</span>
+            <span class="ob-label">Month</span>
+          </div>
+        </div>
+        <div class="ob-card-content">
+          <span class="ob-card-phase">Early Changes</span>
+          <h3 class="ob-card-heading">Foundation &amp; <em>First Shifts</em></h3>
+          <div class="ob-benefits">
+            <span class="ob-pill">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#4A5C3A" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#4A5C3A" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Digestion
+            </span>
+            <span class="ob-pill">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#4A5C3A" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#4A5C3A" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Energy
+            </span>
+            <span class="ob-pill">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#4A5C3A" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#4A5C3A" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Gut Balance
+            </span>
+            <span class="ob-pill">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#4A5C3A" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#4A5C3A" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Immunity (building)
+            </span>
+          </div>
+          <ul class="ob-detail-list">
+            <li>Most people notice improved digestion and energy levels within the first 1‚Äì2 weeks.</li>
+            <li>A mild detox reaction (light fatigue, loose stools) may occur in week one as antimicrobial compounds begin to work ‚Äî this typically resolves quickly.</li>
+            <li>Bloating, gas, and gut discomfort begin to ease as oregano oil supports healthy microbial balance and black seed oil soothes the digestive tract.</li>
+            <li>Immune and anti-inflammatory benefits start building ‚Äî most noticeable after 4‚Äì6 weeks of consistent use.</li>
+            <li>Some users report reduced nasal congestion and clearer skin by the end of week four.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Month 2 -->
+      <div class="ob-card">
+        <div class="ob-card-content">
+          <span class="ob-card-phase">Deeper Benefits</span>
+          <h3 class="ob-card-heading">Immune &amp; <em>Metabolic Support</em></h3>
+          <div class="ob-benefits">
+            <span class="ob-pill">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#4A5C3A" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#4A5C3A" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Immune Shield
+            </span>
+            <span class="ob-pill">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#4A5C3A" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#4A5C3A" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Cholesterol
+            </span>
+            <span class="ob-pill">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#4A5C3A" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#4A5C3A" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Respiratory Health
+            </span>
+            <span class="ob-pill">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#4A5C3A" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#4A5C3A" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Antioxidant
+            </span>
+          </div>
+          <ul class="ob-detail-list">
+            <li>Immune support becomes pronounced. Carvacrol (oregano) and thymoquinone (black seed) work synergistically to combat oxidative stress and cellular damage.</li>
+            <li>Research shows that 8 weeks of daily black seed oil use is associated with improved blood lipid markers ‚Äî cardiovascular and metabolic improvements may begin here.</li>
+            <li>Respiratory health stabilises: black seed oil supports relaxed airways while oregano oil supports upper-respiratory seasonal readiness.</li>
+            <li>Sustained energy, regular digestion, and reduced inflammation are commonly reported by week eight.</li>
+            <li>Blood sugar regulation may improve, particularly beneficial for those managing metabolic health.</li>
+          </ul>
+        </div>
+        <div class="ob-card-node">
+          <div class="ob-node-badge">
+            <span class="ob-num">2</span>
+            <span class="ob-label">Months</span>
+          </div>
+        </div>
+        <div class="ob-card-spacer"></div>
+      </div>
+
+      <!-- Month 3 -->
+      <div class="ob-card">
+        <div class="ob-card-spacer"></div>
+        <div class="ob-card-node">
+          <div class="ob-node-badge">
+            <span class="ob-num">3</span>
+            <span class="ob-label">Months</span>
+          </div>
+        </div>
+        <div class="ob-card-content">
+          <span class="ob-card-phase">Long-Term Results</span>
+          <h3 class="ob-card-heading">Visible &amp; <em>Lasting Change</em></h3>
+          <div class="ob-benefits">
+            <span class="ob-pill">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#4A5C3A" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#4A5C3A" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Hair Density
+            </span>
+            <span class="ob-pill">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#4A5C3A" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#4A5C3A" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Skin Health
+            </span>
+            <span class="ob-pill">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#4A5C3A" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#4A5C3A" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Inflammation
+            </span>
+            <span class="ob-pill">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="#4A5C3A" stroke-width="1.2"/><path d="M4 6l1.5 1.5L8 4" stroke="#4A5C3A" stroke-width="1.2" stroke-linecap="round"/></svg>
+              Gut Microbiome
+            </span>
+          </div>
+          <ul class="ob-detail-list">
+            <li>Hair benefits become visible: studies show 3 months of Nigella sativa use significantly increased hair density and thickness, and it was found to be the most effective seed oil at reducing hair loss.</li>
+            <li>Skin appears clearer and more hydrated ‚Äî the rich fatty acids in black seed oil (linoleic &amp; oleic acid) support moisture and reduced acne over time.</li>
+            <li>Anti-inflammatory effects on joints and the whole body are more noticeable, with many reporting improved mobility and comfort.</li>
+            <li>The gut microbiome has had time to fully rebalance ‚Äî reduced food sensitivities and improved digestion are commonly reported.</li>
+            <li>After 3 months, take a 1-month break (3-on / 1-off cycle) to reset gut flora and maintain long-term effectiveness.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div><!-- /.ob-timeline -->
+
+    <!-- Safety notice -->
+    <div class="ob-notice">
+      <div class="ob-notice-icon">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 2L20 19H2L11 2Z" stroke="#C8963E" stroke-width="1.5" stroke-linejoin="round"/>
+          <line x1="11" y1="9" x2="11" y2="13" stroke="#C8963E" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="11" cy="15.5" r="0.75" fill="#C8963E"/>
+        </svg>
+      </div>
+      <div class="ob-notice-text">
+        <h4>Important Usage Notes</h4>
+        <p>Both oils are considered safe for most adults at standard supplemental doses for up to 3 months. A <strong>3-month on / 1-month off cycle</strong> is recommended to preserve gut flora balance and prevent tolerance.</p>
+        <p>Some individuals may experience mild stomach upset, loose stools, or skin sensitivity during early use. Always start with a low dose and increase gradually. <strong>Consult a healthcare professional</strong> before use if you are pregnant, have liver or kidney conditions, or take prescription medication.</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    {% if section.settings.cta_label != blank %}
+    <div class="ob-cta-wrap">
+      <a href="{{ section.settings.cta_url }}" class="ob-cta-btn">{{ section.settings.cta_label }}</a>
+    </div>
+    {% endif %}
+
+  </div>
+</section>
+
+<script>
+  (function () {
+    var cards = document.querySelectorAll('#ob-timeline-section .ob-card');
+    if (!cards.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('ob-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    cards.forEach(function (card) { observer.observe(card); });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Benefits Timeline",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Button Label",
+      "default": "Shop the Bundle"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Button URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Benefits Timeline"
+    }
+  ]
+}
+{% endschema %}
+
