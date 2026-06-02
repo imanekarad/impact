@@ -206,12 +206,6 @@
           "type": "badges",
           "settings": {}
         },
-        "price_MQGBiG": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
         "rating_gtp6cz": {
           "type": "rating",
           "settings": {
@@ -266,7 +260,6 @@
         "title_p7Dtda",
         "rapi_rapi_bundle_dwGUPY",
         "badges_y8f7Tg",
-        "price_MQGBiG",
         "rating_gtp6cz",
         "separator_hJVJRG",
         "description_gxRiEz",
