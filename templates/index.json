@@ -292,7 +292,7 @@
       "name": "Scrolling text",
       "settings": {
         "full_width": true,
-        "text": "Cardiovascular wellness  -  Healthy inflmmation response  -  Gut health  -  Daily energy  -  Metabolic support      -",
+        "text": "Cardiovascular wellness  -  Healthy inflmmation response  -  Gut health  -  Daily energy  -  Metabolic support -",
         "text_size": "xsmall",
         "text_style": "fill",
         "scrolling_mode": "auto",
