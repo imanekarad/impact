@@ -190,20 +190,16 @@
     "featured_product_63LEgA": {
       "type": "featured-product",
       "blocks": {
-        "rapi_rapi_bundle_dwGUPY": {
-          "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
-          "settings": {
-            "product": "{{section.settings.product}}"
-          }
-        },
-        "vendor_MNRbjK": {
-          "type": "vendor",
-          "settings": {}
-        },
         "title_p7Dtda": {
           "type": "title",
           "settings": {
             "heading_tag": "h2"
+          }
+        },
+        "rapi_rapi_bundle_dwGUPY": {
+          "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
+          "settings": {
+            "product": "{{section.settings.product}}"
           }
         },
         "badges_y8f7Tg": {
@@ -267,9 +263,8 @@
         }
       },
       "block_order": [
-        "rapi_rapi_bundle_dwGUPY",
-        "vendor_MNRbjK",
         "title_p7Dtda",
+        "rapi_rapi_bundle_dwGUPY",
         "badges_y8f7Tg",
         "price_MQGBiG",
         "rating_gtp6cz",
