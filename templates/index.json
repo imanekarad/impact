@@ -287,26 +287,20 @@
         "input_text_color": ""
       }
     },
-    "17794659306db84895": {
-      "type": "apps",
-      "blocks": {
-        "rapi_rapi_bundle_gdQXbA": {
-          "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
-          "settings": {
-            "product": "phytoseed-labs-oregano-oil-softgel-with-blackseed-oil"
-          }
-        }
-      },
-      "block_order": [
-        "rapi_rapi_bundle_gdQXbA"
-      ],
+    "scrolling_text_Bfg9gN": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
+        "text": "Cardiovascular wellness - Healthy inflmmation response - Gut health - Daily energy - Metabolic support",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 12,
+        "background": "#4f5f35",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#f0c417",
+        "text_gradient": ""
       }
     },
     "faq": {
@@ -351,7 +345,7 @@
         "full_width": false,
         "subheading": "",
         "title": "FAQ",
-        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
+        "content": "",
         "team_avatar_width": 160,
         "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
         "answer_time": "Average answer time: 24h",
@@ -399,22 +393,6 @@
         "cta_label": "Shop the Bundle",
         "cta_url": ""
       }
-    },
-    "scrolling_text_Bfg9gN": {
-      "type": "scrolling-text",
-      "name": "Scrolling text",
-      "settings": {
-        "full_width": true,
-        "text": "Cardiovascular wellness - Healthy inflmmation response - Gut health - Daily energy - Metabolic support",
-        "text_size": "xsmall",
-        "text_style": "fill",
-        "scrolling_mode": "auto",
-        "scrolling_speed": 12,
-        "background": "#4f5f35",
-        "background_gradient": "",
-        "text_color": "#f0c417",
-        "text_gradient": ""
-      }
     }
   },
   "order": [
@@ -425,10 +403,9 @@
     "image_with_text_overlay_Ly377i",
     "custom_liquid_yF8yj3",
     "featured_product_63LEgA",
-    "17794659306db84895",
+    "scrolling_text_Bfg9gN",
     "faq",
     "gut_health_statement_Hpeftn",
-    "oregano_blackseed_ypDKA4",
-    "scrolling_text_Bfg9gN"
+    "oregano_blackseed_ypDKA4"
   ]
 }
