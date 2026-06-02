@@ -72,7 +72,7 @@
         "show_country_selector": true,
         "show_country_flag": true,
         "show_country_name": false,
-        "transparent_header_text_color": "#ffffff",
+        "transparent_header_text_color": "#4f5f35",
         "reduce_padding": false,
         "background_opacity": 0,
         "background_blur_radius": 0
