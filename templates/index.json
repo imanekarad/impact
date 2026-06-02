@@ -391,6 +391,14 @@
         "padding_top": 96,
         "padding_bottom": 96
       }
+    },
+    "oregano_blackseed_ypDKA4": {
+      "type": "oregano-blackseed",
+      "name": "Benefits Timeline",
+      "settings": {
+        "cta_label": "Shop the Bundle",
+        "cta_url": ""
+      }
     }
   },
   "order": [
@@ -403,6 +411,7 @@
     "featured_product_63LEgA",
     "17794659306db84895",
     "faq",
-    "gut_health_statement_Hpeftn"
+    "gut_health_statement_Hpeftn",
+    "oregano_blackseed_ypDKA4"
   ]
 }
