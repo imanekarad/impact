@@ -293,10 +293,10 @@
       "settings": {
         "full_width": true,
         "text": "Cardiovascular wellness  -  Healthy inflammation response  -       Gut health  -       Daily energy  -  Metabolic support -",
-        "text_size": "xsmall",
+        "text_size": "small",
         "text_style": "fill",
         "scrolling_mode": "auto",
-        "scrolling_speed": 12,
+        "scrolling_speed": 5,
         "background": "#4f5f35",
         "background_gradient": "",
         "text_color": "#f0c417",
