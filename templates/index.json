@@ -196,6 +196,12 @@
             "heading_tag": "h2"
           }
         },
+        "text_7hLWTC": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Finally Feel Comfortable In Your Clothes Again</strong><br/><strong>No More Painful Bloating, Gas & Digestive Discomfort</strong></p>"
+          }
+        },
         "rapi_rapi_bundle_dwGUPY": {
           "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
           "settings": {
@@ -258,6 +264,7 @@
       },
       "block_order": [
         "title_p7Dtda",
+        "text_7hLWTC",
         "rapi_rapi_bundle_dwGUPY",
         "badges_y8f7Tg",
         "rating_gtp6cz",
