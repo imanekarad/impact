@@ -208,12 +208,6 @@
             "product": "{{section.settings.product}}"
           }
         },
-        "liquid_jz76mq": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<style>\n.guarantee-section {\n  background: #56683F;\n  padding: 50px 30px;\n  border-radius: 16px;\n}\n\n.guarantee-wrapper {\n  max-width: 1200px;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 60px;\n  flex-wrap: wrap;\n}\n\n.guarantee-badge img {\n  max-width: 250px;\n  height: auto;\n}\n\n.guarantee-content {\n  flex: 1;\n  min-width: 300px;\n  text-align: center;\n}\n\n.guarantee-content h2 {\n  color: #ffffff;\n  font-size: 48px;\n  line-height: 1.2;\n  font-weight: 700;\n  margin-bottom: 20px;\n}\n\n.guarantee-content p {\n  color: #ffffff;\n  font-size: 24px;\n  line-height: 1.6;\n  opacity: 0.95;\n  max-width: 900px;\n  margin: 0 auto;\n}\n\n@media (max-width: 768px) {\n  .guarantee-content h2 {\n    font-size: 32px;\n  }\n\n  .guarantee-content p {\n    font-size: 18px;\n  }\n\n  .guarantee-badge img {\n    max-width: 180px;\n  }\n\n  .guarantee-wrapper {\n    gap: 30px;\n  }\n}\n</style>\n\n<div class=\"guarantee-section\">\n  <div class=\"guarantee-wrapper\">\n\n    <div class=\"guarantee-badge\">\n      <img src=\"TON_URL_IMAGE_ICI\" alt=\"Money Back Guarantee\">\n    </div>\n\n    <div class=\"guarantee-content\">\n      <h2>Experience Stronger Immunity, Or Pay Nothing</h2>\n\n      <p>\n        Try it completely risk-free. If you're not satisfied with your results,\n        simply return it for a full refund. Just contact us and we'll take care\n        of the rest.\n      </p>\n    </div>\n\n  </div>\n</div>"
-          }
-        },
         "badges_y8f7Tg": {
           "type": "badges",
           "settings": {}
@@ -272,7 +266,6 @@
         "title_p7Dtda",
         "text_7hLWTC",
         "rapi_rapi_bundle_dwGUPY",
-        "liquid_jz76mq",
         "badges_y8f7Tg",
         "rating_gtp6cz",
         "separator_hJVJRG",
@@ -407,6 +400,19 @@
         "cta_label": "Shop the Bundle",
         "cta_url": ""
       }
+    },
+    "custom_liquid_NFbn7H": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n.guarantee-full-width {\n  width: 100vw;\n  margin-left: calc(50% - 50vw);\n  background: #56683F;\n  padding: 60px 40px;\n}\n\n.guarantee-wrapper {\n  max-width: 1400px;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  gap: 80px;\n}\n\n.guarantee-badge {\n  flex-shrink: 0;\n}\n\n.guarantee-badge img {\n  width: 220px;\n  display: block;\n}\n\n.guarantee-content {\n  flex: 1;\n}\n\n.guarantee-content h2 {\n  color: white;\n  font-size: 54px;\n  font-weight: 700;\n  line-height: 1.2;\n  margin-bottom: 20px;\n}\n\n.guarantee-content p {\n  color: white;\n  font-size: 24px;\n  line-height: 1.6;\n  opacity: .95;\n}\n\n@media(max-width:768px){\n\n  .guarantee-wrapper{\n    flex-direction:column;\n    text-align:center;\n    gap:30px;\n  }\n\n  .guarantee-content h2{\n    font-size:36px;\n  }\n\n  .guarantee-content p{\n    font-size:18px;\n  }\n\n  .guarantee-badge img{\n    width:180px;\n  }\n\n}\n</style>\n\n<div class=\"guarantee-full-width\">\n\n  <div class=\"guarantee-wrapper\">\n\n    <div class=\"guarantee-badge\">\n      <img src=\"COLLE_ICI_TON_URL_IMAGE\">\n    </div>\n\n    <div class=\"guarantee-content\">\n      <h2>Feel The Difference In 30 Days — Or Your Money Back</h2>\n\n      <p>\n        We stand behind every bottle. If you're not completely satisfied within\n        30 days, simply contact us for a full refund. No questions asked.\n      </p>\n    </div>\n\n  </div>\n\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -420,6 +426,7 @@
     "scrolling_text_Bfg9gN",
     "faq",
     "gut_health_statement_Hpeftn",
-    "oregano_blackseed_ypDKA4"
+    "oregano_blackseed_ypDKA4",
+    "custom_liquid_NFbn7H"
   ]
 }
