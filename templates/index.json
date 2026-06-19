@@ -294,20 +294,17 @@
         "input_text_color": ""
       }
     },
-    "scrolling_text_Bfg9gN": {
-      "type": "scrolling-text",
-      "name": "Scrolling text",
+    "custom_liquid_NFbn7H": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
       "settings": {
         "full_width": true,
-        "text": "Cardiovascular wellness  -  Healthy inflammation response  -  Gut health  -   Daily energy  -  Metabolic support -",
-        "text_size": "small",
-        "text_style": "fill",
-        "scrolling_mode": "auto",
-        "scrolling_speed": 5,
-        "background": "#4f5f35",
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<style>\n.guarantee-full-width {\n  width: 100vw;\n  margin-left: calc(50% - 50vw);\n  background: #56683F;\n  padding: 60px 40px;\n}\n\n.guarantee-wrapper {\n  max-width: 1400px;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  gap: 80px;\n}\n\n.guarantee-badge {\n  flex-shrink: 0;\n}\n\n.guarantee-badge img {\n  width: 220px;\n  display: block;\n}\n\n.guarantee-content {\n  flex: 1;\n}\n\n.guarantee-content h2 {\n  color: white;\n  font-size: 54px;\n  font-weight: 700;\n  line-height: 1.2;\n  margin-bottom: 20px;\n}\n\n.guarantee-content p {\n  color: white;\n  font-size: 24px;\n  line-height: 1.6;\n  opacity: .95;\n}\n\n@media(max-width:768px){\n\n  .guarantee-wrapper{\n    flex-direction:column;\n    text-align:center;\n    gap:30px;\n  }\n\n  .guarantee-content h2{\n    font-size:36px;\n  }\n\n  .guarantee-content p{\n    font-size:18px;\n  }\n\n  .guarantee-badge img{\n    width:180px;\n  }\n\n}\n</style>\n\n<div class=\"guarantee-full-width\">\n\n  <div class=\"guarantee-wrapper\">\n\n    <div class=\"guarantee-badge\">\n      <img src=https://cdn.shopify.com/s/files/1/1076/7378/0573/files/3e748aa0-d7ec-4758-abdf-ea38a8c42387.png?v=1781863306>\n    </div>\n\n    <div class=\"guarantee-content\">\n      <h2>Feel The Difference In 30 Days — Or Your Money Back</h2>\n\n      <p>\n        We stand behind every bottle. If you're not completely satisfied within\n        30 days, simply contact us for a full refund. No questions asked.\n      </p>\n    </div>\n\n  </div>\n\n</div>",
+        "background": "",
         "background_gradient": "",
-        "text_color": "#f0c417",
-        "text_gradient": ""
+        "text_color": ""
       }
     },
     "faq": {
@@ -400,19 +397,6 @@
         "cta_label": "Shop the Bundle",
         "cta_url": ""
       }
-    },
-    "custom_liquid_NFbn7H": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<style>\n.guarantee-full-width {\n  width: 100vw;\n  margin-left: calc(50% - 50vw);\n  background: #56683F;\n  padding: 60px 40px;\n}\n\n.guarantee-wrapper {\n  max-width: 1400px;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  gap: 80px;\n}\n\n.guarantee-badge {\n  flex-shrink: 0;\n}\n\n.guarantee-badge img {\n  width: 220px;\n  display: block;\n}\n\n.guarantee-content {\n  flex: 1;\n}\n\n.guarantee-content h2 {\n  color: white;\n  font-size: 54px;\n  font-weight: 700;\n  line-height: 1.2;\n  margin-bottom: 20px;\n}\n\n.guarantee-content p {\n  color: white;\n  font-size: 24px;\n  line-height: 1.6;\n  opacity: .95;\n}\n\n@media(max-width:768px){\n\n  .guarantee-wrapper{\n    flex-direction:column;\n    text-align:center;\n    gap:30px;\n  }\n\n  .guarantee-content h2{\n    font-size:36px;\n  }\n\n  .guarantee-content p{\n    font-size:18px;\n  }\n\n  .guarantee-badge img{\n    width:180px;\n  }\n\n}\n</style>\n\n<div class=\"guarantee-full-width\">\n\n  <div class=\"guarantee-wrapper\">\n\n    <div class=\"guarantee-badge\">\n      <img src=https://cdn.shopify.com/s/files/1/1076/7378/0573/files/3e748aa0-d7ec-4758-abdf-ea38a8c42387.png?v=1781863306>\n    </div>\n\n    <div class=\"guarantee-content\">\n      <h2>Feel The Difference In 30 Days — Or Your Money Back</h2>\n\n      <p>\n        We stand behind every bottle. If you're not completely satisfied within\n        30 days, simply contact us for a full refund. No questions asked.\n      </p>\n    </div>\n\n  </div>\n\n</div>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
     }
   },
   "order": [
@@ -423,10 +407,9 @@
     "image_with_text_overlay_Ly377i",
     "custom_liquid_yF8yj3",
     "featured_product_63LEgA",
-    "scrolling_text_Bfg9gN",
+    "custom_liquid_NFbn7H",
     "faq",
     "gut_health_statement_Hpeftn",
-    "oregano_blackseed_ypDKA4",
-    "custom_liquid_NFbn7H"
+    "oregano_blackseed_ypDKA4"
   ]
 }
