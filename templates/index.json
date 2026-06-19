@@ -190,12 +190,6 @@
     "featured_product_63LEgA": {
       "type": "featured-product",
       "blocks": {
-        "liquid_jz76mq": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<style>\n.guarantee-section {\n  background: #56683F;\n  padding: 50px 30px;\n  border-radius: 16px;\n}\n\n.guarantee-wrapper {\n  max-width: 1200px;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 60px;\n  flex-wrap: wrap;\n}\n\n.guarantee-badge img {\n  max-width: 250px;\n  height: auto;\n}\n\n.guarantee-content {\n  flex: 1;\n  min-width: 300px;\n  text-align: center;\n}\n\n.guarantee-content h2 {\n  color: #ffffff;\n  font-size: 48px;\n  line-height: 1.2;\n  font-weight: 700;\n  margin-bottom: 20px;\n}\n\n.guarantee-content p {\n  color: #ffffff;\n  font-size: 24px;\n  line-height: 1.6;\n  opacity: 0.95;\n  max-width: 900px;\n  margin: 0 auto;\n}\n\n@media (max-width: 768px) {\n  .guarantee-content h2 {\n    font-size: 32px;\n  }\n\n  .guarantee-content p {\n    font-size: 18px;\n  }\n\n  .guarantee-badge img {\n    max-width: 180px;\n  }\n\n  .guarantee-wrapper {\n    gap: 30px;\n  }\n}\n</style>\n\n<div class=\"guarantee-section\">\n  <div class=\"guarantee-wrapper\">\n\n    <div class=\"guarantee-badge\">\n      <img src=\"TON_URL_IMAGE_ICI\" alt=\"Money Back Guarantee\">\n    </div>\n\n    <div class=\"guarantee-content\">\n      <h2>Experience Stronger Immunity, Or Pay Nothing</h2>\n\n      <p>\n        Try it completely risk-free. If you're not satisfied with your results,\n        simply return it for a full refund. Just contact us and we'll take care\n        of the rest.\n      </p>\n    </div>\n\n  </div>\n</div>"
-          }
-        },
         "title_p7Dtda": {
           "type": "title",
           "settings": {
@@ -212,6 +206,12 @@
           "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
           "settings": {
             "product": "{{section.settings.product}}"
+          }
+        },
+        "liquid_jz76mq": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n.guarantee-section {\n  background: #56683F;\n  padding: 50px 30px;\n  border-radius: 16px;\n}\n\n.guarantee-wrapper {\n  max-width: 1200px;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 60px;\n  flex-wrap: wrap;\n}\n\n.guarantee-badge img {\n  max-width: 250px;\n  height: auto;\n}\n\n.guarantee-content {\n  flex: 1;\n  min-width: 300px;\n  text-align: center;\n}\n\n.guarantee-content h2 {\n  color: #ffffff;\n  font-size: 48px;\n  line-height: 1.2;\n  font-weight: 700;\n  margin-bottom: 20px;\n}\n\n.guarantee-content p {\n  color: #ffffff;\n  font-size: 24px;\n  line-height: 1.6;\n  opacity: 0.95;\n  max-width: 900px;\n  margin: 0 auto;\n}\n\n@media (max-width: 768px) {\n  .guarantee-content h2 {\n    font-size: 32px;\n  }\n\n  .guarantee-content p {\n    font-size: 18px;\n  }\n\n  .guarantee-badge img {\n    max-width: 180px;\n  }\n\n  .guarantee-wrapper {\n    gap: 30px;\n  }\n}\n</style>\n\n<div class=\"guarantee-section\">\n  <div class=\"guarantee-wrapper\">\n\n    <div class=\"guarantee-badge\">\n      <img src=\"TON_URL_IMAGE_ICI\" alt=\"Money Back Guarantee\">\n    </div>\n\n    <div class=\"guarantee-content\">\n      <h2>Experience Stronger Immunity, Or Pay Nothing</h2>\n\n      <p>\n        Try it completely risk-free. If you're not satisfied with your results,\n        simply return it for a full refund. Just contact us and we'll take care\n        of the rest.\n      </p>\n    </div>\n\n  </div>\n</div>"
           }
         },
         "badges_y8f7Tg": {
@@ -269,10 +269,10 @@
         }
       },
       "block_order": [
-        "liquid_jz76mq",
         "title_p7Dtda",
         "text_7hLWTC",
         "rapi_rapi_bundle_dwGUPY",
+        "liquid_jz76mq",
         "badges_y8f7Tg",
         "rating_gtp6cz",
         "separator_hJVJRG",
