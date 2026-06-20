@@ -37,7 +37,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "Customer service",
-            "content": "<p><strong>Support Within 24 Hours - We're here to help you and answer to your questions</strong></p><h3></h3>"
+            "content": "<p>Support Within 24 Hours - We're here to help you and answer to your questions</p><h3></h3>"
           }
         },
         "discount": {
@@ -63,7 +63,7 @@
             "icon_background": "",
             "icon_color": "",
             "title": "Secure payment",
-            "content": "<p><strong>Protected by Advanced Encryption</strong></p><h3></h3>"
+            "content": "<p>Protected by Advanced Encryption</p><h3></h3>"
           }
         }
       },
