@@ -190,6 +190,12 @@
     "featured_product_63LEgA": {
       "type": "featured-product",
       "blocks": {
+        "liquid_Hmpm8G": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"display:flex; align-items:center; justify-content:center; gap:12px; padding:12px 18px; background:#f8f8f8; border-radius:10px; font-family:inherit; flex-wrap:wrap;\">\n\n  <div style=\"color:#00B67A; font-size:22px; line-height:1;\">\n    ★★★★★\n  </div>\n\n  <div style=\"font-size:16px; color:#222; font-weight:500;\">\n    <strong>4.8/5 Rated Excellent</strong> by\n    <strong>7,000+ satisfied customers</strong>\n  </div>\n\n</div>"
+          }
+        },
         "title_p7Dtda": {
           "type": "title",
           "settings": {
@@ -263,6 +269,7 @@
         }
       },
       "block_order": [
+        "liquid_Hmpm8G",
         "title_p7Dtda",
         "text_7hLWTC",
         "rapi_rapi_bundle_dwGUPY",
