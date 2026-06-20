@@ -17,14 +17,14 @@
         "free-shipping": {
           "type": "item",
           "settings": {
-            "icon": "picto-box",
+            "icon": "picto-money",
             "mobile_icon_width": 24,
             "icon_width": 24,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Free shipping",
-            "content": ""
+            "title": "💰 30-Day Guarantee",
+            "content": "<p>Risk-Free Purchase</p>"
           }
         },
         "customer-support": {
