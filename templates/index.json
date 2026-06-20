@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/ChatGPT_Image_Jun_2_2026_02_00_14_PM.png",
             "mobile_image": "shopify://shop_images/ChatGPT_Image_Jun_2_2026_02_00_14_PM.png",
             "content_max_width": 780,
-            "mobile_text_position": "place-self-center text-center",
+            "mobile_text_position": "place-self-start-end text-end",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "",
             "title": "",
@@ -251,7 +251,7 @@
           "settings": {
             "show_payment_button": true,
             "show_gift_card_recipient": false,
-            "atc_button_background": "#D4AF37",
+            "atc_button_background": "#d4af37",
             "atc_button_text_color": "",
             "payment_button_background": "#28a20d",
             "payment_button_text_color": ""
