@@ -405,6 +405,19 @@
         "cta_label": "Shop the Bundle",
         "cta_url": ""
       }
+    },
+    "custom_liquid_6JwR9C": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div style=\"display:flex; align-items:center; justify-content:center; gap:12px; padding:14px 20px; background:#f8f8f8; border-radius:10px; font-family:inherit; flex-wrap:wrap;\">\n\n  <div style=\"color:#00B67A; font-size:22px;\">\n    ★★★★★\n  </div>\n\n  <div style=\"font-size:16px; color:#222;\">\n    <strong>4.8/5 Excellent</strong> • Join\n    <strong>7,000+ customers</strong> who are already experiencing less bloating and better digestion\n  </div>\n\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -418,6 +431,7 @@
     "custom_liquid_NFbn7H",
     "faq",
     "gut_health_statement_Hpeftn",
-    "oregano_blackseed_ypDKA4"
+    "oregano_blackseed_ypDKA4",
+    "custom_liquid_6JwR9C"
   ]
 }
