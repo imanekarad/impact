@@ -353,7 +353,7 @@
         "item_yRx3Yi"
       ],
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "subheading": "",
         "title": "FAQ",
         "content": "",
