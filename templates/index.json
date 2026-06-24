@@ -214,18 +214,6 @@
             "product": "{{section.settings.product}}"
           }
         },
-        "liquid_cmprMj": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Logos de Paiement</title>\n  <style>\n    .icon-container {\n      display: flex;\n      gap: 10px;\n      align-items: center;\n      justify-content: center;\n      margin-top: 10px;\n    }\n\n    .icon {\n      width: 40px;\n      height: auto;\n    }\n  </style>\n</head>\n<body>\n\n  <div class=\"icon-container\">\n    <!-- Apple Pay -->\n    <img class=\"icon\" src=\"https://cdn.shopify.com/s/files/1/0747/1749/5526/files/Apple_Pay-Logo.wine.png?v=1746126288\" alt=\"Apple Pay\">\n\n    <!-- Google Pay -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/d/d4/Google-pay-acceptance-mark-icon.svg\">\n\n    <!-- PayPal -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg\" alt=\"PayPal\">\n\n    <!-- Mastercard -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png\" alt=\"Mastercard\">\n\n    <!-- Visa -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Visa_Inc._logo_%282021%E2%80%93present%29.svg/1920px-Visa_Inc._logo_%282021%E2%80%93present%29.svg.png\">\n\n    <!-- American Express -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/archive/f/fa/20191022102800%21American_Express_logo_%282018%29.svg\">\n  </div>"
-          }
-        },
-        "text_rqfemK": {
-          "type": "text",
-          "settings": {
-            "text": "<p>🔒 <strong>Secure Checkout</strong> — SSL Encrypted · Shopify Protected · 30-Day Guarantee</p>"
-          }
-        },
         "badges_y8f7Tg": {
           "type": "badges",
           "settings": {}
@@ -275,6 +263,18 @@
             "payment_button_text_color": ""
           }
         },
+        "liquid_cmprMj": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Logos de Paiement</title>\n  <style>\n    .icon-container {\n      display: flex;\n      gap: 10px;\n      align-items: center;\n      justify-content: center;\n      margin-top: 10px;\n    }\n\n    .icon {\n      width: 40px;\n      height: auto;\n    }\n  </style>\n</head>\n<body>\n\n  <div class=\"icon-container\">\n    <!-- Apple Pay -->\n    <img class=\"icon\" src=\"https://cdn.shopify.com/s/files/1/0747/1749/5526/files/Apple_Pay-Logo.wine.png?v=1746126288\" alt=\"Apple Pay\">\n\n    <!-- Google Pay -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/d/d4/Google-pay-acceptance-mark-icon.svg\">\n\n    <!-- PayPal -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg\" alt=\"PayPal\">\n\n    <!-- Mastercard -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png\" alt=\"Mastercard\">\n\n    <!-- Visa -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Visa_Inc._logo_%282021%E2%80%93present%29.svg/1920px-Visa_Inc._logo_%282021%E2%80%93present%29.svg.png\">\n\n    <!-- American Express -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/archive/f/fa/20191022102800%21American_Express_logo_%282018%29.svg\">\n  </div>"
+          }
+        },
+        "text_rqfemK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>🔒 <strong>Secure Checkout</strong> — SSL Encrypted · Shopify Protected · 30-Day Guarantee</p>"
+          }
+        },
         "pickup_availability_hDNMPj": {
           "type": "pickup_availability",
           "settings": {}
@@ -285,8 +285,6 @@
         "title_p7Dtda",
         "text_7hLWTC",
         "rapi_rapi_bundle_dwGUPY",
-        "liquid_cmprMj",
-        "text_rqfemK",
         "badges_y8f7Tg",
         "rating_gtp6cz",
         "separator_hJVJRG",
@@ -294,6 +292,8 @@
         "variant_picker_zaWYdq",
         "quantity_selector_C7EW3B",
         "buy_buttons_VfRYPz",
+        "liquid_cmprMj",
+        "text_rqfemK",
         "pickup_availability_hDNMPj"
       ],
       "name": "Featured product",
