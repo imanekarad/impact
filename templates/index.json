@@ -308,7 +308,7 @@
         "enable_video_looping": false,
         "enable_image_zoom": true,
         "max_image_zoom_level": 3,
-        "background": "#F8F4ED",
+        "background": "#f8f4ed",
         "background_gradient": "",
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
@@ -356,7 +356,7 @@
           "type": "item",
           "settings": {
             "title": "Ingredients",
-            "content": "<p>Oil of Oregano (<em>Origanum vulgare</em>) — 6,000 mg (standardized to 80% carvacrol and 5% thymol)<br/>Black Seed Oil (<em>Nigella sativa</em>) — 200 mg</p><p>Other ingredients: Softgel shell (gelatin, glycerin, purified water). Contains no fillers, binders, artificial colors, or preservatives.</p><p>Free from: Gluten, dairy, soy, sugar, GMOs, artificial additives.</p>"
+            "content": "<p>\"UK-Based Quality Control\"</p><p>Oil of Oregano (<em>Origanum vulgare</em>) — 6,000 mg (standardized to 80% carvacrol and 5% thymol)<br/>Black Seed Oil (<em>Nigella sativa</em>) — 200 mg</p><p>Other ingredients: Softgel shell (gelatin, glycerin, purified water). Contains no fillers, binders, artificial colors, or preservatives.</p><p>Free from: Gluten, dairy, soy, sugar, GMOs, artificial additives.</p>"
           }
         }
       },
