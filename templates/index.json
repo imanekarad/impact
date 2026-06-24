@@ -190,6 +190,12 @@
     "featured_product_63LEgA": {
       "type": "featured-product",
       "blocks": {
+        "text_rqfemK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>🔒 <strong>Secure Checkout</strong> — SSL Encrypted · Shopify Protected · 30-Day Guarantee</p>"
+          }
+        },
         "liquid_Hmpm8G": {
           "type": "liquid",
           "settings": {
@@ -275,6 +281,7 @@
         }
       },
       "block_order": [
+        "text_rqfemK",
         "liquid_Hmpm8G",
         "title_p7Dtda",
         "text_7hLWTC",
