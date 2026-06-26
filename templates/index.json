@@ -25,7 +25,7 @@
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
-            "text_color": "#ffffff",
+            "text_color": "#2E680F",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
@@ -67,6 +67,46 @@
         "text_color": "",
         "button_background": "",
         "button_text_color": ""
+      }
+    },
+    "rich_text_cRKxgm": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_ciU7eN": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_qVYqVG": {
+          "type": "heading",
+          "settings": {
+            "text": "She thought her bloating was normal. She was wrong.",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_zxm9rN": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_ciU7eN",
+        "heading_qVYqVG",
+        "richtext_zxm9rN"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "custom_liquid_LM3Gng": {
@@ -414,6 +454,7 @@
   "order": [
     "slideshow",
     "impact-text",
+    "rich_text_cRKxgm",
     "custom_liquid_LM3Gng",
     "before-after-image",
     "image_with_text_overlay_Ly377i",
