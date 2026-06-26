@@ -15,8 +15,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Jun_2_2026_02_00_14_PM.png",
-            "mobile_image": "shopify://shop_images/ChatGPT_Image_Jun_24_2026_10_12_59_PM.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Jun_26_2026_12_52_12_PM.png",
+            "mobile_image": "shopify://shop_images/ChatGPT_Image_Jun_26_2026_12_52_12_PM.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-end text-end",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -33,33 +33,10 @@
             "background": "",
             "background_gradient": ""
           }
-        },
-        "slide-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_11.png",
-            "mobile_image": "shopify://shop_images/Design_sans_titre_11.png",
-            "content_max_width": 400,
-            "mobile_text_position": "place-self-start-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h3",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "",
-            "background_gradient": ""
-          }
         }
       },
       "block_order": [
-        "slide-1",
-        "slide-2"
+        "slide-1"
       ],
       "settings": {
         "full_width": true,
