@@ -25,7 +25,7 @@
             "heading_tag": "h2",
             "button_text": "",
             "button_link": "",
-            "text_color": "#2E680F",
+            "text_color": "#2e680f",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
@@ -83,7 +83,7 @@
           "settings": {
             "text": "She thought her bloating was normal. She was wrong.",
             "heading_tag": "h2",
-            "text_color": "#C9A96E",
+            "text_color": "#c9a96e",
             "gradient": ""
           }
         },
@@ -429,14 +429,6 @@
         "padding_bottom": 96
       }
     },
-    "oregano_blackseed_ypDKA4": {
-      "type": "oregano-blackseed",
-      "name": "Benefits Timeline",
-      "settings": {
-        "cta_label": "Shop the Bundle",
-        "cta_url": ""
-      }
-    },
     "custom_liquid_6JwR9C": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -463,7 +455,6 @@
     "custom_liquid_NFbn7H",
     "faq",
     "gut_health_statement_Hpeftn",
-    "oregano_blackseed_ypDKA4",
     "custom_liquid_6JwR9C"
   ]
 }
