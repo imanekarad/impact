@@ -71,8 +71,8 @@
         "item_AVMRyJ"
       ],
       "settings": {
-        "full_width": true,
-        "stack_mobile": true,
+        "full_width": false,
+        "stack_mobile": false,
         "text_alignment": "center",
         "impact_text_style": "fill",
         "text_divider": "none",
