@@ -184,6 +184,7 @@
         "enable_parallax": false,
         "image_size": "auto",
         "image": "shopify://shop_images/ChatGPT_Image_May_22_2026_05_04_18_PM.png",
+        "mobile_image": "shopify://shop_images/phytoseedlabs_lumea_style_benefits.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
