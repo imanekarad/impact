@@ -51,6 +51,49 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
+    "image_with_text_overlay_AUCzPV": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_f7Lxhe": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_NwdM8A": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h5"
+          }
+        },
+        "richtext_XPwTqk": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_f7Lxhe",
+        "heading_NwdM8A",
+        "richtext_XPwTqk"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/ChatGPT_Image_Jun_28_2026_08_49_22_PM.png",
+        "mobile_image": "shopify://shop_images/ChatGPT_Image_Jun_28_2026_08_49_22_PM.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "impact-text": {
       "type": "impact-text",
       "settings": {
@@ -416,53 +459,11 @@
         "background_gradient": "",
         "text_color": ""
       }
-    },
-    "image_with_text_overlay_AUCzPV": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_f7Lxhe": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        },
-        "heading_NwdM8A": {
-          "type": "heading",
-          "settings": {
-            "text": "",
-            "heading_tag": "h5"
-          }
-        },
-        "richtext_XPwTqk": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_f7Lxhe",
-        "heading_NwdM8A",
-        "richtext_XPwTqk"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/ChatGPT_Image_Jun_28_2026_08_49_22_PM.png",
-        "mobile_image": "shopify://shop_images/ChatGPT_Image_Jun_28_2026_08_49_22_PM.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
     }
   },
   "order": [
     "slideshow",
+    "image_with_text_overlay_AUCzPV",
     "impact-text",
     "rich_text_cRKxgm",
     "custom_liquid_LM3Gng",
@@ -472,7 +473,6 @@
     "custom_liquid_NFbn7H",
     "faq",
     "gut_health_statement_Hpeftn",
-    "custom_liquid_6JwR9C",
-    "image_with_text_overlay_AUCzPV"
+    "custom_liquid_6JwR9C"
   ]
 }
