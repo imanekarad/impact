@@ -53,6 +53,23 @@
     },
     "impact-text": {
       "type": "impact-text",
+      "blocks": {
+        "item_AVMRyJ": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "subheading": "Tired of looking 6 months pregnant by lunchtime.",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_AVMRyJ"
+      ],
       "settings": {
         "full_width": true,
         "stack_mobile": true,
