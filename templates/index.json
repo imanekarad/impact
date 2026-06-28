@@ -51,41 +51,6 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
-    "impact-text": {
-      "type": "impact-text",
-      "blocks": {
-        "item_AVMRyJ": {
-          "type": "item",
-          "settings": {
-            "title": "",
-            "subheading": "Tired of looking 6 months pregnant by lunchtime.",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "item_AVMRyJ"
-      ],
-      "settings": {
-        "full_width": false,
-        "stack_mobile": false,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 1,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "linear-gradient(180deg, rgba(26, 26, 26, 0.2), rgba(26, 26, 26, 0) 100%)",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "custom_liquid_LM3Gng": {
       "type": "custom-liquid",
       "disabled": true,
@@ -448,7 +413,6 @@
   },
   "order": [
     "slideshow",
-    "impact-text",
     "custom_liquid_LM3Gng",
     "custom_liquid_yF8yj3",
     "image_with_text_overlay_AUCzPV",
