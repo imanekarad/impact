@@ -15,8 +15,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Jun_26_2026_12_52_12_PM.png",
-            "mobile_image": "shopify://shop_images/ChatGPT_Image_Jun_26_2026_12_52_12_PM.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Jun_28_2026_07_34_39_PM.png",
+            "mobile_image": "shopify://shop_images/ChatGPT_Image_Jun_28_2026_07_34_39_PM.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-start-end text-end",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -25,7 +25,7 @@
             "heading_tag": "h4",
             "button_text": "",
             "button_link": "",
-            "text_color": "#2E680F",
+            "text_color": "#2e680f",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
