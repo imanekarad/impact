@@ -51,6 +51,49 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
+    "image_with_text_overlay_Ly377i": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_M8mfPe": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_4jR97G": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_rMFU3n": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_M8mfPe",
+        "heading_4jR97G",
+        "richtext_rMFU3n"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/converted_image.webp",
+        "mobile_image": "shopify://shop_images/converted_image.webp",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "custom_liquid_LM3Gng": {
       "type": "custom-liquid",
       "disabled": true,
@@ -122,49 +165,6 @@
         "image_size": "auto",
         "image": "shopify://shop_images/ChatGPT_Image_Jun_28_2026_08_49_22_PM.png",
         "mobile_image": "shopify://shop_images/ChatGPT_Image_Jun_30_2026_10_19_57_AM.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
-    "image_with_text_overlay_Ly377i": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_M8mfPe": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        },
-        "heading_4jR97G": {
-          "type": "heading",
-          "settings": {
-            "text": "",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_rMFU3n": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_M8mfPe",
-        "heading_4jR97G",
-        "richtext_rMFU3n"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/ChatGPT_Image_May_22_2026_05_04_18_PM.png",
-        "mobile_image": "shopify://shop_images/phytoseedlabs_lumea_style_benefits.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -422,10 +422,10 @@
   },
   "order": [
     "slideshow",
+    "image_with_text_overlay_Ly377i",
     "custom_liquid_LM3Gng",
     "custom_liquid_yF8yj3",
     "image_with_text_overlay_AUCzPV",
-    "image_with_text_overlay_Ly377i",
     "featured_product_63LEgA",
     "custom_liquid_NFbn7H",
     "faq",
