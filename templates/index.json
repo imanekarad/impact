@@ -237,12 +237,6 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "text_rqfemK": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Most customers notice the best results with consistent use over several weeks. Choose the plan that fits your wellness journey.       🔒 <strong>Secure Checkout</strong> — SSL Encrypted · Shopify Protected · 30-Day Guarantee 🇬🇧 Fast UK Shipping</p>"
-          }
-        },
         "buy_buttons_VfRYPz": {
           "type": "buy_buttons",
           "settings": {
@@ -252,6 +246,12 @@
             "atc_button_text_color": "",
             "payment_button_background": "#28a20d",
             "payment_button_text_color": ""
+          }
+        },
+        "text_rqfemK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Most customers notice the best results with consistent use over several weeks. Choose the plan that fits your wellness journey.       🔒 <strong>Secure Checkout</strong> — SSL Encrypted · Shopify Protected · 30-Day Guarantee 🇬🇧 Fast UK Shipping</p>"
           }
         },
         "liquid_cmprMj": {
@@ -276,8 +276,8 @@
         "description_gxRiEz",
         "variant_picker_zaWYdq",
         "quantity_selector_C7EW3B",
-        "text_rqfemK",
         "buy_buttons_VfRYPz",
+        "text_rqfemK",
         "liquid_cmprMj",
         "pickup_availability_hDNMPj"
       ],
