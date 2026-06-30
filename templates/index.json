@@ -108,6 +108,19 @@
         "text_color": ""
       }
     },
+    "custom_liquid_36iAmk": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div style=\"text-align:center;padding:20px 0;\">\n  <div style=\"display:flex;justify-content:center;gap:4px;margin-bottom:12px;\">\n    <span style=\"background:#00B67A;color:#fff;font-size:18px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:18px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:18px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:18px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:18px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n  </div>\n\n  <div style=\"font-size:34px;font-weight:700;color:#222;line-height:1.2;\">\n    4.8/5 — Over 1,900 Happy Women\n  </div>\n\n  <div style=\"margin-top:10px;font-size:22px;color:#555;\">\n    Based on verified reviews\n  </div>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "custom_liquid_yF8yj3": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -424,6 +437,7 @@
     "slideshow",
     "image_with_text_overlay_Ly377i",
     "custom_liquid_LM3Gng",
+    "custom_liquid_36iAmk",
     "custom_liquid_yF8yj3",
     "image_with_text_overlay_AUCzPV",
     "featured_product_63LEgA",
