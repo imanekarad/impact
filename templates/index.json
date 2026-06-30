@@ -316,6 +316,13 @@
     "faq": {
       "type": "faq",
       "blocks": {
+        "item_hzNLGm": {
+          "type": "item",
+          "settings": {
+            "title": "Are there any side effects?",
+            "content": "<p>PhytoseedLabs is made with carefully selected ingredients and is generally well tolerated when taken as directed. As with any dietary supplement, individual responses may vary. We recommend take 1 softgel per day during 1 week.  If you  are pregnant or breastfeeding we recommend consulting your healthcare professional before use.</p>"
+          }
+        },
         "item_mkzghj": {
           "type": "item",
           "settings": {
@@ -353,6 +360,7 @@
         }
       },
       "block_order": [
+        "item_hzNLGm",
         "item_mkzghj",
         "166442457738b23caf-0",
         "166442457738b23caf-1",
