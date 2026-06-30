@@ -70,7 +70,7 @@
         "show_social_media": false,
         "show_locale_selector": true,
         "show_country_selector": true,
-        "show_country_flag": true,
+        "show_country_flag": false,
         "show_country_name": false,
         "transparent_header_text_color": "#4f5f35",
         "transparent_logo": "shopify://shop_images/ChatGPT_Image_May_20_2026_02_14_24_PM.png",
