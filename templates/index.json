@@ -316,6 +316,13 @@
     "faq": {
       "type": "faq",
       "blocks": {
+        "item_QAUx9H": {
+          "type": "item",
+          "settings": {
+            "title": "Is it suitable for people over 60?",
+            "content": "<p>Yes. PhytoseedLabs is suitable for adults, including those over 60, when taken as directed. In fact, many people choose to support their digestive health as they get older. </p>"
+          }
+        },
         "item_hzNLGm": {
           "type": "item",
           "settings": {
@@ -360,6 +367,7 @@
         }
       },
       "block_order": [
+        "item_QAUx9H",
         "item_hzNLGm",
         "item_mkzghj",
         "166442457738b23caf-0",
