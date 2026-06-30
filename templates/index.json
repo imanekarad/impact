@@ -316,6 +316,13 @@
     "faq": {
       "type": "faq",
       "blocks": {
+        "item_iQzdhh": {
+          "type": "item",
+          "settings": {
+            "title": "Gut support for women navigating perimenopause and menopause.",
+            "content": "<p>Yes. PhytoseedLabs is suitable for women in perimenopause and menopause who want to support their digestive health. Hormonal changes can coincide with changes in digestion for some women, and maintaining a healthy gut is an important part of overall wellbeing.</p>"
+          }
+        },
         "item_QAUx9H": {
           "type": "item",
           "settings": {
@@ -367,6 +374,7 @@
         }
       },
       "block_order": [
+        "item_iQzdhh",
         "item_QAUx9H",
         "item_hzNLGm",
         "item_mkzghj",
