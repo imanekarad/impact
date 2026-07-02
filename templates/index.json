@@ -124,7 +124,8 @@
         "logo_aDcwJJ": {
           "type": "logo",
           "settings": {
-            "logo_width": 120,
+            "logo": "shopify://shop_images/ChatGPT_Image_Jul_2_2026_11_25_42_PM.png",
+            "logo_width": 300,
             "link": ""
           }
         }
