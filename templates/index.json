@@ -51,49 +51,6 @@
         "background_gradient": "linear-gradient(60deg, rgba(233, 230, 223, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
-    "image_with_text_overlay_Ly377i": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_M8mfPe": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        },
-        "heading_4jR97G": {
-          "type": "heading",
-          "settings": {
-            "text": "",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_rMFU3n": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_M8mfPe",
-        "heading_4jR97G",
-        "richtext_rMFU3n"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/converted_image_1.webp",
-        "mobile_image": "shopify://shop_images/ChatGPT_Image_Jul_2_2026_11_11_04_PM.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
     "logo_list_VhnQiD": {
       "type": "logo-list",
       "blocks": {
@@ -140,17 +97,60 @@
       "settings": {
         "full_width": true,
         "stack_mobile": true,
-        "title": "Logo list",
+        "title": "They Were Told \"It's Just Age.\" They Refused to Believe It.",
         "content": "",
-        "text_alignment": "start",
+        "text_alignment": "center",
         "items_per_row": 5,
-        "background": "",
+        "background": "#FFFFFF",
         "background_gradient": "",
-        "text_color": "",
+        "text_color": "#3F5235",
         "heading_color": "",
         "heading_gradient": "",
         "logo_item_background": "",
-        "logo_item_border": ""
+        "logo_item_border": "#FFFFFF"
+      }
+    },
+    "image_with_text_overlay_Ly377i": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_M8mfPe": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_4jR97G": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_rMFU3n": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_M8mfPe",
+        "heading_4jR97G",
+        "richtext_rMFU3n"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/converted_image_1.webp",
+        "mobile_image": "shopify://shop_images/ChatGPT_Image_Jul_2_2026_11_11_04_PM.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "custom_liquid_XgLT7J": {
@@ -480,8 +480,8 @@
   },
   "order": [
     "slideshow",
-    "image_with_text_overlay_Ly377i",
     "logo_list_VhnQiD",
+    "image_with_text_overlay_Ly377i",
     "custom_liquid_XgLT7J",
     "custom_liquid_36iAmk",
     "image_with_text_overlay_AUCzPV",
