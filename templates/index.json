@@ -420,6 +420,7 @@
     },
     "custom_liquid_XgLT7J": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "Custom Liquid",
       "settings": {
         "full_width": true,
