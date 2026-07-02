@@ -120,57 +120,6 @@
         "text_color": ""
       }
     },
-    "image_with_text_overlay_AUCzPV": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_QFEnw8": {
-          "type": "heading",
-          "settings": {
-            "text": "",
-            "heading_tag": "h5"
-          }
-        },
-        "subheading_f7Lxhe": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        },
-        "heading_NwdM8A": {
-          "type": "heading",
-          "settings": {
-            "text": "",
-            "heading_tag": "h5"
-          }
-        },
-        "richtext_XPwTqk": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_QFEnw8",
-        "subheading_f7Lxhe",
-        "heading_NwdM8A",
-        "richtext_XPwTqk"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/ChatGPT_Image_Jun_28_2026_08_49_22_PM.png",
-        "mobile_image": "shopify://shop_images/ChatGPT_Image_Jun_30_2026_10_19_57_AM.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
-    },
     "logo_list_VhnQiD": {
       "type": "logo-list",
       "blocks": {
@@ -235,6 +184,57 @@
         "heading_gradient": "",
         "logo_item_background": "",
         "logo_item_border": ""
+      }
+    },
+    "image_with_text_overlay_AUCzPV": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_QFEnw8": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h5"
+          }
+        },
+        "subheading_f7Lxhe": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_NwdM8A": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h5"
+          }
+        },
+        "richtext_XPwTqk": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_QFEnw8",
+        "subheading_f7Lxhe",
+        "heading_NwdM8A",
+        "richtext_XPwTqk"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/ChatGPT_Image_Jun_28_2026_08_49_22_PM.png",
+        "mobile_image": "shopify://shop_images/ChatGPT_Image_Jun_30_2026_10_19_57_AM.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     },
     "featured_product_63LEgA": {
@@ -488,10 +488,10 @@
   "order": [
     "slideshow",
     "image_with_text_overlay_Ly377i",
+    "logo_list_VhnQiD",
     "custom_liquid_XgLT7J",
     "custom_liquid_36iAmk",
     "image_with_text_overlay_AUCzPV",
-    "logo_list_VhnQiD",
     "featured_product_63LEgA",
     "custom_liquid_NFbn7H",
     "faq",
