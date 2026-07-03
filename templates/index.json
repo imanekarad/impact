@@ -207,15 +207,6 @@
           "type": "separator",
           "settings": {}
         },
-        "description_gxRiEz": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-            "icon": "none",
-            "icon_width": 20,
-            "collapse_content": false
-          }
-        },
         "variant_picker_zaWYdq": {
           "type": "variant_picker",
           "settings": {
@@ -267,7 +258,6 @@
         "badges_y8f7Tg",
         "rating_gtp6cz",
         "separator_hJVJRG",
-        "description_gxRiEz",
         "variant_picker_zaWYdq",
         "quantity_selector_C7EW3B",
         "buy_buttons_VfRYPz",
