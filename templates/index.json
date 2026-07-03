@@ -166,26 +166,13 @@
         "text_color": ""
       }
     },
-    "custom_liquid_36iAmk": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": true,
-        "liquid": "<div style=\"text-align:center;padding:18px 0;\">\n  <div style=\"display:flex;justify-content:center;gap:4px;margin-bottom:10px;\">\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n  </div>\n\n  <div style=\"font-size:20px;font-weight:700;color:#222;line-height:1.2;\">\n    4.8/5 — Trusted by 1,900+ Women\n  </div>\n\n  <div style=\"margin-top:8px;font-size:16px;color:#666;line-height:1.4;\">\n    Based on verified reviews\n  </div>\n</div>",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "featured_product_63LEgA": {
       "type": "featured-product",
       "blocks": {
-        "liquid_Hmpm8G": {
+        "liquid_hDXxFY": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"display:flex; align-items:center; justify-content:center; gap:12px; padding:12px 18px; background:#f8f8f8; border-radius:10px; font-family:inherit; flex-wrap:wrap;\">\n\n  <div style=\"color:#00B67A; font-size:22px; line-height:1;\">\n    ★★★★★\n  </div>\n\n  <div style=\"font-size:16px; color:#222; font-weight:500;\">\n    <strong>4.8/5 Rated Excellent</strong> by\n    <strong>1,923+ satisfied customers</strong>\n  </div>\n\n</div>"
+            "liquid": "<div style=\"text-align:center;padding:18px 0;\">\n  <div style=\"display:flex;justify-content:center;gap:4px;margin-bottom:10px;\">\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n  </div>\n\n  <div style=\"font-size:20px;font-weight:700;color:#222;line-height:1.2;\">\n    4.8/5 — Trusted by 1,900+ Women\n  </div>\n\n  <div style=\"margin-top:8px;font-size:16px;color:#666;line-height:1.4;\">\n    Based on verified reviews\n  </div>\n</div>"
           }
         },
         "title_p7Dtda": {
@@ -273,7 +260,7 @@
         }
       },
       "block_order": [
-        "liquid_Hmpm8G",
+        "liquid_hDXxFY",
         "title_p7Dtda",
         "text_7hLWTC",
         "rapi_rapi_bundle_dwGUPY",
@@ -432,7 +419,6 @@
     "logo_list_VhnQiD",
     "image_with_text_overlay_Ly377i",
     "custom_liquid_XgLT7J",
-    "custom_liquid_36iAmk",
     "featured_product_63LEgA",
     "custom_liquid_NFbn7H",
     "faq",
