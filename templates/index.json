@@ -169,12 +169,6 @@
     "featured_product_63LEgA": {
       "type": "featured-product",
       "blocks": {
-        "liquid_hDXxFY": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"text-align:center;padding:18px 0;\">\n  <div style=\"display:flex;justify-content:center;gap:4px;margin-bottom:10px;\">\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n  </div>\n\n  <div style=\"font-size:20px;font-weight:700;color:#222;line-height:1.2;\">\n    4.8/5 — Trusted by 1,923+ Women\n  </div>\n\n  <div style=\"margin-top:8px;font-size:16px;color:#666;line-height:1.4;\">\n    Based on verified reviews\n  </div>\n</div>"
-          }
-        },
         "title_p7Dtda": {
           "type": "title",
           "settings": {
@@ -222,6 +216,12 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "liquid_hDXxFY": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"text-align:center;padding:18px 0;\">\n  <div style=\"display:flex;justify-content:center;gap:4px;margin-bottom:10px;\">\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n  </div>\n\n  <div style=\"font-size:20px;font-weight:700;color:#222;line-height:1.2;\">\n    4.8/5 — Trusted by 1,923+ Women\n  </div>\n\n  <div style=\"margin-top:8px;font-size:16px;color:#666;line-height:1.4;\">\n    Based on verified reviews\n  </div>\n</div>"
+          }
+        },
         "buy_buttons_VfRYPz": {
           "type": "buy_buttons",
           "settings": {
@@ -251,7 +251,6 @@
         }
       },
       "block_order": [
-        "liquid_hDXxFY",
         "title_p7Dtda",
         "text_7hLWTC",
         "rapi_rapi_bundle_dwGUPY",
@@ -260,6 +259,7 @@
         "separator_hJVJRG",
         "variant_picker_zaWYdq",
         "quantity_selector_C7EW3B",
+        "liquid_hDXxFY",
         "buy_buttons_VfRYPz",
         "text_rqfemK",
         "liquid_cmprMj",
