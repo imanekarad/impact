@@ -10115,3 +10115,19 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
   display: -webkit-box;
   overflow: hidden;
 }
+/* Force smaller header icons - Impact 6.4.1 */
+
+.header svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.header__icon-list svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.header .tap-area {
+  width: 40px !important;
+  height: 40px !important;
+}
