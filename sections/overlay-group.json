@@ -14,7 +14,7 @@
     "newsletter-popup": {
       "type": "newsletter-popup",
       "settings": {
-        "apparition_delay": 10,
+        "apparition_delay": 0,
         "show_only_on_index": true,
         "show_only_for_visitors": true,
         "show_only_once": true,
