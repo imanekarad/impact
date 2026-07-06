@@ -45,6 +45,54 @@
         "type": "shopify://apps/rapi/blocks/app-embed/99617c17-a32b-4e70-a883-7a155610d032",
         "disabled": false,
         "settings": {}
+      },
+      "2200952712151285029": {
+        "type": "shopify://apps/microsoft-clarity/blocks/brandAgents_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
+        "disabled": false,
+        "settings": {}
+      },
+      "2567389343055140935": {
+        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
+        "disabled": false,
+        "settings": {}
+      },
+      "13762318497758424536": {
+        "type": "shopify://apps/eu-widerruf-button/blocks/button_css_embed/019b2ca9-9838-7858-9694-3a8051afa76e",
+        "disabled": false,
+        "settings": {
+          "target_url": "/pages/widerruf-formular",
+          "button_style": "filled",
+          "bg_color": "#000000",
+          "text_color": "#FFFFFF",
+          "border_color": "#000000",
+          "padding_vertical": 10,
+          "padding_horizontal": 24,
+          "font_size": 15,
+          "font_weight": "600",
+          "border_radius": 8,
+          "hover_effect": "opacity",
+          "hide_outside_eu": false
+        }
+      },
+      "12510727292439481604": {
+        "type": "shopify://apps/eu-widerruf-button/blocks/embed/019b2ca9-9838-7858-9694-3a8051afa76e",
+        "disabled": true,
+        "settings": {
+          "show_heading": true,
+          "heading": "-",
+          "description": "-",
+          "show_fixed_button": true,
+          "color_bg": "#000000",
+          "color_text": "#FFFFFF",
+          "position": "bottom-right",
+          "label_text": "-",
+          "show_order_lookup": true,
+          "require_order_number": true,
+          "hide_order_notes": false,
+          "require_items": false,
+          "confirm_step": false,
+          "hide_outside_eu": false
+        }
       }
     }
   },
