@@ -15,8 +15,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT-Image-Jul-6_-2026_-04_40_47-PM.webp",
-            "mobile_image": "shopify://shop_images/ChatGPT-Image-Jul-6_-2026_-04_40_47-PM.webp",
+            "image": "shopify://shop_images/herokb.webp",
+            "mobile_image": "shopify://shop_images/herokb.webp",
             "content_max_width": 620,
             "mobile_text_position": "place-self-start-end text-end",
             "desktop_text_position": "sm:place-self-center sm:text-center",
