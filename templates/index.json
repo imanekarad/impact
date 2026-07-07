@@ -343,10 +343,24 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "custom_liquid_WXp6pp": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"pfl-press\">\n  <p class=\"pfl-press-label\">As Featured In</p>\n  <div class=\"pfl-wrap\">\n    <div class=\"pfl-track\">\n\n      <span class=\"pfl-item pfl-itv\">This Morning <em>ITV</em></span>\n      <span class=\"pfl-item pfl-gh\">GOOD HOUSEKEEPING</span>\n      <span class=\"pfl-item pfl-wh\">WOMEN'S HEALTH</span>\n      <span class=\"pfl-item pfl-dm\">Daily Mail <em>Health</em></span>\n      <span class=\"pfl-item pfl-hi\">Healthista</span>\n      <span class=\"pfl-item pfl-bbc\"><b>BBC</b> Morning Live</span>\n      <span class=\"pfl-item pfl-pr\">Prima</span>\n      <span class=\"pfl-item pfl-tg\">The Telegraph</span>\n\n      <!-- Duplicate for seamless loop — no JS needed -->\n      <span class=\"pfl-item pfl-itv\">This Morning <em>ITV</em></span>\n      <span class=\"pfl-item pfl-gh\">GOOD HOUSEKEEPING</span>\n      <span class=\"pfl-item pfl-wh\">WOMEN'S HEALTH</span>\n      <span class=\"pfl-item pfl-dm\">Daily Mail <em>Health</em></span>\n      <span class=\"pfl-item pfl-hi\">Healthista</span>\n      <span class=\"pfl-item pfl-bbc\"><b>BBC</b> Morning Live</span>\n      <span class=\"pfl-item pfl-pr\">Prima</span>\n      <span class=\"pfl-item pfl-tg\">The Telegraph</span>\n\n    </div>\n  </div>\n</div>\n\n<style>\n.pfl-press {\n  background: #fff;\n  padding: 32px 0;\n  border-top: 1px solid #EAE7DA;\n  border-bottom: 1px solid #EAE7DA;\n  overflow: hidden;\n}\n.pfl-press-label {\n  text-align: center;\n  font-size: 10px;\n  font-weight: 700;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n  color: #9AA084;\n  margin: 0 0 24px;\n}\n.pfl-wrap {\n  overflow: hidden;\n  width: 100%;\n}\n.pfl-track {\n  display: flex;\n  align-items: center;\n  gap: 56px;\n  width: max-content;\n  animation: pfl-scroll 28s linear infinite;\n}\n.pfl-track:hover {\n  animation-play-state: paused;\n}\n.pfl-item {\n  flex-shrink: 0;\n  font-size: 16px;\n  font-weight: 700;\n  white-space: nowrap;\n  opacity: 0.8;\n  transition: opacity 0.3s;\n  line-height: 1.2;\n}\n.pfl-item:hover { opacity: 1; }\n.pfl-item em {\n  font-style: normal;\n  font-size: 10px;\n  font-weight: 700;\n  letter-spacing: 2px;\n  display: block;\n}\n\n/* Brand colours */\n.pfl-itv { font-family: Georgia, serif; color: #E4003B; }\n.pfl-itv em { color: #E4003B; }\n.pfl-gh  { font-family: Georgia, serif; color: #6D1F3E; font-size: 14px; letter-spacing: 0.5px; }\n.pfl-wh  { font-family: Arial, sans-serif; color: #E8175D; letter-spacing: 1px; font-size: 14px; }\n.pfl-dm  { font-family: Georgia, serif; color: #003B72; }\n.pfl-dm em { color: #003B72; letter-spacing: 2px; }\n.pfl-hi  { font-family: Arial, sans-serif; color: #00A896; font-size: 18px; }\n.pfl-bbc { font-family: Arial, sans-serif; color: #111; font-size: 14px; letter-spacing: 0.5px; }\n.pfl-bbc b {\n  background: #E4003B;\n  color: #fff;\n  padding: 2px 5px;\n  border-radius: 2px;\n  font-size: 13px;\n  margin-right: 4px;\n}\n.pfl-pr  { font-family: Georgia, serif; color: #D63A2F; font-size: 22px; font-style: italic; }\n.pfl-tg  { font-family: Georgia, serif; color: #00447C; }\n\n@keyframes pfl-scroll {\n  0%   { transform: translateX(0); }\n  100% { transform: translateX(-50%); }\n}\n\n@media (max-width: 768px) {\n  .pfl-track { gap: 40px; animation-duration: 20s; }\n  .pfl-item  { font-size: 13px; }\n  .pfl-gh, .pfl-wh { font-size: 11px; }\n  .pfl-hi  { font-size: 15px; }\n  .pfl-pr  { font-size: 18px; }\n}\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "slideshow",
+    "custom_liquid_WXp6pp",
     "image_with_text_overlay_Ly377i",
     "custom_liquid_XgLT7J",
     "featured_product_63LEgA",
