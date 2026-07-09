@@ -11,33 +11,6 @@
   "sections": {
     "slideshow": {
       "type": "slideshow",
-      "blocks": {
-        "slide-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/herokb.webp",
-            "mobile_image": "shopify://shop_images/herokb.webp",
-            "content_max_width": 620,
-            "mobile_text_position": "place-self-start-end text-end",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h4",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#2e680f",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0,
-            "background": "#ffffff",
-            "background_gradient": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide-1"
-      ],
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
@@ -98,8 +71,6 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/ChatGPT_Image_Jul_2__2026__11_11_04_PM.webp",
-        "mobile_image": "shopify://shop_images/ChatGPT_Image_Jul_2__2026__11_11_04_PM.webp",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -339,7 +310,6 @@
         "subheading": "",
         "title": "FAQ",
         "content": "",
-        "team_avatar": "shopify://shop_images/8ded9cbe-f7ac-48c8-ac0b-1eccb28d4998_1.webp",
         "team_avatar_width": 160,
         "support_hours": "Our customer support (UK based support)  is available Monday to Friday: 8am-8:30pm. Tracked Royal Mail/DPD shipping",
         "answer_time": "Average answer time: 24h",
@@ -360,8 +330,8 @@
   },
   "order": [
     "slideshow",
-    "custom_liquid_WXp6pp",
     "image_with_text_overlay_Ly377i",
+    "custom_liquid_WXp6pp",
     "custom_liquid_XgLT7J",
     "featured_product_63LEgA",
     "custom_liquid_NFbn7H",
