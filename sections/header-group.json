@@ -72,7 +72,7 @@
         "show_country_selector": true,
         "show_country_flag": false,
         "show_country_name": false,
-        "transparent_header_text_color": "#4f5f35",
+        "transparent_header_text_color": "#B8712F",
         "transparent_logo": "shopify://shop_images/phytoseed_labs_wordmark_only.webp",
         "reduce_padding": true,
         "background_opacity": 0,
