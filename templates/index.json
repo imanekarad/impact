@@ -89,13 +89,6 @@
             "text": ""
           }
         },
-        "heading_TjGcrq": {
-          "type": "heading",
-          "settings": {
-            "text": "",
-            "heading_tag": "h1"
-          }
-        },
         "richtext_UUpxrT": {
           "type": "richtext",
           "settings": {
@@ -105,7 +98,6 @@
       },
       "block_order": [
         "subheading_tdjiBk",
-        "heading_TjGcrq",
         "richtext_UUpxrT"
       ],
       "name": "Image with text overlay",
