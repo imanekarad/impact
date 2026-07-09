@@ -119,6 +119,11 @@
         "links",
         "text"
       ],
+      "custom_css": [
+        ".footer {background-color: #2B241F !important; color: #F7E9D7;}",
+        ".footer a {color: #F7E9D7;}",
+        ".footer h2,.footer h3,.footer .h4 {color: #FFFFFF;}"
+      ],
       "settings": {
         "show_social_media": true,
         "show_payment_icons": true,
