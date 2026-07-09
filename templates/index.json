@@ -80,32 +80,6 @@
         "text_color": ""
       }
     },
-    "custom_liquid_XgLT7J": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": false,
-        "liquid": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "custom_liquid_6JwR9C": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -197,58 +171,12 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
-    },
-    "image_with_text_overlay_6nnYQF": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_jkk8jN": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        },
-        "heading_Bnxeay": {
-          "type": "heading",
-          "settings": {
-            "text": "",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_i89Q3C": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_jkk8jN",
-        "heading_Bnxeay",
-        "richtext_i89Q3C"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/ChatGPT-Image-Jul-9_-2026_-11_19_42-PM.webp",
-        "mobile_image": "shopify://shop_images/ChatGPT-Image-Jul-9_-2026_-11_19_42-PM.webp",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
     }
   },
   "order": [
     "slideshow",
     "image_with_text_overlay_Ly377i",
     "custom_liquid_WXp6pp",
-    "custom_liquid_XgLT7J",
-    "custom_liquid_6JwR9C",
-    "faq",
-    "image_with_text_overlay_6nnYQF"
+    "faq"
   ]
 }
