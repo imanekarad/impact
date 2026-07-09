@@ -145,45 +145,13 @@
             "title": "Do you have a guarantee?",
             "content": "<p>Yes! If you are not satisfied with our Tanning Gummies, contact us and we will refund you fully.</p>"
           }
-        },
-        "166442457738b23caf-0": {
-          "type": "item",
-          "settings": {
-            "title": "Description",
-            "content": "<p>Phytoseed Labs. is a powerful, clean supplement designed to support your immune system, gut health, and overall well-being.<br/><br/>Each softgel combines concentrated oregano oil extract with black seed oil (200 mg)—two clinically studied ingredients to support your body's natural defenses.<br/><br/>No fillers. No aftertaste.</p><p>Whether you’re looking to support your immune system, ease digestive discomfort, or maintain daily wellness—Phytoseed Labs was made for you.</p><p>This daily formula helps your body stay strong, balanced, and resilient—all from two powerful plants used for centuries and now informed by modern research.</p>"
-          }
-        },
-        "166442457738b23caf-1": {
-          "type": "item",
-          "settings": {
-            "title": "Benefits",
-            "content": "<p><strong>Less bloating by evening</strong> — no more planning outfits around your stomach</p><p>✦ <strong>More energy from the inside out</strong> — not the jittery kind, the kind that actually lasts</p><p>✦ <strong>Clearer head, better focus</strong> — the fog lifts, the sharpness comes back</p><p>✦ <strong>Calmer nights</strong> — fewer disruptions, more of the deep rest your body is asking for</p><p>✦ <strong>Feel like yourself again</strong> — not a younger version, just the real you</p>"
-          }
-        },
-        "166442457738b23caf-2": {
-          "type": "item",
-          "settings": {
-            "title": "Recommended use",
-            "content": "<p>Take 1 softgel per day with food. Most women start noticing a difference within 2–4 weeks, with fuller results building over 4–6 weeks of consistent use — this isn't a quick fix, it's designed to work <em>with</em> your body over time. Do not exceed the recommended daily dose.</p><p>* Individual results may vary. Consult your healthcare provider before use if you are pregnant, nursing, taking medication, or have a medical condition.</p>"
-          }
-        },
-        "item_yRx3Yi": {
-          "type": "item",
-          "settings": {
-            "title": "Ingredients",
-            "content": "<p>\"UK-Based Quality Control\"</p><p>Oil of Oregano (<em>Origanum vulgare</em>) — 6,000 mg (standardized to 80% carvacrol and 5% thymol)<br/>Black Seed Oil (<em>Nigella sativa</em>) — 200 mg</p><p>Other ingredients: Softgel shell (gelatin, glycerin, purified water). Contains no fillers, binders, artificial colors, or preservatives.</p><p>Free from: Gluten, dairy, soy, sugar, GMOs, artificial additives.</p>"
-          }
         }
       },
       "block_order": [
         "item_iQzdhh",
         "item_QAUx9H",
         "item_hzNLGm",
-        "item_mkzghj",
-        "166442457738b23caf-0",
-        "166442457738b23caf-1",
-        "166442457738b23caf-2",
-        "item_yRx3Yi"
+        "item_mkzghj"
       ],
       "settings": {
         "full_width": true,
