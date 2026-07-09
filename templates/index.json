@@ -58,8 +58,8 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/ChatGPT-Image-Jul-9_-2026_-10_30_21-PM.webp",
-        "mobile_image": "shopify://shop_images/ChatGPT-Image-Jul-9_-2026_-10_30_21-PM.webp",
+        "image": "shopify://shop_images/ChatGPT-Image-Jul-9_-2026_-10_47_54-PM_1.webp",
+        "mobile_image": "shopify://shop_images/ChatGPT-Image-Jul-9_-2026_-10_47_54-PM_1.webp",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -93,137 +93,6 @@
         "text_color": ""
       }
     },
-    "featured_product_63LEgA": {
-      "type": "featured-product",
-      "blocks": {
-        "title_p7Dtda": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h3"
-          }
-        },
-        "text_7hLWTC": {
-          "type": "text",
-          "settings": {
-            "text": "<ul><li><strong>Finally Feel Comfortable In Your Clothes Again</strong></li><li><strong>No More Painful Bloating, Gas & Digestive Discomfort</strong></li></ul>"
-          }
-        },
-        "rapi_rapi_bundle_dwGUPY": {
-          "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
-          "settings": {
-            "product": "{{section.settings.product}}"
-          }
-        },
-        "badges_y8f7Tg": {
-          "type": "badges",
-          "settings": {}
-        },
-        "rating_gtp6cz": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "separator_hJVJRG": {
-          "type": "separator",
-          "settings": {}
-        },
-        "variant_picker_zaWYdq": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_style": "block",
-            "swatch_selector_style": "swatch",
-            "variant_image_options": "",
-            "size_chart_page": ""
-          }
-        },
-        "quantity_selector_C7EW3B": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "liquid_hDXxFY": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"text-align:center;padding:18px 0;\">\n  <div style=\"display:flex;justify-content:center;gap:4px;margin-bottom:10px;\">\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n    <span style=\"background:#00B67A;color:#fff;font-size:16px;line-height:1;padding:4px 6px;border-radius:3px;\">★</span>\n  </div>\n\n  <div style=\"font-size:20px;font-weight:700;color:#222;line-height:1.2;\">\n    4.8/5 — Trusted by 1,900+ Women\n  </div>\n\n  <div style=\"margin-top:8px;font-size:16px;color:#666;line-height:1.4;\">\n    Based on verified reviews\n  </div>\n</div>"
-          }
-        },
-        "buy_buttons_VfRYPz": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": false,
-            "show_gift_card_recipient": false,
-            "atc_button_background": "#d4af37",
-            "atc_button_text_color": "",
-            "payment_button_background": "#28a20d",
-            "payment_button_text_color": ""
-          }
-        },
-        "text_rqfemK": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Most customers notice the best results with consistent use over several weeks. Choose the plan that fits your wellness journey.       🔒 <strong>Secure Checkout</strong> — SSL Encrypted · Shopify Protected · 30-Day Guarantee 🇬🇧 Fast UK Shipping</p>"
-          }
-        },
-        "liquid_cmprMj": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Logos de Paiement</title>\n  <style>\n    .icon-container {\n      display: flex;\n      gap: 10px;\n      align-items: center;\n      justify-content: center;\n      margin-top: 10px;\n    }\n\n    .icon {\n      width: 40px;\n      height: auto;\n    }\n  </style>\n</head>\n<body>\n\n  <div class=\"icon-container\">\n    <!-- Apple Pay -->\n    <img class=\"icon\" src=\"https://cdn.shopify.com/s/files/1/0747/1749/5526/files/Apple_Pay-Logo.wine.png?v=1746126288\" alt=\"Apple Pay\">\n\n    <!-- Google Pay -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/d/d4/Google-pay-acceptance-mark-icon.svg\">\n\n    <!-- PayPal -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg\" alt=\"PayPal\">\n\n    <!-- Mastercard -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png\" alt=\"Mastercard\">\n\n    <!-- Visa -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Visa_Inc._logo_%282021%E2%80%93present%29.svg/1920px-Visa_Inc._logo_%282021%E2%80%93present%29.svg.png\">\n\n    <!-- American Express -->\n    <img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/archive/f/fa/20191022102800%21American_Express_logo_%282018%29.svg\">\n  </div>"
-          }
-        },
-        "pickup_availability_hDNMPj": {
-          "type": "pickup_availability",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "title_p7Dtda",
-        "text_7hLWTC",
-        "rapi_rapi_bundle_dwGUPY",
-        "badges_y8f7Tg",
-        "rating_gtp6cz",
-        "separator_hJVJRG",
-        "variant_picker_zaWYdq",
-        "quantity_selector_C7EW3B",
-        "liquid_hDXxFY",
-        "buy_buttons_VfRYPz",
-        "text_rqfemK",
-        "liquid_cmprMj",
-        "pickup_availability_hDNMPj"
-      ],
-      "name": "Featured product",
-      "settings": {
-        "full_width": true,
-        "product": "phytoseed-labs-oregano-oil-softgel-with-blackseed-oil",
-        "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
-        "background": "#f8f4ed",
-        "background_gradient": "",
-        "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
-      }
-    },
-    "custom_liquid_NFbn7H": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": true,
-        "liquid": "<style>\n.guarantee-full-width {\n  width: 100vw;\n  margin-left: calc(50% - 50vw);\n  background: #56683F;\n  padding: 60px 40px;\n}\n\n.guarantee-wrapper {\n  max-width: 1400px;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  gap: 80px;\n}\n\n.guarantee-badge {\n  flex-shrink: 0;\n}\n\n.guarantee-badge img {\n  width: 220px;\n  display: block;\n}\n\n.guarantee-content {\n  flex: 1;\n}\n\n.guarantee-content h2 {\n  color: white;\n  font-size: 54px;\n  font-weight: 700;\n  line-height: 1.2;\n  margin-bottom: 20px;\n}\n\n.guarantee-content p {\n  color: white;\n  font-size: 24px;\n  line-height: 1.6;\n  opacity: .95;\n}\n\n@media(max-width:768px){\n\n  .guarantee-wrapper{\n    flex-direction:column;\n    text-align:center;\n    gap:30px;\n  }\n\n  .guarantee-content h2{\n    font-size:36px;\n  }\n\n  .guarantee-content p{\n    font-size:18px;\n  }\n\n  .guarantee-badge img{\n    width:180px;\n  }\n\n}\n</style>\n\n<div class=\"guarantee-full-width\">\n\n  <div class=\"guarantee-wrapper\">\n\n    <div class=\"guarantee-badge\">\n      <img src=https://cdn.shopify.com/s/files/1/1076/7378/0573/files/3e748aa0-d7ec-4758-abdf-ea38a8c42387.png?v=1781863306>\n    </div>\n\n    <div class=\"guarantee-content\">\n      <h2>Feel The Difference In 30 Days — Or Your Money Back</h2>\n\n      <p>\n        We stand behind every product. If you're not completely satisfied within\n        30 days, simply contact us for a full refund. No questions asked.\n      </p>\n    </div>\n\n  </div>\n\n</div>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "custom_liquid_6JwR9C": {
       "type": "custom-liquid",
       "name": "Custom Liquid",
@@ -231,7 +100,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "<div style=\"display:flex; align-items:center; justify-content:center; gap:12px; padding:14px 20px; background:#f8f8f8; border-radius:10px; font-family:inherit; flex-wrap:wrap;\">\n\n  <div style=\"color:#00B67A; font-size:22px;\">\n    ★★★★★\n  </div>\n\n  <div style=\"font-size:16px; color:#222;\">\n    <strong>4.8/5 Excellent</strong> • Join\n    <strong>1,900+ customers</strong> who are already experiencing less bloating and better digestion\n  </div>\n\n</div>",
+        "liquid": "",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -335,8 +204,6 @@
     "image_with_text_overlay_Ly377i",
     "custom_liquid_WXp6pp",
     "custom_liquid_XgLT7J",
-    "featured_product_63LEgA",
-    "custom_liquid_NFbn7H",
     "custom_liquid_6JwR9C",
     "faq"
   ]
