@@ -116,19 +116,107 @@
         "overlay_opacity": 0
       }
     },
-    "1783704305bd38a84f": {
-      "type": "apps",
+    "featured_product_CBekJp": {
+      "type": "featured-product",
       "blocks": {
-        "rapi_rapi_bundle_GxaGy3": {
+        "title_bePLwX": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "description_mDLmEc": {
+          "type": "description",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "collapse_content": false
+          }
+        },
+        "rapi_rapi_bundle_YXkcUa": {
           "type": "shopify://apps/rapi-bundle/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
           "settings": {
             "product": "tanning-gummies-phytoseed-labs"
           }
+        },
+        "badges_BmWaw7": {
+          "type": "badges",
+          "settings": {}
+        },
+        "rating_9EiJrm": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "separator_PzFjqD": {
+          "type": "separator",
+          "settings": {}
+        },
+        "variant_picker_nhbBjb": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_pc98k8": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_MKeaxz": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_eWrzhw": {
+          "type": "pickup_availability",
+          "settings": {}
         }
       },
       "block_order": [
-        "rapi_rapi_bundle_GxaGy3"
+        "title_bePLwX",
+        "description_mDLmEc",
+        "rapi_rapi_bundle_YXkcUa",
+        "badges_BmWaw7",
+        "rating_9EiJrm",
+        "separator_PzFjqD",
+        "variant_picker_nhbBjb",
+        "quantity_selector_pc98k8",
+        "buy_buttons_MKeaxz",
+        "pickup_availability_eWrzhw"
       ],
+      "name": "Featured product",
+      "settings": {
+        "full_width": true,
+        "product": "tanning-gummies-phytoseed-labs",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "1783704305bd38a84f": {
+      "type": "apps",
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -291,110 +379,6 @@
         "gold_color": "#c9a24b",
         "text_color": "#241f1b",
         "badge_color": "#6b4426"
-      }
-    },
-    "featured_product_CBekJp": {
-      "type": "featured-product",
-      "blocks": {
-        "vendor_Lqt9zn": {
-          "type": "vendor",
-          "settings": {}
-        },
-        "title_bePLwX": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h2"
-          }
-        },
-        "badges_BmWaw7": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price_KRMphY": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
-        "rating_9EiJrm": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "separator_PzFjqD": {
-          "type": "separator",
-          "settings": {}
-        },
-        "description_mDLmEc": {
-          "type": "description",
-          "settings": {
-            "icon": "none",
-            "icon_width": 20,
-            "collapse_content": false
-          }
-        },
-        "variant_picker_nhbBjb": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_style": "block",
-            "swatch_selector_style": "swatch",
-            "variant_image_options": "",
-            "size_chart_page": ""
-          }
-        },
-        "quantity_selector_pc98k8": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_MKeaxz": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": true,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        },
-        "pickup_availability_eWrzhw": {
-          "type": "pickup_availability",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "vendor_Lqt9zn",
-        "title_bePLwX",
-        "badges_BmWaw7",
-        "price_KRMphY",
-        "rating_9EiJrm",
-        "separator_PzFjqD",
-        "description_mDLmEc",
-        "variant_picker_nhbBjb",
-        "quantity_selector_pc98k8",
-        "buy_buttons_MKeaxz",
-        "pickup_availability_eWrzhw"
-      ],
-      "name": "Featured product",
-      "settings": {
-        "full_width": true,
-        "product": "tanning-gummies-phytoseed-labs",
-        "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
       }
     }
   },
