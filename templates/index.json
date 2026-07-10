@@ -372,7 +372,7 @@
         "rating_score": "4.8",
         "review_count_text": "1,900+ Verified Reviews",
         "show_arrows": true,
-        "autoplay": true,
+        "autoplay": false,
         "autoplay_speed": 4000,
         "bg_color": "#f2e9d9",
         "card_bg_color": "#fbf6ec",
