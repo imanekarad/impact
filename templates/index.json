@@ -226,74 +226,6 @@
         "text_color": ""
       }
     },
-    "faq": {
-      "type": "faq",
-      "blocks": {
-        "item_hiUJm9": {
-          "type": "item",
-          "settings": {
-            "title": "Ingredients",
-            "content": "<p><strong>Astaxanthin</strong> – Powerful antioxidant that helps protect the skin from oxidative stress and supports a healthy, radiant glow. <br/><br/><strong>L-Tyrosine</strong> – An amino acid involved in the body's natural melanin production, helping support a deeper, more even tan. <br/><br/><strong>Hyaluronic Acid</strong> – Helps maintain skin hydration and gives the skin a plumper, smoother appearance.<br/><br/><strong>Collagen</strong> – Supports skin firmness and elasticity while helping maintain youthful-looking skin.</p><p></p><p>☀️ Supports a natural golden glow<br/><br/>💧 Deeply hydrates the skin<br/><br/>✨ Promotes smoother, firmer skin<br/><br/>🛡️ Protects against oxidative stress caused by UV exposure<br/><br/>🌴 Helps achieve a more even-looking tan<br/><br/>💖 Supports healthy skin from within</p>"
-          }
-        },
-        "item_iQzdhh": {
-          "type": "item",
-          "settings": {
-            "title": "When will I start to see a tan?",
-            "content": "<p>Most people see first results around week 4 Consistency is what matters most. And if you do get some sun, your natural tan and your gummy glow build on each other for a deeper, longer-lasting result. The molecule J Lycopene and Astaxanthin are awesome and reliable antioxidants. Maintain a glowing tan by eating yummy gummies? Yes!</p>"
-          }
-        },
-        "item_QAUx9H": {
-          "type": "item",
-          "settings": {
-            "title": "How to use my Tanning gummies ?",
-            "content": "<p>For best results, take 2 gummies with a meal and a glass of water.</p><p>Do not consume on an empty stomach. If you are sensitive to new supplements, start with just 1 gummy per day to assess your tolerance.</p><p>Enjoy your journey to a beautiful tan !</p>"
-          }
-        },
-        "item_hzNLGm": {
-          "type": "item",
-          "settings": {
-            "title": "How long will my delivery take?",
-            "content": "<p>Due to exceptionally high demand, your Tanning Gummies will be delivered within approximately 8 days.</p>"
-          }
-        },
-        "item_mkzghj": {
-          "type": "item",
-          "settings": {
-            "title": "Do you have a guarantee?",
-            "content": "<p>Yes! If you are not satisfied with our Tanning Gummies, contact us and we will refund you fully.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_hiUJm9",
-        "item_iQzdhh",
-        "item_QAUx9H",
-        "item_hzNLGm",
-        "item_mkzghj"
-      ],
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "FAQ",
-        "content": "",
-        "team_avatar_width": 160,
-        "support_hours": "Our customer support (UK based support)  is available Monday to Friday: 8am-8:30pm. Tracked Royal Mail/DPD shipping",
-        "answer_time": "Average answer time: 24h",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "background": "#f7e9d7",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
-      }
-    },
     "tanning_gummies_reviews_B3hAhG": {
       "type": "tanning-gummies-reviews",
       "blocks": {
@@ -386,6 +318,74 @@
         "text_color": "#241f1b",
         "badge_color": "#6b4426"
       }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "item_hiUJm9": {
+          "type": "item",
+          "settings": {
+            "title": "Ingredients",
+            "content": "<p><strong>Astaxanthin</strong> – Powerful antioxidant that helps protect the skin from oxidative stress and supports a healthy, radiant glow. <br/><br/><strong>L-Tyrosine</strong> – An amino acid involved in the body's natural melanin production, helping support a deeper, more even tan. <br/><br/><strong>Hyaluronic Acid</strong> – Helps maintain skin hydration and gives the skin a plumper, smoother appearance.<br/><br/><strong>Collagen</strong> – Supports skin firmness and elasticity while helping maintain youthful-looking skin.</p><p></p><p>☀️ Supports a natural golden glow<br/><br/>💧 Deeply hydrates the skin<br/><br/>✨ Promotes smoother, firmer skin<br/><br/>🛡️ Protects against oxidative stress caused by UV exposure<br/><br/>🌴 Helps achieve a more even-looking tan<br/><br/>💖 Supports healthy skin from within</p>"
+          }
+        },
+        "item_iQzdhh": {
+          "type": "item",
+          "settings": {
+            "title": "When will I start to see a tan?",
+            "content": "<p>Most people see first results around week 4 Consistency is what matters most. And if you do get some sun, your natural tan and your gummy glow build on each other for a deeper, longer-lasting result. The molecule J Lycopene and Astaxanthin are awesome and reliable antioxidants. Maintain a glowing tan by eating yummy gummies? Yes!</p>"
+          }
+        },
+        "item_QAUx9H": {
+          "type": "item",
+          "settings": {
+            "title": "How to use my Tanning gummies ?",
+            "content": "<p>For best results, take 2 gummies with a meal and a glass of water.</p><p>Do not consume on an empty stomach. If you are sensitive to new supplements, start with just 1 gummy per day to assess your tolerance.</p><p>Enjoy your journey to a beautiful tan !</p>"
+          }
+        },
+        "item_hzNLGm": {
+          "type": "item",
+          "settings": {
+            "title": "How long will my delivery take?",
+            "content": "<p>Due to exceptionally high demand, your Tanning Gummies will be delivered within approximately 8 days.</p>"
+          }
+        },
+        "item_mkzghj": {
+          "type": "item",
+          "settings": {
+            "title": "Do you have a guarantee?",
+            "content": "<p>Yes! If you are not satisfied with our Tanning Gummies, contact us and we will refund you fully.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_hiUJm9",
+        "item_iQzdhh",
+        "item_QAUx9H",
+        "item_hzNLGm",
+        "item_mkzghj"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support (UK based support)  is available Monday to Friday: 8am-8:30pm. Tracked Royal Mail/DPD shipping",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "#f7e9d7",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -395,7 +395,7 @@
     "image_with_text_overlay_CMzgF3",
     "featured_product_CBekJp",
     "1783704305bd38a84f",
-    "faq",
-    "tanning_gummies_reviews_B3hAhG"
+    "tanning_gummies_reviews_B3hAhG",
+    "faq"
   ]
 }
