@@ -173,7 +173,7 @@
         "button_text": "",
         "button_url": "",
         "text_position": "start",
-        "background": "#F7E9D7",
+        "background": "#f7e9d7",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
@@ -183,6 +183,93 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "tanning_gummies_reviews_B3hAhG": {
+      "type": "tanning-gummies-reviews",
+      "blocks": {
+        "review_xQq3UU": {
+          "type": "review",
+          "settings": {
+            "name": "Chloe M.",
+            "location": "Manchester, UK",
+            "rating": 5,
+            "text": "Finally a tan that doesn't ruin my sheets. No smell, no streaks, just a natural glow.",
+            "verified": true
+          }
+        },
+        "review_ceHtrF": {
+          "type": "review",
+          "settings": {
+            "name": "Chloe M.",
+            "location": "Manchester, UK",
+            "rating": 5,
+            "text": "Finally a tan that doesn't ruin my sheets. No smell, no streaks, just a natural glow.",
+            "verified": true
+          }
+        },
+        "review_cfC6Fi": {
+          "type": "review",
+          "settings": {
+            "name": "Chloe M.",
+            "location": "Manchester, UK",
+            "rating": 5,
+            "text": "Finally a tan that doesn't ruin my sheets. No smell, no streaks, just a natural glow.",
+            "verified": true
+          }
+        },
+        "review_YrpBN8": {
+          "type": "review",
+          "settings": {
+            "name": "Chloe M.",
+            "location": "Manchester, UK",
+            "rating": 5,
+            "text": "Finally a tan that doesn't ruin my sheets. No smell, no streaks, just a natural glow.",
+            "verified": true
+          }
+        },
+        "review_niM6Et": {
+          "type": "review",
+          "settings": {
+            "name": "Chloe M.",
+            "location": "Manchester, UK",
+            "rating": 5,
+            "text": "Finally a tan that doesn't ruin my sheets. No smell, no streaks, just a natural glow.",
+            "verified": true
+          }
+        },
+        "review_XykjcQ": {
+          "type": "review",
+          "settings": {
+            "name": "Chloe M.",
+            "location": "Manchester, UK",
+            "rating": 5,
+            "text": "Finally a tan that doesn't ruin my sheets. No smell, no streaks, just a natural glow.",
+            "verified": true
+          }
+        }
+      },
+      "block_order": [
+        "review_xQq3UU",
+        "review_ceHtrF",
+        "review_cfC6Fi",
+        "review_YrpBN8",
+        "review_niM6Et",
+        "review_XykjcQ"
+      ],
+      "name": "Reviews Carousel",
+      "settings": {
+        "heading": "Loved by thousands of glowing customers",
+        "rating_score": "4.8",
+        "review_count_text": "1,900+ Verified Reviews",
+        "show_arrows": true,
+        "autoplay": true,
+        "autoplay_speed": 4000,
+        "bg_color": "#F2E9D9",
+        "card_bg_color": "#FBF6EC",
+        "gold_color": "#C9A24B",
+        "text_color": "#241F1B",
+        "badge_color": "#6B4426"
+      }
     }
   },
   "order": [
@@ -190,6 +277,7 @@
     "image_with_text_overlay_Ly377i",
     "custom_liquid_WXp6pp",
     "image_with_text_overlay_CMzgF3",
-    "faq"
+    "faq",
+    "tanning_gummies_reviews_B3hAhG"
   ]
 }
