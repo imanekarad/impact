@@ -300,6 +300,7 @@
         "review_xQq3UU": {
           "type": "review",
           "settings": {
+            "photo": "shopify://shop_images/ChatGPT_Image_Jul_10_2026_12_27_03_PM.webp",
             "name": "Chloe M.",
             "location": "Manchester, UK",
             "rating": 5,
@@ -310,6 +311,7 @@
         "review_ceHtrF": {
           "type": "review",
           "settings": {
+            "photo": "shopify://shop_images/ChatGPT_Image_Jul_10_2026_01_07_26_PM.webp",
             "name": "Chloe M.",
             "location": "Manchester, UK",
             "rating": 5,
