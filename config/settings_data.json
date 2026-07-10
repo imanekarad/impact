@@ -83,7 +83,7 @@
           "description": "-",
           "show_fixed_button": true,
           "color_bg": "#000000",
-          "color_text": "#FFFFFF",
+          "color_text": "#ffffff",
           "position": "bottom-right",
           "label_text": "-",
           "show_order_lookup": true,
