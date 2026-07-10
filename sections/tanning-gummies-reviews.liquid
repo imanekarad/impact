@@ -20,7 +20,7 @@
   <div class="tg-reviews__inner">
 
     <div class="tg-reviews__header">
-      <div class="tg-reviews__stars" aria-hidden="true">‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ</div>
+      <div class="tg-reviews__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
       <p class="tg-reviews__score">{{ section.settings.rating_score }}<span>/5</span></p>
       <p class="tg-reviews__count">{{ section.settings.review_count_text }}</p>
       {%- if section.settings.heading != blank -%}
@@ -30,7 +30,7 @@
 
     <div class="tg-reviews__viewport">
       {%- if section.settings.show_arrows -%}
-        <button type="button" class="tg-reviews__arrow tg-reviews__arrow--prev" data-tg-prev aria-label="Previous reviews">‚Äπ</button>
+        <button type="button" class="tg-reviews__arrow tg-reviews__arrow--prev" data-tg-prev aria-label="Previous reviews">&#8249;</button>
       {%- endif -%}
 
       <div class="tg-reviews__track" data-tg-track tabindex="0" role="region" aria-label="Customer reviews carousel">
@@ -61,7 +61,7 @@
 
               <div class="tg-reviews__stars-row" aria-label="{{ block.settings.rating }} out of 5 stars">
                 {%- for i in (1..5) -%}
-                  <span class="tg-reviews__star{% if i <= block.settings.rating %} is-filled{% endif %}">‚òÖ</span>
+                  <span class="tg-reviews__star{% if i <= block.settings.rating %} is-filled{% endif %}">&#9733;</span>
                 {%- endfor -%}
               </div>
 
@@ -79,7 +79,7 @@
       </div>
 
       {%- if section.settings.show_arrows -%}
-        <button type="button" class="tg-reviews__arrow tg-reviews__arrow--next" data-tg-next aria-label="Next reviews">‚Ä∫</button>
+        <button type="button" class="tg-reviews__arrow tg-reviews__arrow--next" data-tg-next aria-label="Next reviews">&#8250;</button>
       {%- endif -%}
     </div>
 
