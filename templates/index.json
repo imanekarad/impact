@@ -154,8 +154,8 @@
         "mobile_image": "shopify://shop_images/ChatGPT_Image_Jul_11_2026_12_27_07_AM.webp",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
+        "text_color": "#F7E9D7",
+        "overlay_color": "#F7E9D7",
         "overlay_opacity": 0
       }
     },
