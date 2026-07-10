@@ -322,6 +322,7 @@
         "review_cfC6Fi": {
           "type": "review",
           "settings": {
+            "photo": "shopify://shop_images/ChatGPT_Image_Jul_10_2026_12_35_16_PM.webp",
             "name": "Chloe M.",
             "location": "Manchester, UK",
             "rating": 5,
@@ -332,6 +333,7 @@
         "review_YrpBN8": {
           "type": "review",
           "settings": {
+            "photo": "shopify://shop_images/ChatGPT-Image-Jul-10_-2026_-12_09_13-PM.webp",
             "name": "Chloe M.",
             "location": "Manchester, UK",
             "rating": 5,
@@ -342,6 +344,7 @@
         "review_niM6Et": {
           "type": "review",
           "settings": {
+            "photo": "shopify://shop_images/ChatGPT-Image-Jul-10_-2026_-12_15_31-PM.webp",
             "name": "Chloe M.",
             "location": "Manchester, UK",
             "rating": 5,
@@ -352,10 +355,11 @@
         "review_XykjcQ": {
           "type": "review",
           "settings": {
+            "photo": "shopify://shop_images/ChatGPT-Image-Jul-11_-2026_-12_00_53-AM.webp",
             "name": "Chloe M.",
             "location": "Manchester, UK",
             "rating": 5,
-            "text": "Finally a tan that doesn't ruin my sheets. No smell, no streaks, just a natural glow.",
+            "text": "Finally, a tan that doesn't look fake or smell weird!",
             "verified": true
           }
         }
