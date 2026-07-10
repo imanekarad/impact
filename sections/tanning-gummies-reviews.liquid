@@ -1,0 +1,564 @@
+{%- comment -%}
+  Section: Tanning Gummies Reviews Carousel
+  Self-contained: HTML + CSS + JS in one file, no external libraries.
+  Drop into /sections/ and add via Theme Editor.
+{%- endcomment -%}
+
+<div
+  class="tg-reviews"
+  id="tg-reviews-{{ section.id }}"
+  style="
+    --tg-bg: {{ section.settings.bg_color }};
+    --tg-card-bg: {{ section.settings.card_bg_color }};
+    --tg-gold: {{ section.settings.gold_color }};
+    --tg-text: {{ section.settings.text_color }};
+    --tg-badge: {{ section.settings.badge_color }};
+  "
+  data-autoplay="{{ section.settings.autoplay }}"
+  data-autoplay-speed="{{ section.settings.autoplay_speed }}"
+>
+  <div class="tg-reviews__inner">
+
+    <div class="tg-reviews__header">
+      <div class="tg-reviews__stars" aria-hidden="true">‚òÖ‚òÖ‚òÖ‚òÖ‚òÖ</div>
+      <p class="tg-reviews__score">{{ section.settings.rating_score }}<span>/5</span></p>
+      <p class="tg-reviews__count">{{ section.settings.review_count_text }}</p>
+      {%- if section.settings.heading != blank -%}
+        <h2 class="tg-reviews__heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+    </div>
+
+    <div class="tg-reviews__viewport">
+      {%- if section.settings.show_arrows -%}
+        <button type="button" class="tg-reviews__arrow tg-reviews__arrow--prev" data-tg-prev aria-label="Previous reviews">‚Äπ</button>
+      {%- endif -%}
+
+      <div class="tg-reviews__track" data-tg-track tabindex="0" role="region" aria-label="Customer reviews carousel">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'review' -%}
+            <div class="tg-reviews__card" data-tg-card {{ block.shopify_attributes }}>
+              <div class="tg-reviews__top">
+                {%- if block.settings.photo != blank -%}
+                  <img
+                    class="tg-reviews__photo"
+                    src="{{ block.settings.photo | image_url: width: 160 }}"
+                    width="56" height="56"
+                    alt="{{ block.settings.name | escape }}"
+                    loading="lazy"
+                  >
+                {%- else -%}
+                  <div class="tg-reviews__photo tg-reviews__photo--placeholder" aria-hidden="true">
+                    {{ block.settings.name | slice: 0, 1 | upcase }}
+                  </div>
+                {%- endif -%}
+                <div class="tg-reviews__identity">
+                  <span class="tg-reviews__name">{{ block.settings.name }}</span>
+                  {%- if block.settings.location != blank -%}
+                    <span class="tg-reviews__location">{{ block.settings.location }}</span>
+                  {%- endif -%}
+                </div>
+              </div>
+
+              <div class="tg-reviews__stars-row" aria-label="{{ block.settings.rating }} out of 5 stars">
+                {%- for i in (1..5) -%}
+                  <span class="tg-reviews__star{% if i <= block.settings.rating %} is-filled{% endif %}">‚òÖ</span>
+                {%- endfor -%}
+              </div>
+
+              <p class="tg-reviews__text">&ldquo;{{ block.settings.text }}&rdquo;</p>
+
+              {%- if block.settings.verified -%}
+                <span class="tg-reviews__badge">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Verified Buyer
+                </span>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      {%- if section.settings.show_arrows -%}
+        <button type="button" class="tg-reviews__arrow tg-reviews__arrow--next" data-tg-next aria-label="Next reviews">‚Ä∫</button>
+      {%- endif -%}
+    </div>
+
+    <div class="tg-reviews__dots" data-tg-dots></div>
+
+  </div>
+</div>
+
+<style>
+  #tg-reviews-{{ section.id }} {
+    --tg-bg: {{ section.settings.bg_color }};
+    --tg-card-bg: {{ section.settings.card_bg_color }};
+    --tg-gold: {{ section.settings.gold_color }};
+    --tg-text: {{ section.settings.text_color }};
+    --tg-badge: {{ section.settings.badge_color }};
+    background: var(--tg-bg);
+    padding: 4rem 1.25rem;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__inner {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__stars {
+    color: var(--tg-gold);
+    font-size: 22px;
+    letter-spacing: 4px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__score {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 34px;
+    color: var(--tg-text);
+    margin: 0 0 4px;
+    font-weight: 400;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__score span {
+    font-size: 18px;
+    color: var(--tg-text);
+    opacity: 0.55;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__count {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: var(--tg-text);
+    opacity: 0.7;
+    margin: 0 0 18px;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__heading {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--tg-text);
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__viewport {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding: 6px 6px 20px;
+    flex: 1;
+    scrollbar-width: none;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__track::-webkit-scrollbar {
+    display: none;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__card {
+    flex: 0 0 auto;
+    width: min(300px, 82vw);
+    scroll-snap-align: start;
+    background: var(--tg-card-bg);
+    border-radius: 14px;
+    border-top: 3px solid var(--tg-gold);
+    box-shadow: 0 8px 24px rgba(36, 31, 27, 0.1);
+    padding: 22px 20px 20px;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__photo {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__photo--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--tg-gold);
+    color: var(--tg-card-bg);
+    font-family: Georgia, serif;
+    font-size: 20px;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__identity {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__name {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--tg-text);
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__location {
+    font-size: 12px;
+    color: var(--tg-text);
+    opacity: 0.55;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__stars-row {
+    margin-bottom: 10px;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__star {
+    font-size: 15px;
+    color: rgba(36, 31, 27, 0.2);
+    letter-spacing: 1px;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__star.is-filled {
+    color: var(--tg-gold);
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__text {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--tg-text);
+    opacity: 0.85;
+    margin: 0 0 14px;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: var(--tg-badge);
+    background: color-mix(in srgb, var(--tg-badge) 12%, transparent);
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__arrow {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--tg-gold);
+    background: var(--tg-card-bg);
+    color: var(--tg-gold);
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__arrow:hover {
+    background: var(--tg-gold);
+    color: var(--tg-card-bg);
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--tg-gold);
+    opacity: 0.3;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__dot.is-active {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  @media (max-width: 749px) {
+    #tg-reviews-{{ section.id }} .tg-reviews__arrow {
+      display: none;
+    }
+    #tg-reviews-{{ section.id }} {
+      padding: 3rem 1rem;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var root = document.getElementById('tg-reviews-{{ section.id }}');
+    if (!root) return;
+
+    var track = root.querySelector('[data-tg-track]');
+    var cards = Array.prototype.slice.call(root.querySelectorAll('[data-tg-card]'));
+    var dotsWrap = root.querySelector('[data-tg-dots]');
+    var prevBtn = root.querySelector('[data-tg-prev]');
+    var nextBtn = root.querySelector('[data-tg-next]');
+    if (!track || cards.length === 0) return;
+
+    var autoplay = root.getAttribute('data-autoplay') === 'true';
+    var speed = parseInt(root.getAttribute('data-autoplay-speed'), 10) || 4000;
+    var timer = null;
+    var resumeTimeout = null;
+
+    // Build dots
+    cards.forEach(function (card, i) {
+      var dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'tg-reviews__dot' + (i === 0 ? ' is-active' : '');
+      dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
+      dot.addEventListener('click', function () {
+        scrollToCard(i);
+        restartAutoplayLater();
+      });
+      dotsWrap.appendChild(dot);
+    });
+    var dots = Array.prototype.slice.call(dotsWrap.querySelectorAll('.tg-reviews__dot'));
+
+    function cardStep() {
+      var first = cards[0];
+      var style = window.getComputedStyle(track);
+      var gap = parseInt(style.columnGap || style.gap || 20, 10);
+      return first.getBoundingClientRect().width + gap;
+    }
+
+    function scrollToCard(index) {
+      track.scrollTo({ left: cardStep() * index, behavior: 'smooth' });
+    }
+
+    function currentIndex() {
+      return Math.round(track.scrollLeft / cardStep());
+    }
+
+    function updateDots() {
+      var idx = Math.min(currentIndex(), dots.length - 1);
+      dots.forEach(function (d, i) {
+        d.classList.toggle('is-active', i === idx);
+      });
+    }
+
+    function advance() {
+      var idx = currentIndex();
+      var next = idx + 1;
+      if (next >= cards.length) {
+        track.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        scrollToCard(next);
+      }
+    }
+
+    function startAutoplay() {
+      if (!autoplay) return;
+      stopAutoplay();
+      timer = setInterval(advance, speed);
+    }
+
+    function stopAutoplay() {
+      if (timer) clearInterval(timer);
+      timer = null;
+    }
+
+    function restartAutoplayLater() {
+      stopAutoplay();
+      if (resumeTimeout) clearTimeout(resumeTimeout);
+      resumeTimeout = setTimeout(startAutoplay, speed * 1.5);
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function () {
+        scrollToCard(Math.max(currentIndex() - 1, 0));
+        restartAutoplayLater();
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function () {
+        scrollToCard(Math.min(currentIndex() + 1, cards.length - 1));
+        restartAutoplayLater();
+      });
+    }
+
+    track.addEventListener('pointerenter', stopAutoplay);
+    track.addEventListener('pointerleave', startAutoplay);
+    track.addEventListener('touchstart', restartAutoplayLater, { passive: true });
+
+    var scrollRaf = null;
+    track.addEventListener('scroll', function () {
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = requestAnimationFrame(updateDots);
+    }, { passive: true });
+
+    startAutoplay();
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Reviews Carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Loved by thousands of glowing customers"
+    },
+    {
+      "type": "text",
+      "id": "rating_score",
+      "label": "Rating score",
+      "default": "4.8"
+    },
+    {
+      "type": "text",
+      "id": "review_count_text",
+      "label": "Review count text",
+      "default": "1,900+ Verified Reviews"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "label": "Show arrow navigation on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Enable auto-scroll",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Auto-scroll speed (ms)",
+      "min": 2000,
+      "max": 8000,
+      "step": 500,
+      "default": 4000
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Section background",
+      "default": "#F2E9D9"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Card background",
+      "default": "#FBF6EC"
+    },
+    {
+      "type": "color",
+      "id": "gold_color",
+      "label": "Gold accent",
+      "default": "#C9A24B"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#241F1B"
+    },
+    {
+      "type": "color",
+      "id": "badge_color",
+      "label": "Verified badge color",
+      "default": "#6B4426"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "photo",
+          "label": "Customer photo"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Customer name",
+          "default": "Chloe M."
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Location",
+          "default": "Manchester, UK"
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Star rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Review text",
+          "default": "Finally a tan that doesn't ruin my sheets. No smell, no streaks, just a natural glow."
+        },
+        {
+          "type": "checkbox",
+          "id": "verified",
+          "label": "Show Verified Buyer badge",
+          "default": true
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reviews Carousel",
+      "blocks": [
+        { "type": "review" },
+        { "type": "review" },
+        { "type": "review" },
+        { "type": "review" },
+        { "type": "review" },
+        { "type": "review" }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
