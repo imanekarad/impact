@@ -264,11 +264,33 @@
         "show_arrows": true,
         "autoplay": true,
         "autoplay_speed": 4000,
-        "bg_color": "#F2E9D9",
-        "card_bg_color": "#FBF6EC",
-        "gold_color": "#C9A24B",
-        "text_color": "#241F1B",
-        "badge_color": "#6B4426"
+        "bg_color": "#f2e9d9",
+        "card_bg_color": "#fbf6ec",
+        "gold_color": "#c9a24b",
+        "text_color": "#241f1b",
+        "badge_color": "#6b4426"
+      }
+    },
+    "1783703829bb3ee895": {
+      "type": "apps",
+      "blocks": {
+        "rapi_rapi_bundle_Q4REPM": {
+          "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
+          "settings": {
+            "product": "tanning-gummies-phytoseed-labs"
+          }
+        }
+      },
+      "block_order": [
+        "rapi_rapi_bundle_Q4REPM"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     }
   },
@@ -278,6 +300,7 @@
     "custom_liquid_WXp6pp",
     "image_with_text_overlay_CMzgF3",
     "faq",
-    "tanning_gummies_reviews_B3hAhG"
+    "tanning_gummies_reviews_B3hAhG",
+    "1783703829bb3ee895"
   ]
 }
