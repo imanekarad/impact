@@ -271,21 +271,10 @@
         "badge_color": "#6b4426"
       }
     },
-    "1783703844cc1a772c": {
-      "type": "apps",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "1783703944d24fc26f": {
+    "1783704305bd38a84f": {
       "type": "apps",
       "blocks": {
-        "rapi_rapi_bundle_ygpJCF": {
+        "rapi_rapi_bundle_GxaGy3": {
           "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
           "settings": {
             "product": "tanning-gummies-phytoseed-labs"
@@ -293,29 +282,7 @@
         }
       },
       "block_order": [
-        "rapi_rapi_bundle_ygpJCF"
-      ],
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "1783703990349c0263": {
-      "type": "apps",
-      "blocks": {
-        "rapi_rapi_bundle_Nyqexi": {
-          "type": "shopify://apps/rapi/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
-          "settings": {
-            "product": "tanning-gummies-phytoseed-labs"
-          }
-        }
-      },
-      "block_order": [
-        "rapi_rapi_bundle_Nyqexi"
+        "rapi_rapi_bundle_GxaGy3"
       ],
       "settings": {
         "full_width": true,
@@ -334,8 +301,6 @@
     "image_with_text_overlay_CMzgF3",
     "faq",
     "tanning_gummies_reviews_B3hAhG",
-    "1783703844cc1a772c",
-    "1783703944d24fc26f",
-    "1783703990349c0263"
+    "1783704305bd38a84f"
   ]
 }
