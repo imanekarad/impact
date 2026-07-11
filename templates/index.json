@@ -432,17 +432,6 @@
     },
     "178380658188147353": {
       "type": "apps",
-      "blocks": {
-        "rapi_bundle_rapi_bundle_tWBDzX": {
-          "type": "shopify://apps/rapi-bundle/blocks/rapi-bundle/99617c17-a32b-4e70-a883-7a155610d032",
-          "settings": {
-            "product": "tanning-gummies-phytoseed-labs"
-          }
-        }
-      },
-      "block_order": [
-        "rapi_bundle_rapi_bundle_tWBDzX"
-      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
