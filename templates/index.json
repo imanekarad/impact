@@ -154,8 +154,8 @@
         "mobile_image": "shopify://shop_images/ChatGPT_Image_Jul_11_2026_12_27_07_AM.webp",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#F7E9D7",
-        "overlay_color": "#F7E9D7",
+        "text_color": "#f7e9d7",
+        "overlay_color": "#f7e9d7",
         "overlay_opacity": 0
       }
     },
@@ -334,7 +334,7 @@
             "name": "Chloe M.",
             "location": "Manchester, UK",
             "rating": 5,
-            "text": "Finally, a tan that doesn't look fake or smell weird!",
+            "text": "Finally, a tan that doesn't look fake or smell weird! Been using these for 2 months and my tan is honestly amazing, bronze golden tone, looks so natural. Really happy with the results.",
             "verified": true
           }
         }
@@ -355,7 +355,7 @@
         "show_arrows": true,
         "autoplay": false,
         "autoplay_speed": 4000,
-        "bg_color": "#F7E9D7",
+        "bg_color": "#f2e9d9",
         "card_bg_color": "#fbf6ec",
         "gold_color": "#c9a24b",
         "text_color": "#241f1b",
