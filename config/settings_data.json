@@ -93,6 +93,11 @@
           "confirm_step": false,
           "hide_outside_eu": false
         }
+      },
+      "15557474716127144420": {
+        "type": "shopify://apps/kaching-bundles/blocks/app-embed-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
