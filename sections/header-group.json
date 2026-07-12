@@ -24,7 +24,7 @@
         "message_bdtLn6": {
           "type": "message",
           "settings": {
-            "text": "30-day money back guarantee",
+            "text": "🔒 Secure Payments",
             "url": ""
           }
         },
@@ -48,7 +48,7 @@
         "text_size": "text-lg",
         "navigation_mode": "scrolling",
         "scrolling_speed": 10,
-        "background": "#2F2621",
+        "background": "#2f2621",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
@@ -72,7 +72,7 @@
         "show_country_selector": true,
         "show_country_flag": false,
         "show_country_name": false,
-        "transparent_header_text_color": "#2F2621",
+        "transparent_header_text_color": "#2f2621",
         "reduce_padding": true,
         "background_opacity": 0,
         "background_blur_radius": 0
