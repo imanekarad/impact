@@ -20,7 +20,10 @@
   <div class="tg-reviews__inner">
 
     <div class="tg-reviews__header">
-      <div class="tg-reviews__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="tg-reviews__stars" aria-hidden="true">
+        <span class="tg-reviews__stars-base">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="tg-reviews__stars-fill" style="width: {{ section.settings.rating_score | times: 20.0 | at_most: 100 }}%">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      </div>
       <p class="tg-reviews__score">{{ section.settings.rating_score }}<span>/5</span></p>
       <p class="tg-reviews__count">{{ section.settings.review_count_text }}</p>
       {%- if section.settings.heading != blank -%}
@@ -110,11 +113,27 @@
   }
 
   #tg-reviews-{{ section.id }} .tg-reviews__stars {
-    color: var(--tg-gold);
+    position: relative;
+    display: inline-block;
     font-size: 22px;
     letter-spacing: 4px;
     line-height: 1;
     margin-bottom: 10px;
+    color: rgba(36, 31, 27, 0.2);
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__stars-base,
+  #tg-reviews-{{ section.id }} .tg-reviews__stars-fill {
+    display: block;
+    white-space: nowrap;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__stars-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: var(--tg-gold);
   }
 
   #tg-reviews-{{ section.id }} .tg-reviews__score {
