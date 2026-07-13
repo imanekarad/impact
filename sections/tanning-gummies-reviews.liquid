@@ -20,11 +20,24 @@
   <div class="tg-reviews__inner">
 
     {%- assign tg_rating_num = section.settings.rating_score | plus: 0.0 -%}
-    {%- assign tg_rating_pct = tg_rating_num | times: 20 | at_most: 100 -%}
+    {%- assign tg_full_stars = tg_rating_num | floor -%}
+    {%- assign tg_fraction = tg_rating_num | minus: tg_full_stars -%}
+    {%- assign tg_fraction_pct = tg_fraction | times: 100 | round -%}
+    {%- assign tg_partial_index = tg_full_stars | plus: 1 -%}
     <div class="tg-reviews__header">
       <div class="tg-reviews__stars" aria-hidden="true">
-        <span class="tg-reviews__stars-base">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <span class="tg-reviews__stars-fill" style="width: {{ tg_rating_pct }}%">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        {%- for i in (1..5) -%}
+          {%- if i <= tg_full_stars -%}
+            <span class="tg-reviews__star-icon is-filled">&#9733;</span>
+          {%- elsif i == tg_partial_index and tg_fraction_pct > 0 -%}
+            <span class="tg-reviews__star-icon tg-reviews__star-icon--partial">
+              <span class="tg-reviews__star-icon-base">&#9733;</span>
+              <span class="tg-reviews__star-icon-fill" style="width: {{ tg_fraction_pct }}%">&#9733;</span>
+            </span>
+          {%- else -%}
+            <span class="tg-reviews__star-icon">&#9733;</span>
+          {%- endif -%}
+        {%- endfor -%}
       </div>
       <p class="tg-reviews__score">{{ section.settings.rating_score }}<span>/5</span></p>
       <p class="tg-reviews__count">{{ section.settings.review_count_text }}</p>
@@ -115,26 +128,39 @@
   }
 
   #tg-reviews-{{ section.id }} .tg-reviews__stars {
-    position: relative;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
     font-size: 22px;
-    letter-spacing: 4px;
     line-height: 1;
     margin-bottom: 10px;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__star-icon {
+    color: rgba(36, 31, 27, 0.2);
+    display: inline-block;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__star-icon.is-filled {
+    color: var(--tg-gold);
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__star-icon--partial {
+    position: relative;
+  }
+
+  #tg-reviews-{{ section.id }} .tg-reviews__star-icon-base {
+    display: block;
     color: rgba(36, 31, 27, 0.2);
   }
 
-  #tg-reviews-{{ section.id }} .tg-reviews__stars-base,
-  #tg-reviews-{{ section.id }} .tg-reviews__stars-fill {
-    display: block;
-    white-space: nowrap;
-  }
-
-  #tg-reviews-{{ section.id }} .tg-reviews__stars-fill {
+  #tg-reviews-{{ section.id }} .tg-reviews__star-icon-fill {
     position: absolute;
     top: 0;
     left: 0;
+    display: block;
     overflow: hidden;
+    white-space: nowrap;
     color: var(--tg-gold);
   }
 
@@ -582,5 +608,6 @@
   ]
 }
 {% endschema %}
+
 
 
