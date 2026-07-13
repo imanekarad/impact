@@ -19,10 +19,12 @@
 >
   <div class="tg-reviews__inner">
 
+    {%- assign tg_rating_num = section.settings.rating_score | plus: 0.0 -%}
+    {%- assign tg_rating_pct = tg_rating_num | times: 20 | at_most: 100 -%}
     <div class="tg-reviews__header">
       <div class="tg-reviews__stars" aria-hidden="true">
         <span class="tg-reviews__stars-base">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <span class="tg-reviews__stars-fill" style="width: {{ section.settings.rating_score | times: 20.0 | at_most: 100 }}%">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="tg-reviews__stars-fill" style="width: {{ tg_rating_pct }}%">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
       </div>
       <p class="tg-reviews__score">{{ section.settings.rating_score }}<span>/5</span></p>
       <p class="tg-reviews__count">{{ section.settings.review_count_text }}</p>
@@ -580,4 +582,5 @@
   ]
 }
 {% endschema %}
+
 
