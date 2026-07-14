@@ -80,7 +80,7 @@
         "heading_tag": "h6",
         "text_alignment": "center",
         "icon_spacing": "small",
-        "background": "#F7E9D7",
+        "background": "#f7e9d7",
         "background_gradient": "",
         "text_color": ""
       }
@@ -120,9 +120,9 @@
         "text"
       ],
       "custom_css": [
-        ".footer {background-color: #2B241F !important; color: #F7E9D7;}",
-        ".footer a {color: #F7E9D7;}",
-        ".footer h2,.footer h3,.footer .h4 {color: #FFFFFF;}"
+        ".footer {background-color: #2b241f !important; color: #f7e9d7;}",
+        ".footer a {color: #f7e9d7;}",
+        ".footer h2,.footer h3,.footer .h4 {color: #ffffff;}"
       ],
       "settings": {
         "show_social_media": true,
