@@ -300,10 +300,6 @@
             "size_chart_page": ""
           }
         },
-        "quantity_selector_pc98k8": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
         "buy_buttons_MKeaxz": {
           "type": "buy_buttons",
           "settings": {
@@ -334,7 +330,6 @@
         "rating_9EiJrm",
         "separator_PzFjqD",
         "variant_picker_nhbBjb",
-        "quantity_selector_pc98k8",
         "buy_buttons_MKeaxz",
         "liquid_T6CgB4",
         "pickup_availability_eWrzhw"
