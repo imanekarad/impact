@@ -116,6 +116,49 @@
         "overlay_opacity": 0
       }
     },
+    "image_with_text_overlay_yQm8LV": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_7XbKAm": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_Jgwc7C": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_FnxcFb": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_7XbKAm",
+        "heading_Jgwc7C",
+        "richtext_FnxcFb"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/ChatGPT_Image_Jul_11_2026_12_27_07_AM.webp",
+        "mobile_image": "shopify://shop_images/ChatGPT_Image_Jul_11_2026_12_27_07_AM.webp",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#f7e9d7",
+        "overlay_color": "#f7e9d7",
+        "overlay_opacity": 0
+      }
+    },
     "tanning_gummies_reviews_B3hAhG": {
       "type": "tanning-gummies-reviews",
       "blocks": {
@@ -207,49 +250,6 @@
         "gold_color": "#c9a24b",
         "text_color": "#241f1b",
         "badge_color": "#6b4426"
-      }
-    },
-    "image_with_text_overlay_yQm8LV": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_7XbKAm": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        },
-        "heading_Jgwc7C": {
-          "type": "heading",
-          "settings": {
-            "text": "",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_FnxcFb": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_7XbKAm",
-        "heading_Jgwc7C",
-        "richtext_FnxcFb"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/ChatGPT_Image_Jul_11_2026_12_27_07_AM.webp",
-        "mobile_image": "shopify://shop_images/ChatGPT_Image_Jul_11_2026_12_27_07_AM.webp",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#f7e9d7",
-        "overlay_color": "#f7e9d7",
-        "overlay_opacity": 0
       }
     },
     "featured_product_CBekJp": {
@@ -456,8 +456,8 @@
     "image_with_text_overlay_Ly377i",
     "custom_liquid_WXp6pp",
     "image_with_text_overlay_CMzgF3",
-    "tanning_gummies_reviews_B3hAhG",
     "image_with_text_overlay_yQm8LV",
+    "tanning_gummies_reviews_B3hAhG",
     "featured_product_CBekJp",
     "1783704305bd38a84f",
     "faq",
