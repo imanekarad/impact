@@ -361,6 +361,15 @@
     "ps_wall_of_reviews_pr4Be6": {
       "type": "ps-wall-of-reviews",
       "blocks": {
+        "review_VdPNEC": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify://shop_images/images-23.webp",
+            "stars": 5,
+            "quote": "I'm honestly obsessed! My skin looks healthier, I look younger, and I barely wear makeup anymore. I'm going on holiday next week, and I can't wait to see how much longer my tan lasts this time.",
+            "name": "Heather P."
+          }
+        },
         "review_7Y7i9z": {
           "type": "review",
           "settings": {
@@ -399,6 +408,7 @@
         }
       },
       "block_order": [
+        "review_VdPNEC",
         "review_7Y7i9z",
         "review_fnnTtJ",
         "review_QMDmf7",
@@ -412,7 +422,7 @@
         "rating_label": "Excellent",
         "review_count": "+650 verified reviews",
         "columns": "4",
-        "bg_color": "#F4EBDD"
+        "bg_color": "#f4ebdd"
       }
     }
   },
