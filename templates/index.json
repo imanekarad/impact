@@ -156,6 +156,15 @@
             "name": "Heather P."
           }
         },
+        "review_jQQDkV": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify://shop_images/ChatGPT_Image_Jul_10_2026_12_35_16_PM.webp",
+            "stars": 5,
+            "quote": "Best sunless option I've tried, no streaks, no orange patches, just a soft golden tint that built up nicely over 3-4 weeks. Skin also felt more hydrated as a bonus. Repurchasing already.",
+            "name": "Sandra L."
+          }
+        },
         "review_7Y7i9z": {
           "type": "review",
           "settings": {
@@ -173,15 +182,6 @@
             "quote": "These actually work if you're consistent noticed a nice golden undertone building up gradually. Paired with a bit of sun and it looked fantastic. Best sunless tanning method I've tried so far.",
             "name": "Ines R."
           }
-        },
-        "review_jQQDkV": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/ChatGPT_Image_Jul_10_2026_12_35_16_PM.webp",
-            "stars": 5,
-            "quote": "Best sunless option I've tried, no streaks, no orange patches, just a soft golden tint that built up nicely over 3-4 weeks. Skin also felt more hydrated as a bonus. Repurchasing already.",
-            "name": "Sandra L."
-          }
         }
       },
       "block_order": [
@@ -189,9 +189,9 @@
         "review_fnnTtJ",
         "review_fVcx86",
         "review_VdPNEC",
+        "review_jQQDkV",
         "review_7Y7i9z",
-        "review_QMDmf7",
-        "review_jQQDkV"
+        "review_QMDmf7"
       ],
       "name": "PS Wall of Reviews",
       "settings": {
