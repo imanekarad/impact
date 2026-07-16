@@ -120,6 +120,15 @@
     "ps_wall_of_reviews_pr4Be6": {
       "type": "ps-wall-of-reviews",
       "blocks": {
+        "review_fnnTtJ": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify://shop_images/ChatGPT_Image_Jul_16_2026_02_12_34_PM.webp",
+            "stars": 5,
+            "quote": "I usually burn red and peel fast, but starting these 2 weeks before holiday changed everything. I tanned gradually, faster than normal, and my skin stayed hydrated. Got the nicest caramel tone I've ever had. It's been 3 weeks and people still think I've just come back from holiday. I love my skin tone so much !",
+            "name": "Kloe M."
+          }
+        },
         "review_fVcx86": {
           "type": "review",
           "settings": {
@@ -147,15 +156,6 @@
             "name": "Savannah T."
           }
         },
-        "review_fnnTtJ": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/ChatGPT_Image_Jul_16_2026_02_12_34_PM.webp",
-            "stars": 5,
-            "quote": "I usually burn red and peel fast, but starting these 2 weeks before holiday changed everything. I tanned gradually, faster than normal, and my skin stayed hydrated. Got the nicest caramel tone I've ever had. It's been 3 weeks and people still think I've just come back from holiday. I love my skin tone so much !",
-            "name": "Kloe M."
-          }
-        },
         "review_QMDmf7": {
           "type": "review",
           "settings": {
@@ -176,10 +176,10 @@
         }
       },
       "block_order": [
+        "review_fnnTtJ",
         "review_fVcx86",
         "review_VdPNEC",
         "review_7Y7i9z",
-        "review_fnnTtJ",
         "review_QMDmf7",
         "review_jQQDkV"
       ],
