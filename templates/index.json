@@ -344,6 +344,23 @@
         "input_text_color": ""
       }
     },
+    "image_with_text_overlay_NQcg9A": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/ChatGPT-Image-Jul-16_-2026_-01_44_29-PM.webp",
+        "mobile_image": "shopify://shop_images/ChatGPT-Image-Jul-16_-2026_-01_44_29-PM_53715e57-8a18-4000-bcee-a650e6f4e147.webp",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "1783704305bd38a84f": {
       "type": "apps",
       "settings": {
@@ -433,23 +450,6 @@
         "background_gradient": "",
         "text_color": ""
       }
-    },
-    "image_with_text_overlay_NQcg9A": {
-      "type": "image-with-text-overlay",
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/ChatGPT-Image-Jul-16_-2026_-01_44_29-PM.webp",
-        "mobile_image": "shopify://shop_images/ChatGPT-Image-Jul-16_-2026_-01_44_29-PM_53715e57-8a18-4000-bcee-a650e6f4e147.webp",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
     }
   },
   "order": [
@@ -459,9 +459,9 @@
     "image_with_text_overlay_yQm8LV",
     "tanning_gummies_reviews_B3hAhG",
     "featured_product_CBekJp",
+    "image_with_text_overlay_NQcg9A",
     "1783704305bd38a84f",
     "faq",
-    "178380658188147353",
-    "image_with_text_overlay_NQcg9A"
+    "178380658188147353"
   ]
 }
