@@ -143,99 +143,6 @@
         "overlay_opacity": 0
       }
     },
-    "tanning_gummies_reviews_B3hAhG": {
-      "type": "tanning-gummies-reviews",
-      "blocks": {
-        "review_xQq3UU": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/ChatGPT_Image_Jul_10_2026_12_27_03_PM.webp",
-            "name": "Kloe M.",
-            "location": "Manchester, UK",
-            "rating": 5,
-            "text": "I usually burn red and peel fast, but starting these 2 weeks before holiday changed everything. I tanned gradually, faster than normal, no burning, and my skin stayed hydrated. Got the nicest caramel tone I've ever had. It's been 3 weeks and people still think I've just come back from holiday.",
-            "verified": true
-          }
-        },
-        "review_ceHtrF": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/ChatGPT_Image_Jul_10_2026_01_07_26_PM.webp",
-            "name": "Savannah T.",
-            "location": "Bristol, UK",
-            "rating": 5,
-            "text": "Love that it's a gradual, natural-looking glow rather than an instant fake tan colour. Took about 3 weeks but the results looked really even across my whole body. Feels like a nice, low-effort to look sexy",
-            "verified": true
-          }
-        },
-        "review_cfC6Fi": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/ChatGPT_Image_Jul_10_2026_12_35_16_PM.webp",
-            "name": "Sandra L.",
-            "location": "London, UK",
-            "rating": 5,
-            "text": "Best sunless option I've tried, no streaks, no orange patches, just a soft golden tint that built up nicely over 3-4 weeks. Skin also felt more hydrated as a bonus. Repurchasing already.",
-            "verified": true
-          }
-        },
-        "review_YrpBN8": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/ChatGPT-Image-Jul-10_-2026_-12_09_13-PM.webp",
-            "name": "Harry B.",
-            "location": "Birmingham, UK",
-            "rating": 5,
-            "text": "Took these before a lads' holiday and honestly it saved me from turning up dead pale like usual. Would recommend to anyone who burns easily or struggles to catch a tan.",
-            "verified": true
-          }
-        },
-        "review_niM6Et": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/ChatGPT-Image-Jul-10_-2026_-12_15_31-PM.webp",
-            "name": "Ines M.",
-            "location": "Leeds, UK",
-            "rating": 5,
-            "text": "These actually work if you're consistent noticed a nice golden undertone building up gradually. Paired with a bit of sun and it looked fantastic. Best sunless tanning method I've tried so far.",
-            "verified": true
-          }
-        },
-        "review_XykjcQ": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/ChatGPT-Image-Jul-11_-2026_-12_00_53-AM.webp",
-            "name": "Lauren A.",
-            "location": "Manchester, UK",
-            "rating": 5,
-            "text": "Finally, a tan that doesn't look fake or smell weird! Been using these for 2 months and my tan is honestly amazing, bronze golden tone, looks so natural. Really happy with the results.",
-            "verified": true
-          }
-        }
-      },
-      "block_order": [
-        "review_xQq3UU",
-        "review_ceHtrF",
-        "review_cfC6Fi",
-        "review_YrpBN8",
-        "review_niM6Et",
-        "review_XykjcQ"
-      ],
-      "name": "Reviews Carousel",
-      "settings": {
-        "heading": "A Sun-Kissed Glow That Looks Naturally Yours.",
-        "rating_score": "4.8",
-        "review_count_text": "1,900+ Verified Reviews",
-        "show_arrows": true,
-        "autoplay": false,
-        "autoplay_speed": 4000,
-        "bg_color": "#f2e9d9",
-        "card_bg_color": "#fbf6ec",
-        "gold_color": "#c9a24b",
-        "text_color": "#241f1b",
-        "badge_color": "#6b4426"
-      }
-    },
     "featured_product_CBekJp": {
       "type": "featured-product",
       "blocks": {
@@ -514,7 +421,6 @@
     "custom_liquid_WXp6pp",
     "image_with_text_overlay_CMzgF3",
     "image_with_text_overlay_yQm8LV",
-    "tanning_gummies_reviews_B3hAhG",
     "featured_product_CBekJp",
     "image_with_text_overlay_NQcg9A",
     "1783704305bd38a84f",
