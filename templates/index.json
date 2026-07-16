@@ -239,6 +239,14 @@
     "featured_product_CBekJp": {
       "type": "featured-product",
       "blocks": {
+        "image_CkizK9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT-Image-Jul-16_-2026_-01_33_50-PM.webp",
+            "alignment": "center",
+            "max_width": 500
+          }
+        },
         "title_bePLwX": {
           "type": "title",
           "settings": {
@@ -313,6 +321,7 @@
         }
       },
       "block_order": [
+        "image_CkizK9",
         "title_bePLwX",
         "description_mDLmEc",
         "rapi_rapi_bundle_YXkcUa",
