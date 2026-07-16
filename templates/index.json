@@ -169,32 +169,6 @@
     },
     "image_with_text_overlay_yQm8LV": {
       "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_7XbKAm": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        },
-        "heading_Jgwc7C": {
-          "type": "heading",
-          "settings": {
-            "text": "",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_FnxcFb": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_7XbKAm",
-        "heading_Jgwc7C",
-        "richtext_FnxcFb"
-      ],
       "name": "Image with text overlay",
       "settings": {
         "full_width": true,
@@ -429,9 +403,9 @@
   "order": [
     "image_with_text_overlay_Ly377i",
     "custom_liquid_WXp6pp",
+    "image_with_text_overlay_yQm8LV",
     "image_with_text_overlay_CMzgF3",
     "ps_wall_of_reviews_pr4Be6",
-    "image_with_text_overlay_yQm8LV",
     "featured_product_CBekJp",
     "image_with_text_overlay_NQcg9A",
     "1783704305bd38a84f",
