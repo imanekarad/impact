@@ -3,162 +3,349 @@
   PHYTOSEED LABS ‚Äî Wall of Reviews (section √©ditable)
   A ajouter dans : Boutique en ligne ‚Üí Modifier le code ‚Üí Sections
   Nom du fichier sugg√©r√© : ps-wall-of-reviews.liquid
+  Desktop : grille (2/3/4 colonnes au choix)
+  Mobile  : carrousel √† d√©filement horizontal (scroll-snap)
   ============================================================
 {% endcomment %}
 
+<section
+  class="ps-wall"
+  id="ps-wall-{{ section.id }}"
+  style="--ps-bg: {{ section.settings.bg_color }}; --ps-cols: {{ section.settings.columns }};"
+>
+  <div class="ps-wall-inner">
+
+    <div class="ps-wall-header">
+      {% if section.settings.eyebrow != blank %}
+        <p class="ps-eyebrow">{{ section.settings.eyebrow }}</p>
+      {% endif %}
+
+      <h2 class="ps-title">{{ section.settings.title }}</h2>
+
+      <div class="ps-rating-row">
+        <div class="ps-stars" aria-hidden="true">
+          {% for i in (1..5) %}
+            <span class="ps-star ps-star-filled">‚òÖ</span>
+          {% endfor %}
+        </div>
+        <p class="ps-rating-text">
+          {{ section.settings.rating }} ¬∑ {{ section.settings.rating_label }} ¬∑ {{ section.settings.review_count }}
+        </p>
+      </div>
+    </div>
+
+    <div class="ps-carousel-wrap">
+      <button class="ps-arrow ps-arrow-prev" type="button" aria-label="Avis pr√©c√©dents">‚Äπ</button>
+
+      <div class="ps-track" id="ps-track-{{ section.id }}">
+        {% for block in section.blocks %}
+          {% if block.type == 'review' %}
+            <div class="ps-card" {{ block.shopify_attributes }}>
+              <div class="ps-photo-wrap">
+                {% if block.settings.photo != blank %}
+                  <img
+                    class="ps-photo"
+                    src="{{ block.settings.photo | image_url: width: 300 }}"
+                    width="150" height="150"
+                    alt="{{ block.settings.name }}"
+                    loading="lazy"
+                  >
+                {% else %}
+                  <div class="ps-photo ps-photo-placeholder">
+                    <span>Photo client<br>√† ajouter</span>
+                  </div>
+                {% endif %}
+              </div>
+
+              <div class="ps-card-body">
+                <div class="ps-card-stars" aria-hidden="true">
+                  {% for i in (1..5) %}
+                    {% if i <= block.settings.stars %}
+                      <span class="ps-star ps-star-filled">‚òÖ</span>
+                    {% else %}
+                      <span class="ps-star">‚òÖ</span>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+
+                <p class="ps-quote">&ldquo;{{ block.settings.quote }}&rdquo;</p>
+
+                <p class="ps-name">{{ block.settings.name }}</p>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <button class="ps-arrow ps-arrow-next" type="button" aria-label="Avis suivants">‚Ä∫</button>
+    </div>
+
+    <div class="ps-dots" id="ps-dots-{{ section.id }}" aria-hidden="true"></div>
+
+  </div>
+</section>
+
 <style>
-  .ps-wall {
-    font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
-    background: {{ section.settings.bg_color }};
-    padding: 50px 20px;
-    text-align: center;
+  #ps-wall-{{ section.id }} {
+    background: var(--ps-bg);
+    padding: 48px 0 40px;
+    overflow: hidden;
   }
 
-  .ps-wall__eyebrow {
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #8A7460;
-    margin-bottom: 6px;
-  }
-
-  .ps-wall__title {
-    font-size: 38px;
-    font-weight: 800;
-    color: #2E1D10;
-    margin: 0 0 18px;
-    line-height: 1.1;
-  }
-
-  .ps-wall__title span { color: #C0762E; }
-
-  .ps-wall__stars-row {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background: #FFFDF8;
-    border: 1.5px solid #E9D3B4;
-    border-radius: 999px;
-    padding: 8px 20px;
-    margin-bottom: 36px;
-  }
-
-  .ps-wall__stars { display: flex; gap: 2px; }
-
-  .ps-wall__star {
-    width: 20px; height: 20px; border-radius: 4px;
-    background: #00B67A;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .ps-wall__star svg { width: 11px; height: 11px; fill: #FFF8EC; }
-
-  .ps-wall__stars-text { font-size: 14px; font-weight: 700; color: #3A2416; }
-  .ps-wall__stars-text b { color: #C0762E; }
-
-  .ps-wall__grid {
-    display: grid;
-    grid-template-columns: repeat({{ section.settings.columns }}, 1fr);
-    gap: 20px;
+  #ps-wall-{{ section.id }} .ps-wall-inner {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 
-  .ps-wall__card {
-    background: #FFFDF8;
-    border: 1px solid #E9D3B4;
-    border-radius: 16px;
+  #ps-wall-{{ section.id }} .ps-wall-header {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  #ps-wall-{{ section.id }} .ps-eyebrow {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin: 0 0 6px;
+  }
+
+  #ps-wall-{{ section.id }} .ps-title {
+    font-size: clamp(24px, 3.2vw, 34px);
+    font-weight: 600;
+    margin: 0 0 12px;
+  }
+
+  #ps-wall-{{ section.id }} .ps-rating-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  #ps-wall-{{ section.id }} .ps-stars {
+    color: #C9A24B;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  #ps-wall-{{ section.id }} .ps-rating-text {
+    font-size: 13px;
+    opacity: 0.75;
+    margin: 0;
+  }
+
+  #ps-wall-{{ section.id }} .ps-carousel-wrap {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  /* --- Horizontal scroller (mobile-first) --- */
+  #ps-wall-{{ section.id }} .ps-track {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding: 4px 4px 12px;
+    scrollbar-width: none;
+    width: 100%;
+  }
+  #ps-wall-{{ section.id }} .ps-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  #ps-wall-{{ section.id }} .ps-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 240px;
+    background: #FFFFFF;
+    border-radius: 14px;
     overflow: hidden;
-    text-align: left;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
     display: flex;
     flex-direction: column;
   }
 
-  .ps-wall__photo {
+  #ps-wall-{{ section.id }} .ps-photo-wrap {
     width: 100%;
-    aspect-ratio: 4 / 3;
-    background: #EFE1CC;
+    aspect-ratio: 1 / 1;
   }
 
-  .ps-wall__photo img {
-    width: 100%; height: 100%; object-fit: cover; display: block;
+  #ps-wall-{{ section.id }} .ps-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
-  .ps-wall__photo-placeholder {
-    width: 100%; height: 100%;
-    display: flex; align-items: center; justify-content: center;
-    color: #C0A97E; font-size: 12px; text-align: center; padding: 6px;
+  #ps-wall-{{ section.id }} .ps-photo-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EDE3D2;
+    color: #6B5A3E;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.4;
   }
 
-  .ps-wall__body { padding: 14px 16px 18px; }
-
-  .ps-wall__mini-stars { display: flex; gap: 2px; margin-bottom: 8px; }
-
-  .ps-wall__mini-star {
-    width: 14px; height: 14px; border-radius: 3px;
-    background: #00B67A;
-    display: flex; align-items: center; justify-content: center;
+  #ps-wall-{{ section.id }} .ps-card-body {
+    padding: 14px 16px 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
-  .ps-wall__mini-star svg { width: 8px; height: 8px; fill: #FFF8EC; }
-  .ps-wall__mini-star--empty { background: #E9D3B4; }
 
-  .ps-wall__quote { font-size: 13.5px; line-height: 1.45; color: #3A2416; margin: 0 0 10px; }
-  .ps-wall__name { font-size: 12.5px; font-weight: 700; color: #8A7460; }
-
-  @media (max-width: 900px) {
-    .ps-wall__grid { grid-template-columns: repeat(2, 1fr); }
-    .ps-wall__title { font-size: 28px; }
+  #ps-wall-{{ section.id }} .ps-card-stars {
+    color: #E4DCC9;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
   }
-  @media (max-width: 480px) {
-    .ps-wall__grid { grid-template-columns: 1fr; }
+
+  #ps-wall-{{ section.id }} .ps-quote {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #241F1B;
+    margin: 0 0 10px;
+    flex-grow: 1;
+  }
+
+  #ps-wall-{{ section.id }} .ps-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6B4426;
+    margin: 0;
+  }
+
+  /* --- Desktop: switch to a real grid, no scroll --- */
+  @media (min-width: 900px) {
+    #ps-wall-{{ section.id }} .ps-track {
+      display: grid;
+      grid-template-columns: repeat(var(--ps-cols), minmax(0, 1fr));
+      overflow-x: visible;
+      scroll-snap-type: none;
+      padding: 4px;
+    }
+
+    #ps-wall-{{ section.id }} .ps-card {
+      width: auto;
+    }
+
+    #ps-wall-{{ section.id }} .ps-arrow,
+    #ps-wall-{{ section.id }} .ps-dots {
+      display: none;
+    }
+  }
+
+  /* --- Arrows (mobile + tablet only) --- */
+  #ps-wall-{{ section.id }} .ps-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: #FFFFFF;
+    color: #241F1B;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    flex-shrink: 0;
+    z-index: 2;
+    margin-top: 60px;
+  }
+  #ps-wall-{{ section.id }} .ps-arrow-prev { margin-right: 10px; }
+  #ps-wall-{{ section.id }} .ps-arrow-next { margin-left: 10px; }
+  #ps-wall-{{ section.id }} .ps-arrow[disabled] { opacity: 0.35; cursor: default; }
+
+  /* --- Dots (mobile + tablet) --- */
+  #ps-wall-{{ section.id }} .ps-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 6px;
+  }
+  #ps-wall-{{ section.id }} .ps-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #241F1B;
+    opacity: 0.25;
+    transition: opacity 0.2s ease, width 0.2s ease;
+  }
+  #ps-wall-{{ section.id }} .ps-dot.is-active {
+    opacity: 1;
+    width: 16px;
+    border-radius: 3px;
   }
 </style>
 
-<div class="ps-wall">
+<script>
+  (function () {
+    var root = document.getElementById('ps-wall-{{ section.id }}');
+    if (!root) return;
 
-  {% if section.settings.eyebrow != blank %}
-    <div class="ps-wall__eyebrow">{{ section.settings.eyebrow }}</div>
-  {% endif %}
+    var track = document.getElementById('ps-track-{{ section.id }}');
+    var dotsWrap = document.getElementById('ps-dots-{{ section.id }}');
+    var prevBtn = root.querySelector('.ps-arrow-prev');
+    var nextBtn = root.querySelector('.ps-arrow-next');
+    var cards = Array.prototype.slice.call(track.children);
+    if (!cards.length) return;
 
-  <h2 class="ps-wall__title">{{ section.settings.title }}</h2>
+    cards.forEach(function (_, i) {
+      var dot = document.createElement('span');
+      dot.className = 'ps-dot' + (i === 0 ? ' is-active' : '');
+      dot.addEventListener('click', function () {
+        cards[i].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+      });
+      dotsWrap.appendChild(dot);
+    });
+    var dots = Array.prototype.slice.call(dotsWrap.children);
 
-  <div class="ps-wall__stars-row">
-    <div class="ps-wall__stars">
-      {% for i in (1..5) %}
-        <div class="ps-wall__star">
-          <svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431L24 9.168l-6 5.847L19.335 24 12 19.897 4.665 24 6 15.015 0 9.168l8.332-1.15z"/></svg>
-        </div>
-      {% endfor %}
-    </div>
-    <span class="ps-wall__stars-text"><b>{{ section.settings.rating }}</b>&nbsp;&middot;&nbsp;{{ section.settings.rating_label }}&nbsp;&middot;&nbsp;{{ section.settings.review_count }}</span>
-  </div>
+    function cardStep() {
+      var style = window.getComputedStyle(track);
+      var gap = parseFloat(style.columnGap || style.gap || 16);
+      return cards[0].getBoundingClientRect().width + gap;
+    }
 
-  <div class="ps-wall__grid">
-    {% for block in section.blocks %}
-      <div class="ps-wall__card" {{ block.shopify_attributes }}>
-        <div class="ps-wall__photo">
-          {% if block.settings.photo != blank %}
-            <img src="{{ block.settings.photo | image_url: width: 600 }}" alt="{{ block.settings.name | escape }}" loading="lazy">
-          {% else %}
-            <div class="ps-wall__photo-placeholder">Photo client<br>√† ajouter</div>
-          {% endif %}
-        </div>
-        <div class="ps-wall__body">
-          <div class="ps-wall__mini-stars">
-            {% for i in (1..5) %}
-              {% if i <= block.settings.stars %}
-                <div class="ps-wall__mini-star"><svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431L24 9.168l-6 5.847L19.335 24 12 19.897 4.665 24 6 15.015 0 9.168l8.332-1.15z"/></svg></div>
-              {% else %}
-                <div class="ps-wall__mini-star ps-wall__mini-star--empty"></div>
-              {% endif %}
-            {% endfor %}
-          </div>
-          <p class="ps-wall__quote">"{{ block.settings.quote }}"</p>
-          <div class="ps-wall__name">{{ block.settings.name }}</div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-</div>
+    function scrollByCards(n) {
+      track.scrollBy({ left: cardStep() * n, behavior: 'smooth' });
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', function () { scrollByCards(-1); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { scrollByCards(1); });
+
+    function updateActiveState() {
+      var scrollLeft = track.scrollLeft;
+      var step = cardStep();
+      var activeIndex = Math.round(scrollLeft / step);
+
+      dots.forEach(function (dot, i) {
+        dot.classList.toggle('is-active', i === activeIndex);
+      });
+
+      if (prevBtn) prevBtn.disabled = scrollLeft <= 4;
+      if (nextBtn) {
+        var maxScroll = track.scrollWidth - track.clientWidth;
+        nextBtn.disabled = scrollLeft >= maxScroll - 4;
+      }
+    }
+
+    var scrollTimeout;
+    track.addEventListener('scroll', function () {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(updateActiveState, 80);
+    }, { passive: true });
+
+    updateActiveState();
+  })();
+</script>
 
 {% schema %}
 {
@@ -259,5 +446,4 @@
   ]
 }
 {% endschema %}
-
 
