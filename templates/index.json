@@ -120,6 +120,15 @@
     "ps_wall_of_reviews_pr4Be6": {
       "type": "ps-wall-of-reviews",
       "blocks": {
+        "review_VnjV89": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify://shop_images/Self_Tanner_Drops_-_2.png",
+            "stars": 5,
+            "quote": "I'm obsessed with my tan. I genuinely don't even wear foundation anymore. My skin looks so much healthier and naturally glowy. I took 2 gummies a day for a month and this is the result.",
+            "name": "Camille R."
+          }
+        },
         "review_fnnTtJ": {
           "type": "review",
           "settings": {
@@ -176,6 +185,7 @@
         }
       },
       "block_order": [
+        "review_VnjV89",
         "review_fnnTtJ",
         "review_fVcx86",
         "review_VdPNEC",
