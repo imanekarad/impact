@@ -100,6 +100,73 @@
         "overlay_opacity": 0
       }
     },
+    "ps_wall_of_reviews_pr4Be6": {
+      "type": "ps-wall-of-reviews",
+      "blocks": {
+        "review_VdPNEC": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify://shop_images/images-23.webp",
+            "stars": 5,
+            "quote": "I'm honestly obsessed! My skin looks healthier, I look younger, and I barely wear makeup anymore. I'm going on holiday next week, and I can't wait to see how much longer my tan lasts this time.",
+            "name": "Heather P."
+          }
+        },
+        "review_7Y7i9z": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify://shop_images/ChatGPT_Image_Jul_10_2026_01_07_26_PM.webp",
+            "stars": 5,
+            "quote": "Love that it's a gradual, natural-looking glow rather than an instant fake tan colour. Took about 3 weeks but the results looked really even across my whole body. Feels like a nice, low-effort. No make-up needed !",
+            "name": "Savannah T."
+          }
+        },
+        "review_fnnTtJ": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify://shop_images/ChatGPT-Image-Jul-16_-2026_-02_12_34-PM.webp",
+            "stars": 5,
+            "quote": "I usually burn red and peel fast, but starting these 2 weeks before holiday changed everything. I tanned gradually, faster than normal, and my skin stayed hydrated. Got the nicest caramel tone I've ever had. It's been 3 weeks and people still think I've just come back from holiday. I love my skin tone so much !",
+            "name": "Kloe M."
+          }
+        },
+        "review_QMDmf7": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify://shop_images/ChatGPT-Image-Jul-10_-2026_-12_15_31-PM.webp",
+            "stars": 5,
+            "quote": "These actually work if you're consistent noticed a nice golden undertone building up gradually. Paired with a bit of sun and it looked fantastic. Best sunless tanning method I've tried so far.",
+            "name": "Ines R."
+          }
+        },
+        "review_jQQDkV": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify://shop_images/ChatGPT_Image_Jul_10_2026_12_35_16_PM.webp",
+            "stars": 5,
+            "quote": "Best sunless option I've tried, no streaks, no orange patches, just a soft golden tint that built up nicely over 3-4 weeks. Skin also felt more hydrated as a bonus. Repurchasing already.",
+            "name": "Sandra L."
+          }
+        }
+      },
+      "block_order": [
+        "review_VdPNEC",
+        "review_7Y7i9z",
+        "review_fnnTtJ",
+        "review_QMDmf7",
+        "review_jQQDkV"
+      ],
+      "name": "PS Wall of Reviews",
+      "settings": {
+        "eyebrow": "Phytoseed Labs",
+        "title": "+1,900 Happy Customers",
+        "rating": "4.8/5",
+        "rating_label": "Excellent",
+        "review_count": "+650 verified reviews",
+        "columns": "4",
+        "bg_color": "#f4ebdd"
+      }
+    },
     "image_with_text_overlay_yQm8LV": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -357,85 +424,18 @@
         "background_gradient": "",
         "text_color": ""
       }
-    },
-    "ps_wall_of_reviews_pr4Be6": {
-      "type": "ps-wall-of-reviews",
-      "blocks": {
-        "review_VdPNEC": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/images-23.webp",
-            "stars": 5,
-            "quote": "I'm honestly obsessed! My skin looks healthier, I look younger, and I barely wear makeup anymore. I'm going on holiday next week, and I can't wait to see how much longer my tan lasts this time.",
-            "name": "Heather P."
-          }
-        },
-        "review_7Y7i9z": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/ChatGPT_Image_Jul_10_2026_01_07_26_PM.webp",
-            "stars": 5,
-            "quote": "Love that it's a gradual, natural-looking glow rather than an instant fake tan colour. Took about 3 weeks but the results looked really even across my whole body. Feels like a nice, low-effort. No make-up needed !",
-            "name": "Savannah T."
-          }
-        },
-        "review_fnnTtJ": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/ChatGPT-Image-Jul-16_-2026_-02_12_34-PM.webp",
-            "stars": 5,
-            "quote": "I usually burn red and peel fast, but starting these 2 weeks before holiday changed everything. I tanned gradually, faster than normal, and my skin stayed hydrated. Got the nicest caramel tone I've ever had. It's been 3 weeks and people still think I've just come back from holiday. I love my skin tone so much !",
-            "name": "Kloe M."
-          }
-        },
-        "review_QMDmf7": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/ChatGPT-Image-Jul-10_-2026_-12_15_31-PM.webp",
-            "stars": 5,
-            "quote": "These actually work if you're consistent noticed a nice golden undertone building up gradually. Paired with a bit of sun and it looked fantastic. Best sunless tanning method I've tried so far.",
-            "name": "Ines R."
-          }
-        },
-        "review_jQQDkV": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/ChatGPT_Image_Jul_10_2026_12_35_16_PM.webp",
-            "stars": 5,
-            "quote": "Best sunless option I've tried, no streaks, no orange patches, just a soft golden tint that built up nicely over 3-4 weeks. Skin also felt more hydrated as a bonus. Repurchasing already.",
-            "name": "Sandra L."
-          }
-        }
-      },
-      "block_order": [
-        "review_VdPNEC",
-        "review_7Y7i9z",
-        "review_fnnTtJ",
-        "review_QMDmf7",
-        "review_jQQDkV"
-      ],
-      "name": "PS Wall of Reviews",
-      "settings": {
-        "eyebrow": "Phytoseed Labs",
-        "title": "+1,900 Happy Customers",
-        "rating": "4.8/5",
-        "rating_label": "Excellent",
-        "review_count": "+650 verified reviews",
-        "columns": "4",
-        "bg_color": "#f4ebdd"
-      }
     }
   },
   "order": [
     "image_with_text_overlay_Ly377i",
     "custom_liquid_WXp6pp",
     "image_with_text_overlay_CMzgF3",
+    "ps_wall_of_reviews_pr4Be6",
     "image_with_text_overlay_yQm8LV",
     "featured_product_CBekJp",
     "image_with_text_overlay_NQcg9A",
     "1783704305bd38a84f",
     "faq",
-    "178380658188147353",
-    "ps_wall_of_reviews_pr4Be6"
+    "178380658188147353"
   ]
 }
