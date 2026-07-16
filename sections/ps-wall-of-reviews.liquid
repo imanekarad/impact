@@ -47,7 +47,7 @@
 
   .ps-wall__star {
     width: 20px; height: 20px; border-radius: 4px;
-    background: linear-gradient(135deg, #E7A65C 0%, #C0762E 100%);
+    background: #00B67A;
     display: flex; align-items: center; justify-content: center;
   }
   .ps-wall__star svg { width: 11px; height: 11px; fill: #FFF8EC; }
@@ -95,7 +95,7 @@
 
   .ps-wall__mini-star {
     width: 14px; height: 14px; border-radius: 3px;
-    background: linear-gradient(135deg, #E7A65C 0%, #C0762E 100%);
+    background: #00B67A;
     display: flex; align-items: center; justify-content: center;
   }
   .ps-wall__mini-star svg { width: 8px; height: 8px; fill: #FFF8EC; }
@@ -129,7 +129,7 @@
         </div>
       {% endfor %}
     </div>
-    <span class="ps-wall__stars-text"><b>{{ section.settings.rating }}</b> ¬∑ {{ section.settings.rating_label }} ¬∑ {{ section.settings.review_count }}</span>
+    <span class="ps-wall__stars-text"><b>{{ section.settings.rating }}</b>&nbsp;&middot;&nbsp;{{ section.settings.rating_label }}&nbsp;&middot;&nbsp;{{ section.settings.review_count }}</span>
   </div>
 
   <div class="ps-wall__grid">
@@ -259,4 +259,5 @@
   ]
 }
 {% endschema %}
+
 
