@@ -65,6 +65,23 @@
         "text_color": ""
       }
     },
+    "image_with_text_overlay_yQm8LV": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/ChatGPT_Image_Jul_11_2026_12_27_07_AM.webp",
+        "mobile_image": "shopify://shop_images/ChatGPT_Image_Jul_11_2026_12_27_07_AM.webp",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#f7e9d7",
+        "overlay_color": "#f7e9d7",
+        "overlay_opacity": 0
+      }
+    },
     "image_with_text_overlay_CMzgF3": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -106,7 +123,7 @@
         "review_VdPNEC": {
           "type": "review",
           "settings": {
-            "photo": "shopify://shop_images/images-23.webp",
+            "photo": "shopify://shop_images/ChatGPT-Image-Jul-16_-2026_-02_31_59-PM.webp",
             "stars": 5,
             "quote": "I'm honestly obsessed! My skin looks healthier, I look younger, and I barely wear makeup anymore. I'm going on holiday next week, and I can't wait to see how much longer my tan lasts this time.",
             "name": "Heather P."
@@ -165,23 +182,6 @@
         "review_count": "+650 verified reviews",
         "columns": "4",
         "bg_color": "#f4ebdd"
-      }
-    },
-    "image_with_text_overlay_yQm8LV": {
-      "type": "image-with-text-overlay",
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/ChatGPT_Image_Jul_11_2026_12_27_07_AM.webp",
-        "mobile_image": "shopify://shop_images/ChatGPT_Image_Jul_11_2026_12_27_07_AM.webp",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#f7e9d7",
-        "overlay_color": "#f7e9d7",
-        "overlay_opacity": 0
       }
     },
     "featured_product_CBekJp": {
