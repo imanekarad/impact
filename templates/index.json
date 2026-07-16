@@ -120,6 +120,15 @@
     "ps_wall_of_reviews_pr4Be6": {
       "type": "ps-wall-of-reviews",
       "blocks": {
+        "review_fVcx86": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify://shop_images/ChatGPT_Image_Jul_16_2026_06_27_42_PM.webp",
+            "stars": 5,
+            "quote": "Being tanned changes everything. After 3 weeks, my skin looks better, I feel more confident, I barely wear makeup anymore, and people keep telling me I look so well-rested.",
+            "name": "Olga S."
+          }
+        },
         "review_VdPNEC": {
           "type": "review",
           "settings": {
@@ -167,6 +176,7 @@
         }
       },
       "block_order": [
+        "review_fVcx86",
         "review_VdPNEC",
         "review_7Y7i9z",
         "review_fnnTtJ",
