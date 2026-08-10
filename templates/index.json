@@ -129,15 +129,6 @@
             "name": "Heather P."
           }
         },
-        "review_jQQDkV": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/ChatGPT_Image_Jul_10_2026_12_35_16_PM.webp",
-            "stars": 5,
-            "quote": "Best sunless option I've tried, no streaks, no orange patches, just a soft golden tint that built up nicely over 3-4 weeks. Skin also felt more hydrated as a bonus. Repurchasing already.",
-            "name": "Sandra L."
-          }
-        },
         "review_fnnTtJ": {
           "type": "review",
           "settings": {
@@ -147,6 +138,15 @@
             "name": "Kloe M."
           }
         },
+        "review_jQQDkV": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify://shop_images/ChatGPT_Image_Jul_10_2026_12_35_16_PM.webp",
+            "stars": 5,
+            "quote": "Best sunless option I've tried, no streaks, no orange patches, just a soft golden tint that built up nicely over 3-4 weeks. Skin also felt more hydrated as a bonus. Repurchasing already.",
+            "name": "Sandra L."
+          }
+        },
         "review_fVcx86": {
           "type": "review",
           "settings": {
@@ -154,6 +154,15 @@
             "stars": 5,
             "quote": "Being tanned changes everything. After 3 weeks, my skin looks better, I feel more confident, I barely wear makeup anymore, and people keep telling me I look so well-rested.",
             "name": "Olga S."
+          }
+        },
+        "review_QMDmf7": {
+          "type": "review",
+          "settings": {
+            "photo": "shopify://shop_images/tan_before_after_shopify.webp",
+            "stars": 5,
+            "quote": "These actually work if you're consistent noticed a nice golden undertone building up gradually. Paired with a bit of sun and it looked fantastic. Best sunless tanning method I've tried so far.",
+            "name": "Ines R."
           }
         },
         "review_VnjV89": {
@@ -173,25 +182,16 @@
             "quote": "Love that it's a gradual, natural-looking glow rather than an instant fake tan colour. Took about 3 weeks but the results looked really even across my whole body. Feels like a nice, low-effort. No make-up needed !",
             "name": "Savannah T."
           }
-        },
-        "review_QMDmf7": {
-          "type": "review",
-          "settings": {
-            "photo": "shopify://shop_images/tan_before_after_shopify.webp",
-            "stars": 5,
-            "quote": "These actually work if you're consistent noticed a nice golden undertone building up gradually. Paired with a bit of sun and it looked fantastic. Best sunless tanning method I've tried so far.",
-            "name": "Ines R."
-          }
         }
       },
       "block_order": [
         "review_VdPNEC",
-        "review_jQQDkV",
         "review_fnnTtJ",
+        "review_jQQDkV",
         "review_fVcx86",
+        "review_QMDmf7",
         "review_VnjV89",
-        "review_7Y7i9z",
-        "review_QMDmf7"
+        "review_7Y7i9z"
       ],
       "name": "PS Wall of Reviews",
       "settings": {
