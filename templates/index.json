@@ -56,9 +56,9 @@
         "image_size": "auto",
         "image": "shopify://shop_images/ChatGPT_Image_Sep_15_2026_11_18_42_AM.png",
         "mobile_image": "shopify://shop_images/ChatGPT_Image_Sep_15_2026_11_18_42_AM.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
+        "mobile_text_position": "place-self-center-start text-start",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
+        "text_color": "#1A3C50",
         "overlay_color": "#000000",
         "overlay_opacity": 0
       }
