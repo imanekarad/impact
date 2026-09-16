@@ -115,10 +115,10 @@
       ],
       "name": "Rich text",
       "settings": {
-        "full_width": false,
+        "full_width": true,
         "content_width": "large",
         "text_position": "center",
-        "background": "#F8F5EF",
+        "background": "#f8f5ef",
         "background_gradient": "",
         "text_color": ""
       }
