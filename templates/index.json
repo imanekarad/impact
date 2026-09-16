@@ -65,23 +65,6 @@
     },
     "impact_text_cRVFyP": {
       "type": "impact-text",
-      "blocks": {
-        "item_LtPtp4": {
-          "type": "item",
-          "settings": {
-            "title": "",
-            "subheading": "Less bottle-holding. More freedom for everyday moments.",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "item_LtPtp4"
-      ],
       "custom_css": [],
       "name": "Impact text",
       "settings": {
@@ -98,6 +81,46 @@
         "text_color": "#0b0b0c",
         "button_background": "",
         "button_text_color": ""
+      }
+    },
+    "rich_text_Hw7wMb": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_yMdw9h": {
+          "type": "subheading",
+          "settings": {
+            "text": "Less bottle-holding. More freedom for everyday moments."
+          }
+        },
+        "heading_TEMjqk": {
+          "type": "heading",
+          "settings": {
+            "text": "Less bottle-holding. More freedom for everyday moments.",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_dk4Pzn": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_yMdw9h",
+        "heading_TEMjqk",
+        "richtext_dk4Pzn"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "image_with_text_overlay_gMkNfH": {
@@ -148,6 +171,7 @@
     "178380658188147353",
     "image_with_text_overlay_PWXmYR",
     "impact_text_cRVFyP",
+    "rich_text_Hw7wMb",
     "image_with_text_overlay_gMkNfH"
   ]
 }
