@@ -95,7 +95,7 @@
         "heading_TEMjqk": {
           "type": "heading",
           "settings": {
-            "text": "Less bottle-holding. More freedom for everyday moments.",
+            "text": "",
             "heading_tag": "h3",
             "text_color": "",
             "gradient": ""
@@ -104,7 +104,7 @@
         "richtext_dk4Pzn": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": ""
           }
         }
       },
