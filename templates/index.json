@@ -83,7 +83,7 @@
         "item_LtPtp4"
       ],
       "custom_css": [
-        "h2 {font-family: \"Josefin Sans\", sans-serif !important; font-weight: 300 !important; letter-spacing: 1px !important;}"
+        "h2 {font-family: \"Josefin Sans\", sans-serif !important; font-weight: 300 !important;}"
       ],
       "name": "Impact text",
       "settings": {
@@ -93,11 +93,11 @@
         "impact_text_style": "fill",
         "text_divider": "none",
         "impact_text_size_ratio": 1,
-        "background": "#F8F5EF",
+        "background": "#f8f5ef",
         "background_gradient": "",
-        "heading_text_color": "#0B0B0C",
+        "heading_text_color": "#0b0b0c",
         "heading_gradient": "",
-        "text_color": "#0B0B0C",
+        "text_color": "#0b0b0c",
         "button_background": "",
         "button_text_color": ""
       }
