@@ -82,6 +82,9 @@
       "block_order": [
         "item_LtPtp4"
       ],
+      "custom_css": [
+        ".subheading {font-family: \"Josefin Sans\", sans-serif !important; font-weight: 300 !important; letter-spacing: 2px !important;}"
+      ],
       "name": "Impact text",
       "settings": {
         "full_width": true,
