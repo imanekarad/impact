@@ -24,7 +24,7 @@
         "message_bdtLn6": {
           "type": "message",
           "settings": {
-            "text": "🔒 Secure Payments",
+            "text": "Secure Payments",
             "url": ""
           }
         },
@@ -48,7 +48,7 @@
         "text_size": "text-lg",
         "navigation_mode": "scrolling",
         "scrolling_speed": 10,
-        "background": "#A8B5A5",
+        "background": "#a8b5a5",
         "background_gradient": "",
         "text_color": "#ffffff"
       }
