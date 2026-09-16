@@ -169,6 +169,13 @@
     "faq_KR9qMQ": {
       "type": "faq",
       "blocks": {
+        "item_WEqqqX": {
+          "type": "item",
+          "settings": {
+            "title": "Who is it suitable for?",
+            "content": ""
+          }
+        },
         "item_tKMgBA": {
           "type": "item",
           "settings": {
@@ -199,6 +206,7 @@
         }
       },
       "block_order": [
+        "item_WEqqqX",
         "item_tKMgBA",
         "item_nRemgz",
         "item_hUkbVg",
