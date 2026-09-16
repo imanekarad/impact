@@ -105,20 +105,20 @@
         "subheading_nECnr8": {
           "type": "subheading",
           "settings": {
-            "text": "Subheading"
+            "text": ""
           }
         },
         "heading_VBkEWR": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay",
+            "text": "",
             "heading_tag": "h1"
           }
         },
         "richtext_AdpRk4": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": ""
           }
         }
       },
