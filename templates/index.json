@@ -179,15 +179,15 @@
         "item_hUkbVg": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "title": "What age is it suitable for?",
+            "content": "<p>From the time your baby is able to suck independently, generally from around 2½ months up to approximately 2 years old. Always stay close to your baby during feeding.</p><h3></h3>"
           }
         },
         "item_HJNcd7": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "title": "Is it safe?",
+            "content": "<p>Our priority is the safety. Made from food-grade silicone and PP, and BPA-free. Always stay close and supervise your baby during feeding.</p>"
           }
         }
       },
