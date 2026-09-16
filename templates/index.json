@@ -169,6 +169,13 @@
     "faq_KR9qMQ": {
       "type": "faq",
       "blocks": {
+        "item_YP8riK": {
+          "type": "item",
+          "settings": {
+            "title": "Will my baby take it?",
+            "content": "<p>Works with standard wide-neck nipples, so you can swap in the one they already use.</p>"
+          }
+        },
         "item_WEqqqX": {
           "type": "item",
           "settings": {
@@ -206,6 +213,7 @@
         }
       },
       "block_order": [
+        "item_YP8riK",
         "item_WEqqqX",
         "item_tKMgBA",
         "item_nRemgz",
