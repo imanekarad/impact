@@ -72,6 +72,7 @@
         "show_country_flag": false,
         "show_country_name": false,
         "transparent_header_text_color": "#2f2621",
+        "transparent_logo": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_10_34_35_AM.webp",
         "reduce_padding": true,
         "background_opacity": 0,
         "background_blur_radius": 0
