@@ -120,9 +120,9 @@
         "text"
       ],
       "custom_css": [
-        ".footer {background-color: #3A302B !important; color: #f7e9d7;}",
-        ".footer a {color: #f7e9d7;}",
-        ".footer h2,.footer h3,.footer .h4 {color: #ffffff;}"
+        ".footer {background-color: #3a302b !important; color: #FFFDFC;}",
+        ".footer a {color: #FFFDFC;}",
+        ".footer h2,.footer h3,.footer .h4 {color: #FFFDFC;}"
       ],
       "settings": {
         "show_social_media": false,
