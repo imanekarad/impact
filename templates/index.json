@@ -58,7 +58,7 @@
         "mobile_image": "shopify://shop_images/ChatGPT_Image_Sep_15_2026_02_51_58_PM.png",
         "mobile_text_position": "place-self-center-start text-start",
         "desktop_text_position": "sm:place-self-center-start sm:text-start",
-        "text_color": "#1A3C50",
+        "text_color": "#1a3c50",
         "overlay_color": "#000000",
         "overlay_opacity": 0
       }
@@ -98,11 +98,53 @@
         "button_background": "",
         "button_text_color": ""
       }
+    },
+    "image_with_text_overlay_gMkNfH": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_nECnr8": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_VBkEWR": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_AdpRk4": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_nECnr8",
+        "heading_VBkEWR",
+        "richtext_AdpRk4"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
     }
   },
   "order": [
     "178380658188147353",
     "image_with_text_overlay_PWXmYR",
-    "impact_text_cRVFyP"
+    "impact_text_cRVFyP",
+    "image_with_text_overlay_gMkNfH"
   ]
 }
