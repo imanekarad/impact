@@ -83,7 +83,7 @@
         "item_LtPtp4"
       ],
       "custom_css": [
-        ".subheading {font-family: \"Josefin Sans\", sans-serif !important; font-weight: 300 !important; letter-spacing: 2px !important;}"
+        ".image-with-text-overlay .h6 {font-family: \"Josefin Sans\", sans-serif !important; font-weight: 300 !important; letter-spacing: 2px !important;}"
       ],
       "name": "Impact text",
       "settings": {
